@@ -917,7 +917,80 @@ const DATA = {
             "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・その他レギュレーションのイベントは除外済み"
           ]
         }
-        // kyoto, hyogo, nara, shiga, wakayama: data will be added here
+        kyoto: {
+          totalEvents: 30,
+          filteredCount: 5,
+          categories: [
+            {
+              id: "gym_battle",
+              name: "ジムバトル",
+              color: "#2563eb",
+              events: [
+                { id: 101, time: "13:00〜", name: "ジムバトル", venue: "ビデオインアメリカ 京都西七条店", address: "京都市下京区西七条北東野町18-1", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/972679/1/11025/20260322/1737926", tags: [] },
+                { id: 102, time: "16:00〜18:00", name: "ジムバトル", venue: "ビデオインアメリカ 大徳寺店", address: "京都市北区紫野上築山町41番地", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973301/1/12099/20260322/1743797", tags: [] }
+              ]
+            },
+            {
+              id: "open_league",
+              name: "オープンリーグ / トレーナーズリーグ",
+              color: "#d97706",
+              events: [
+                { id: 103, time: "10:30〜", name: "シティリーグ2026 S4 オープンリーグ", venue: "BOOKOFF SUPER BAZAAR 1号京都伏見店", address: "京都市伏見区横大路芝生1", fee: "500円", capacity: "64人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/953408/1/18935/20260322/1746363", tags: ["csp"] },
+                { id: 104, time: "13:00〜15:00", name: "トレーナーズリーグ（オープン）", venue: "ビデオインアメリカ 大徳寺店", address: "京都市北区紫野上築山町41番地", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/972768/1/12099/20260322/1743765", tags: ["csp"] }
+              ]
+            },
+            {
+              id: "friend_battle",
+              name: "いっしょにフレンドバトル",
+              color: "#059669",
+              events: [
+                { id: 105, time: "13:00〜14:30", name: "いっしょにフレンドバトル", venue: "WiZ 京都駅前店", address: "京都市下京区東塩小路町720-1 駿河屋ビルB2", fee: "無料", capacity: "24人", distance: "約5分", url: "https://players.pokemon-card.com/event/detail/972704/1/19199/20260322/1734917", tags: ["beginner", "near"] }
+              ]
+            }
+          ],
+          plans: [
+            {
+              id: "A",
+              name: "大徳寺エリア CSP＋ジムバトル",
+              subtitle: "同会場で2連戦・移動ゼロ",
+              rating: 5,
+              steps: [
+                { time: "13:00〜15:00", event: "トレーナーズリーグ（オープン） CSP", venue: "ビデオインアメリカ 大徳寺店", area: "大徳寺", url: "https://players.pokemon-card.com/event/detail/972768/1/12099/20260322/1743765" },
+                { time: "16:00〜18:00", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 大徳寺店", area: "大徳寺", url: "https://players.pokemon-card.com/event/detail/973301/1/12099/20260322/1743797" }
+              ],
+              merit: "同じ会場で2連戦なので移動ゼロ。午後にCSPポイントを獲得しつつ、夕方にジムバトルで対戦経験を積める。大徳寺エリアは京都駅からバスで約25分。"
+            },
+            {
+              id: "B",
+              name: "CSP特化＋西七条プラン",
+              subtitle: "午前シティリーグ → 午後ジムバトル",
+              rating: 4,
+              steps: [
+                { time: "10:30〜", event: "シティリーグ2026 S4 オープンリーグ CSP", venue: "BOOKOFF 京都伏見店", area: "伏見", url: "https://players.pokemon-card.com/event/detail/953408/1/18935/20260322/1746363" },
+                { time: "13:00〜", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 京都西七条店", area: "西七条", url: "https://players.pokemon-card.com/event/detail/972679/1/11025/20260322/1737926" }
+              ],
+              merit: "午前は64人規模のCSP対象シティリーグ、午後は西七条でジムバトル。伏見→西七条はバス・電車で約20分。"
+            },
+            {
+              id: "C",
+              name: "京都駅前のんびりプラン",
+              subtitle: "フレンドバトル → ジムバトル",
+              rating: 3,
+              steps: [
+                { time: "13:00〜14:30", event: "いっしょにフレンドバトル", venue: "WiZ 京都駅前店", area: "京都駅前", url: "https://players.pokemon-card.com/event/detail/972704/1/19199/20260322/1734917" },
+                { time: "16:00〜18:00", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 大徳寺店", area: "大徳寺", url: "https://players.pokemon-card.com/event/detail/973301/1/12099/20260322/1743797" }
+              ],
+              merit: "京都駅前でフレンドバトルからスタート。間に京都観光や食事を楽しんでから、大徳寺でジムバトル。ゆったり派におすすめ。"
+            }
+          ],
+          notes: [
+            "シティリーグ（BOOKOFF京都伏見店）は<strong>先着受付中</strong>（定員64人）",
+            "JR京都駅からの所要時間を基準に約30分以内のイベントを抽出",
+            "各イベントの当日受付状況は変動する可能性があるため、早めの到着をおすすめします",
+            "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・殿堂レギュレーションのイベントは除外済み"
+          ]
+        }
+        // hyogo, nara, shiga, wakayama: data will be added here
       }
     }
   ]
