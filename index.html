@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#1e3a8a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9889;</text></svg>">
-  <title>ポケカ イベント 2026/03/22（日）大阪府</title>
+  <title>ポケカ イベントプラン 大阪府</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -38,11 +38,11 @@
       padding-bottom: var(--safe-bottom);
     }
 
-    /* ===== Header ===== */
+    /* ===== Header (Compact) ===== */
     .header {
       background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
       color: #fff;
-      padding: calc(20px + var(--safe-top)) 20px 18px;
+      padding: calc(16px + var(--safe-top)) 20px 14px;
       position: relative;
       overflow: hidden;
     }
@@ -56,34 +56,32 @@
       background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
       border-radius: 50%;
     }
-    .header-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
-    .header-label {
-      font-size: 13px;
-      font-weight: 600;
-      opacity: 0.85;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
+    .header-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
     }
-    .header-date {
-      font-size: 32px;
+    .header-title {
+      font-size: 18px;
       font-weight: 800;
-      letter-spacing: -0.5px;
-      margin: 4px 0 2px;
-      line-height: 1.2;
+      letter-spacing: -0.3px;
     }
-    .header-area {
-      font-size: 16px;
+    .header-title .area {
       font-weight: 600;
       opacity: 0.9;
     }
     .header-meta {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-top: 12px;
+      gap: 10px;
       font-size: 12px;
-      opacity: 0.8;
-      flex-wrap: wrap;
+      opacity: 0.85;
+      flex-shrink: 0;
     }
     .header-meta a {
       color: #fff;
@@ -96,219 +94,51 @@
     }
     .header-meta a:active { background: rgba(255,255,255,0.25); }
 
-    /* ===== Filter Bar ===== */
-    .filter-bar {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 16px;
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
+    /* ===== Plans Hero Section ===== */
+    .plans-section {
+      background: linear-gradient(180deg, #eff6ff 0%, var(--bg) 100%);
+      padding: 24px 16px 20px;
     }
-    .filter-bar-inner {
-      display: flex;
-      gap: 8px;
+    .plans-section-inner {
       max-width: 1200px;
       margin: 0 auto;
-      width: 100%;
     }
-    .filter-bar::-webkit-scrollbar { display: none; }
-
-    .filter-pill {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 8px 14px;
-      border-radius: 20px;
-      border: 1.5px solid var(--border);
-      background: var(--card);
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text-sub);
-      cursor: pointer;
-      white-space: nowrap;
-      flex-shrink: 0;
-      transition: all 0.2s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .filter-pill:active { transform: scale(0.96); }
-    .filter-pill .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: currentColor;
-      opacity: 0.5;
-    }
-    .filter-pill .cnt {
-      background: var(--bg);
-      padding: 1px 7px;
-      border-radius: 10px;
-      font-size: 11px;
-    }
-    .filter-pill.active {
-      background: var(--active-color, var(--primary));
-      color: #fff;
-      border-color: var(--active-color, var(--primary));
-    }
-    .filter-pill.active .dot { opacity: 0; width: 0; }
-    .filter-pill.active .cnt { background: rgba(255,255,255,0.25); }
-
-    /* ===== Content ===== */
-    .content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 16px;
-    }
-
-    /* ===== Section ===== */
-    .section-divider {
+    .plans-section-header {
       display: flex;
       align-items: center;
       gap: 10px;
-      margin: 24px 0 14px;
-      padding-bottom: 8px;
+      margin-bottom: 16px;
     }
-    .section-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 8px;
+    .plans-section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--primary);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 18px;
       color: #fff;
-      flex-shrink: 0;
     }
-    .section-label {
-      font-size: 15px;
-      font-weight: 700;
-    }
-    .section-count {
-      font-size: 13px;
-      color: var(--text-sub);
-      font-weight: 400;
-    }
-
-    /* ===== Event Card ===== */
-    .event-card {
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      margin-bottom: 10px;
-      border: 1px solid var(--border);
-      overflow: hidden;
-      transition: box-shadow 0.2s, transform 0.15s;
-    }
-    .event-card:active { transform: scale(0.985); }
-
-    .event-card a {
-      display: block;
-      padding: 14px 16px;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .event-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-    .event-time {
-      font-size: 15px;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-    .event-tags { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
-
-    .tag {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-    .tag-csp      { background: #fef3c7; color: #92400e; }
-    .tag-large    { background: #dbeafe; color: #1e40af; }
-    .tag-near     { background: #d1fae5; color: #065f46; }
-    .tag-long     { background: #e0e7ff; color: #3730a3; }
-    .tag-night    { background: #ede9fe; color: #5b21b6; }
-    .tag-full     { background: #fee2e2; color: #991b1b; }
-    .tag-beginner { background: #d1fae5; color: #065f46; }
-
-    .event-name {
-      font-size: 15px;
-      font-weight: 700;
-      margin-bottom: 4px;
-      line-height: 1.4;
-    }
-    .event-venue {
-      font-size: 13px;
-      color: var(--text);
-      margin-bottom: 2px;
-    }
-    .event-address {
-      font-size: 12px;
-      color: var(--text-sub);
-      margin-bottom: 10px;
-    }
-
-    .event-bottom {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding-top: 10px;
-      border-top: 1px solid var(--border);
-      font-size: 12px;
-      color: var(--text-sub);
-    }
-    .event-bottom .meta-item {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-    }
-    .event-link-arrow {
-      margin-left: auto;
-      color: var(--primary-light);
-      font-weight: 700;
-      font-size: 13px;
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-
-    .category-accent {
-      width: 4px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      border-radius: 2px 0 0 2px;
-    }
-    .event-card { position: relative; }
-    .event-card a { padding-left: 18px; }
-
-    /* ===== Plans Section ===== */
-    .plans-header {
+    .plans-section-title {
       font-size: 20px;
       font-weight: 800;
-      margin: 32px 0 16px;
-      padding-top: 16px;
-      border-top: 2px solid var(--border);
+      color: var(--text);
+    }
+    .plans-section-sub {
+      font-size: 13px;
+      color: var(--text-sub);
+    }
+
+    .plans-grid {
+      display: grid;
+      gap: 12px;
     }
 
     .plan-card {
       background: var(--card);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      margin-bottom: 12px;
       border: 1px solid var(--border);
       overflow: hidden;
     }
@@ -407,6 +237,258 @@
     }
     .plan-merit strong { color: var(--primary); }
 
+    /* ===== Date Bar (sticky) ===== */
+    .date-bar {
+      position: sticky;
+      top: 0;
+      z-index: 110;
+      background: var(--primary);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      padding: 0 16px;
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .date-bar::-webkit-scrollbar { display: none; }
+    .date-bar-inner {
+      display: flex;
+      gap: 4px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .date-tab {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.7);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .date-tab:hover { color: rgba(255,255,255,0.9); }
+    .date-tab.active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+    .date-tab .event-count {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.2);
+    }
+    .date-tab.active .event-count {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* ===== Filter Bar ===== */
+    .filter-bar {
+      position: sticky;
+      top: 43px;
+      z-index: 100;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .filter-bar-inner {
+      display: flex;
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .filter-bar::-webkit-scrollbar { display: none; }
+
+    .filter-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-sub);
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .filter-pill:active { transform: scale(0.96); }
+    .filter-pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.5;
+    }
+    .filter-pill .cnt {
+      background: var(--bg);
+      padding: 1px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .filter-pill.active {
+      background: var(--active-color, var(--primary));
+      color: #fff;
+      border-color: var(--active-color, var(--primary));
+    }
+    .filter-pill.active .dot { opacity: 0; width: 0; }
+    .filter-pill.active .cnt { background: rgba(255,255,255,0.25); }
+
+    /* ===== Content ===== */
+    .content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* ===== Section ===== */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 24px 0 14px;
+      padding-bottom: 8px;
+    }
+    .section-divider:first-child { margin-top: 8px; }
+    .section-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .section-label {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .section-count {
+      font-size: 13px;
+      color: var(--text-sub);
+      font-weight: 400;
+    }
+
+    /* ===== Event Card ===== */
+    .event-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 10px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.15s;
+      position: relative;
+    }
+    .event-card:active { transform: scale(0.985); }
+
+    .event-card a {
+      display: block;
+      padding: 14px 16px 14px 18px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .event-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .event-time {
+      font-size: 15px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .event-tags { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .tag-csp      { background: #fef3c7; color: #92400e; }
+    .tag-large    { background: #dbeafe; color: #1e40af; }
+    .tag-near     { background: #d1fae5; color: #065f46; }
+    .tag-long     { background: #e0e7ff; color: #3730a3; }
+    .tag-night    { background: #ede9fe; color: #5b21b6; }
+    .tag-full     { background: #fee2e2; color: #991b1b; }
+    .tag-beginner { background: #d1fae5; color: #065f46; }
+
+    .event-name {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .event-venue {
+      font-size: 13px;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .event-address {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-bottom: 10px;
+    }
+
+    .event-bottom {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-sub);
+    }
+    .event-bottom .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .event-link-arrow {
+      margin-left: auto;
+      color: var(--primary-light);
+      font-weight: 700;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .category-accent {
+      width: 4px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 2px 0 0 2px;
+    }
+
     /* ===== Notes ===== */
     .notes-card {
       background: var(--card);
@@ -473,10 +555,14 @@
 
     /* ===== Tablet (640px+) ===== */
     @media (min-width: 640px) {
-      .header { padding: 32px 24px; }
-      .header-date { font-size: 40px; }
+      .header { padding: calc(16px + var(--safe-top)) 24px 14px; }
+      .header-title { font-size: 20px; }
       .content { padding: 20px 24px; }
       .filter-bar { padding: 12px 24px; }
+      .plans-section { padding: 28px 24px 24px; }
+      .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
       .events-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -484,29 +570,31 @@
       }
       .events-grid .event-card { margin-bottom: 0; }
       .plan-merit { font-size: 13px; }
+      .date-bar { padding: 0 24px; }
     }
 
     /* ===== Desktop (1024px+) ===== */
     @media (min-width: 1024px) {
-      .header { padding: 40px 40px 32px; }
-      .header-inner {
-        display: flex;
-        align-items: flex-end;
-        gap: 32px;
-      }
-      .header-main { flex: 1; }
-      .header-label { font-size: 14px; }
-      .header-date { font-size: 48px; margin: 2px 0; }
-      .header-area { font-size: 18px; }
-      .header-meta {
-        margin-top: 0;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 6px;
-        font-size: 13px;
-      }
+      .header { padding: calc(18px + var(--safe-top)) 40px 16px; }
+      .header-title { font-size: 22px; }
+      .header-meta { font-size: 13px; }
 
-      .filter-bar { padding: 14px 40px; }
+      .plans-section { padding: 36px 40px 28px; }
+      .plans-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+      }
+      .plans-section-title { font-size: 22px; }
+      .plan-header { padding: 16px 20px; }
+      .plan-name { font-size: 15px; }
+      .plan-body-inner { padding: 0 20px 20px; }
+      .plan-step-time { font-size: 13px; min-width: 100px; }
+      .plan-step-event { font-size: 14px; }
+      .plan-merit { font-size: 13px; padding: 14px; }
+
+      .date-bar { padding: 0 40px; }
+
+      .filter-bar { padding: 14px 40px; top: 43px; }
       .filter-pill { padding: 10px 18px; font-size: 14px; }
       .filter-pill .cnt { padding: 2px 9px; font-size: 12px; }
 
@@ -525,22 +613,9 @@
       .event-bottom { font-size: 13px; }
 
       .section-divider { margin: 32px 0 18px; }
+      .section-divider:first-child { margin-top: 8px; }
       .section-icon { width: 36px; height: 36px; font-size: 18px; }
       .section-label { font-size: 17px; }
-
-      .plans-header { font-size: 22px; margin: 40px 0 20px; }
-      .plans-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
-      }
-      .plans-grid .plan-card { margin-bottom: 0; }
-      .plan-header { padding: 16px 20px; }
-      .plan-name { font-size: 15px; }
-      .plan-body-inner { padding: 0 20px 20px; }
-      .plan-step-time { font-size: 13px; min-width: 100px; }
-      .plan-step-event { font-size: 14px; }
-      .plan-merit { font-size: 13px; padding: 14px; }
 
       .notes-card { padding: 24px; margin-top: 32px; }
       .notes-title { font-size: 17px; }
@@ -551,9 +626,11 @@
 
     /* ===== Wide Desktop (1400px+) ===== */
     @media (min-width: 1400px) {
-      .header-inner, .content, .filter-bar-inner { max-width: 1360px; }
-      .header { padding: 48px 60px 36px; }
-      .header-date { font-size: 52px; }
+      .header-inner, .content, .filter-bar-inner, .plans-section-inner, .date-bar-inner { max-width: 1360px; }
+      .header { padding: calc(20px + var(--safe-top)) 60px 16px; }
+      .header-title { font-size: 24px; }
+      .plans-section { padding: 40px 60px 32px; }
+      .date-bar { padding: 0 60px; }
       .filter-bar { padding: 14px 60px; }
       .content { padding: 32px 60px; }
       .events-grid { gap: 16px; }
@@ -564,20 +641,30 @@
 
 <header class="header">
   <div class="header-inner">
-    <div class="header-main">
-      <div class="header-label">Pokemon Card Event Report</div>
-      <div class="header-date" id="headerDate"></div>
-      <div class="header-area" id="headerArea"></div>
-    </div>
+    <div class="header-title" id="headerTitle"></div>
     <div class="header-meta" id="headerMeta"></div>
   </div>
 </header>
+
+<section class="plans-section">
+  <div class="plans-section-inner">
+    <div class="plans-section-header">
+      <div class="plans-section-icon">&#128203;</div>
+      <div>
+        <div class="plans-section-title">行動プラン提案</div>
+        <div class="plans-section-sub">プランを確認して、気になるイベントをチェック</div>
+      </div>
+    </div>
+    <div class="plans-grid" id="plansContainer"></div>
+  </div>
+</section>
+
+<nav class="date-bar"><div class="date-bar-inner" id="dateBar"></div></nav>
 
 <nav class="filter-bar"><div class="filter-bar-inner" id="filterBar"></div></nav>
 
 <div class="content">
   <div id="eventsContainer"></div>
-  <div id="plansContainer"></div>
   <div id="notesContainer"></div>
 </div>
 
@@ -587,115 +674,118 @@
 // ===== EVENT DATA =====
 const DATA = {
   meta: {
-    reportDate: "2026/03/20（金）",
-    targetDate: "2026/03/22",
-    targetDay: "日",
     area: "大阪府",
     searchUrl: "https://players.pokemon-card.com/event/search",
-    totalEvents: 106,
-    filteredCount: 16,
-    criteria: "オープンリーグ or ジムバトル or フレンドバトル / スタンダード（60枚） / 定員32名以上 / JR大阪駅から約30分以内"
+    reportDate: "2026/03/20（金）"
   },
-  categories: [
+  dates: [
     {
-      id: "gym_battle",
-      name: "ジムバトル",
-      color: "#2563eb",
-      events: [
-        { id: 1, time: "13:00〜", name: "ジムバトル", venue: "駿河屋高槻トレカ館", address: "高槻市高槻町15-2 唐崎屋ビル2階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972682/1/12227/20260322/1746272", tags: [] },
-        { id: 2, time: "13:00〜15:00", name: "ジムバトル", venue: "トレカキャピタルなんば エディオンなんば本店", address: "大阪市中央区難波3-2-18 3F", fee: "無料", capacity: "32人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/972739/1/14219/20260322/1747730", tags: [] },
-        { id: 3, time: "14:00〜21:00", name: "ジムバトル", venue: "トレカショップ スキップ玉出店", address: "大阪市住之江区粉浜西1-4-3 エバーグリーン住吉2F", fee: "無料", capacity: "32人", distance: "約30分", url: "https://players.pokemon-card.com/event/detail/973008/1/10931/20260322/1745130", tags: ["long"] },
-        { id: 4, time: "15:00〜", name: "ジムバトル", venue: "あっぷる 今福店", address: "大阪市城東区今福東1-11-27", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973041/1/12120/20260322/1737097", tags: [] },
-        { id: 5, time: "16:30〜18:30", name: "ジムバトル", venue: "GIRAFULLなんば店", address: "大阪市中央区難波千日前13-13 難波KHビル", fee: "無料", capacity: "80人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146", tags: ["large"] },
-        { id: 6, time: "17:30〜", name: "ジムバトル", venue: "ドラゴンスター日本橋3号店", address: "大阪市浪速区敷津東2-1-5", fee: "無料", capacity: "64人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973424/1/14773/20260322/1741167", tags: ["large"] },
-        { id: 7, time: "18:00〜21:00", name: "ジムバトル", venue: "トレカショップ竜のしっぽ 大阪梅田店", address: "大阪市北区芝田2-3-23 メイプルビル芝田2階", fee: "無料", capacity: "32人", distance: "約5分", url: "https://players.pokemon-card.com/event/detail/973505/1/10894/20260322/1738467", tags: ["near"] },
-        { id: 8, time: "19:00〜21:30", name: "ジムバトル", venue: "TSUTAYA野田阪神店", address: "大阪市福島区大開1-1-1 桂文ビル1・2F", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/973577/1/19855/20260322/1755560", tags: ["night"] }
-      ]
-    },
-    {
-      id: "open_league",
-      name: "オープンリーグ / トレーナーズリーグ",
-      color: "#d97706",
-      events: [
-        { id: 9, time: "10:00〜18:00", name: "シティリーグ2026 S4 オープンリーグ", venue: "トイコンプ高槻店", address: "高槻市天神町1-1-10-2F", fee: "500円", capacity: "64人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/952978/1/19966/20260322/1748280", tags: ["full", "csp"] },
-        { id: 10, time: "13:00〜16:00", name: "トレーナーズリーグ（オープン）", venue: "フルアヘッド大阪日本橋店", address: "大阪市浪速区日本橋4-11-6 3F", fee: "無料", capacity: "64人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038", tags: ["csp"] },
-        { id: 11, time: "17:00〜", name: "トレーナーズリーグ（オープン）", venue: "トレカショップ竜のしっぽ 布施店", address: "東大阪市長堂1-2-1 A+FUSEビル3階", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973349/1/19938/20260322/1735846", tags: ["csp"] }
-      ]
-    },
-    {
-      id: "friend_battle",
-      name: "いっしょにフレンドバトル",
-      color: "#059669",
-      events: [
-        { id: 12, time: "10:30〜12:30", name: "いっしょにフレンドバトル", venue: "カードショップきりん 大阪天満橋店", address: "大阪市中央区天満橋京町2-15 8階B室", fee: "200円(100円券配布)", capacity: "16人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972431/1/22032/20260322/1734477", tags: ["beginner"] },
-        { id: 13, time: "16:30〜18:00", name: "いっしょにフレンドバトル", venue: "トレカ専門店ポップタウン", address: "大阪市浪速区日本橋4-9-22 リファインビル4階", fee: "500円", capacity: "24人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973327/1/20022/20260322/1739055", tags: ["beginner"] }
-      ]
-    },
-    {
-      id: "self_event",
-      name: "参考：自主イベント・杯戦",
-      color: "#7c3aed",
-      events: [
-        { id: "A", time: "12:00〜17:00", name: "第20回 タッグマッチSRC!!", venue: "カード王 心斎橋店", address: "大阪市中央区西心斎橋2-10-32-3F", fee: "1,000円/1名", capacity: "80人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/954485/1/15146/20260322/1760277", tags: [] },
-        { id: "B", time: "13:00〜16:30", name: "ニンニンBOX争奪戦", venue: "ニンニン日本橋2号店", address: "大阪市浪速区日本橋西1-2-25 2F", fee: "500円", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/954501/1/13619/20260322/1751986", tags: [] },
-        { id: "C", time: "14:00〜18:00", name: "第18回GO!GO!リーグ", venue: "トレカGO!GO!", address: "茨木市駅前1-3-9 生田ビル301号", fee: "500円", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/954524/1/19376/20260322/1752007", tags: [] }
+      date: "2026/03/22",
+      day: "日",
+      totalEvents: 106,
+      filteredCount: 16,
+      categories: [
+        {
+          id: "gym_battle",
+          name: "ジムバトル",
+          color: "#2563eb",
+          events: [
+            { id: 1, time: "13:00〜", name: "ジムバトル", venue: "駿河屋高槻トレカ館", address: "高槻市高槻町15-2 唐崎屋ビル2階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972682/1/12227/20260322/1746272", tags: [] },
+            { id: 2, time: "13:00〜15:00", name: "ジムバトル", venue: "トレカキャピタルなんば エディオンなんば本店", address: "大阪市中央区難波3-2-18 3F", fee: "無料", capacity: "32人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/972739/1/14219/20260322/1747730", tags: [] },
+            { id: 3, time: "14:00〜21:00", name: "ジムバトル", venue: "トレカショップ スキップ玉出店", address: "大阪市住之江区粉浜西1-4-3 エバーグリーン住吉2F", fee: "無料", capacity: "32人", distance: "約30分", url: "https://players.pokemon-card.com/event/detail/973008/1/10931/20260322/1745130", tags: ["long"] },
+            { id: 4, time: "15:00〜", name: "ジムバトル", venue: "あっぷる 今福店", address: "大阪市城東区今福東1-11-27", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973041/1/12120/20260322/1737097", tags: [] },
+            { id: 5, time: "16:30〜18:30", name: "ジムバトル", venue: "GIRAFULLなんば店", address: "大阪市中央区難波千日前13-13 難波KHビル", fee: "無料", capacity: "80人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146", tags: ["large"] },
+            { id: 6, time: "17:30〜", name: "ジムバトル", venue: "ドラゴンスター日本橋3号店", address: "大阪市浪速区敷津東2-1-5", fee: "無料", capacity: "64人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973424/1/14773/20260322/1741167", tags: ["large"] },
+            { id: 7, time: "18:00〜21:00", name: "ジムバトル", venue: "トレカショップ竜のしっぽ 大阪梅田店", address: "大阪市北区芝田2-3-23 メイプルビル芝田2階", fee: "無料", capacity: "32人", distance: "約5分", url: "https://players.pokemon-card.com/event/detail/973505/1/10894/20260322/1738467", tags: ["near"] },
+            { id: 8, time: "19:00〜21:30", name: "ジムバトル", venue: "TSUTAYA野田阪神店", address: "大阪市福島区大開1-1-1 桂文ビル1・2F", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/973577/1/19855/20260322/1755560", tags: ["night"] }
+          ]
+        },
+        {
+          id: "open_league",
+          name: "オープンリーグ / トレーナーズリーグ",
+          color: "#d97706",
+          events: [
+            { id: 9, time: "10:00〜18:00", name: "シティリーグ2026 S4 オープンリーグ", venue: "トイコンプ高槻店", address: "高槻市天神町1-1-10-2F", fee: "500円", capacity: "64人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/952978/1/19966/20260322/1748280", tags: ["full", "csp"] },
+            { id: 10, time: "13:00〜16:00", name: "トレーナーズリーグ（オープン）", venue: "フルアヘッド大阪日本橋店", address: "大阪市浪速区日本橋4-11-6 3F", fee: "無料", capacity: "64人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038", tags: ["csp"] },
+            { id: 11, time: "17:00〜", name: "トレーナーズリーグ（オープン）", venue: "トレカショップ竜のしっぽ 布施店", address: "東大阪市長堂1-2-1 A+FUSEビル3階", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973349/1/19938/20260322/1735846", tags: ["csp"] }
+          ]
+        },
+        {
+          id: "friend_battle",
+          name: "いっしょにフレンドバトル",
+          color: "#059669",
+          events: [
+            { id: 12, time: "10:30〜12:30", name: "いっしょにフレンドバトル", venue: "カードショップきりん 大阪天満橋店", address: "大阪市中央区天満橋京町2-15 8階B室", fee: "200円(100円券配布)", capacity: "16人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972431/1/22032/20260322/1734477", tags: ["beginner"] },
+            { id: 13, time: "16:30〜18:00", name: "いっしょにフレンドバトル", venue: "トレカ専門店ポップタウン", address: "大阪市浪速区日本橋4-9-22 リファインビル4階", fee: "500円", capacity: "24人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973327/1/20022/20260322/1739055", tags: ["beginner"] }
+          ]
+        },
+        {
+          id: "self_event",
+          name: "参考：自主イベント・杯戦",
+          color: "#7c3aed",
+          events: [
+            { id: "A", time: "12:00〜17:00", name: "第20回 タッグマッチSRC!!", venue: "カード王 心斎橋店", address: "大阪市中央区西心斎橋2-10-32-3F", fee: "1,000円/1名", capacity: "80人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/954485/1/15146/20260322/1760277", tags: [] },
+            { id: "B", time: "13:00〜16:30", name: "ニンニンBOX争奪戦", venue: "ニンニン日本橋2号店", address: "大阪市浪速区日本橋西1-2-25 2F", fee: "500円", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/954501/1/13619/20260322/1751986", tags: [] },
+            { id: "C", time: "14:00〜18:00", name: "第18回GO!GO!リーグ", venue: "トレカGO!GO!", address: "茨木市駅前1-3-9 生田ビル301号", fee: "500円", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/954524/1/19376/20260322/1752007", tags: [] }
+          ]
+        }
+      ],
+      plans: [
+        {
+          id: "A",
+          name: "日本橋・なんばエリア集中プラン",
+          subtitle: "移動最小限で最大3戦",
+          rating: 5,
+          steps: [
+            { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋" },
+            { time: "16:30〜18:30", event: "ジムバトル（定員80人）", venue: "GIRAFULLなんば店", area: "なんば" },
+            { time: "19:00〜", event: "（余力あれば）ジムバトル", venue: "ドラゴンスター日本橋3号店", area: "日本橋" }
+          ],
+          merit: "日本橋〜なんば間は徒歩圏内で移動ストレスなし。フルアヘッドはCSP対象の大型大会（64人）。GIRAFULLも80人規模で対戦の質が高い。夕方以降のドラゴンスター3号店も64人規模。"
+        },
+        {
+          id: "B",
+          name: "朝から夜まで1日フルプラン",
+          subtitle: "最大3〜4戦",
+          rating: 4,
+          steps: [
+            { time: "10:30〜12:30", event: "いっしょにフレンドバトル", venue: "カードショップきりん 天満橋", area: "天満橋" },
+            { time: "13:00〜15:00", event: "ジムバトル", venue: "トレカキャピタルなんば", area: "なんば" },
+            { time: "16:30〜18:30", event: "ジムバトル（80人）", venue: "GIRAFULLなんば店", area: "なんば" },
+            { time: "19:00〜21:30", event: "ジムバトル", venue: "TSUTAYA野田阪神店", area: "野田" }
+          ],
+          merit: "朝のフレンドバトルでウォーミングアップ → なんばでガチ対戦 → 夜は野田で締め。幅広い対戦経験が積める。"
+        },
+        {
+          id: "C",
+          name: "CSPポイント狙い特化プラン",
+          subtitle: "オープンリーグ2連戦",
+          rating: 4,
+          steps: [
+            { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋" },
+            { time: "17:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "竜のしっぽ 布施店", area: "布施" }
+          ],
+          merit: "チャンピオンシップポイント対象のオープンリーグを2連戦。CLやシティリーグ出場権を目指すプレイヤーに最適。日本橋→布施は電車で約15分。"
+        },
+        {
+          id: "D",
+          name: "梅田近辺ゆったりプラン",
+          subtitle: "移動楽々",
+          rating: 3,
+          steps: [
+            { time: "13:00〜", event: "ジムバトル", venue: "駿河屋高槻トレカ館", area: "高槻" },
+            { time: "18:00〜21:00", event: "ジムバトル", venue: "竜のしっぽ 大阪梅田店", area: "梅田" }
+          ],
+          merit: "昼は高槻で1戦、夕方から梅田で1戦。高槻はJR大阪から快速15分、梅田店はJR大阪駅徒歩5分。間に食事やショッピングも余裕。ゆったり楽しみたい人向け。"
+        }
+      ],
+      notes: [
+        "シティリーグ（トイコンプ高槻店）は<strong>満席</strong>のため参加不可",
+        "自主イベント（タッグマッチSRC、ニンニンBOX争奪戦、GO!GO!リーグ）は公式ジムバトル/オープンリーグではありませんが、スタンダード60枚・定員32名以上のため参考掲載しています",
+        "各イベントの当日受付状況は変動する可能性があるため、早めの到着をおすすめします",
+        "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・その他レギュレーションのイベントは除外済み"
       ]
     }
-  ],
-  plans: [
-    {
-      id: "A",
-      name: "日本橋・なんばエリア集中プラン",
-      subtitle: "移動最小限で最大3戦",
-      rating: 5,
-      steps: [
-        { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋" },
-        { time: "16:30〜18:30", event: "ジムバトル（定員80人）", venue: "GIRAFULLなんば店", area: "なんば" },
-        { time: "19:00〜", event: "（余力あれば）ジムバトル", venue: "ドラゴンスター日本橋3号店", area: "日本橋" }
-      ],
-      merit: "日本橋〜なんば間は徒歩圏内で移動ストレスなし。フルアヘッドはCSP対象の大型大会（64人）。GIRAFULLも80人規模で対戦の質が高い。夕方以降のドラゴンスター3号店も64人規模。"
-    },
-    {
-      id: "B",
-      name: "朝から夜まで1日フルプラン",
-      subtitle: "最大3〜4戦",
-      rating: 4,
-      steps: [
-        { time: "10:30〜12:30", event: "いっしょにフレンドバトル", venue: "カードショップきりん 天満橋", area: "天満橋" },
-        { time: "13:00〜15:00", event: "ジムバトル", venue: "トレカキャピタルなんば", area: "なんば" },
-        { time: "16:30〜18:30", event: "ジムバトル（80人）", venue: "GIRAFULLなんば店", area: "なんば" },
-        { time: "19:00〜21:30", event: "ジムバトル", venue: "TSUTAYA野田阪神店", area: "野田" }
-      ],
-      merit: "朝のフレンドバトルでウォーミングアップ → なんばでガチ対戦 → 夜は野田で締め。幅広い対戦経験が積める。"
-    },
-    {
-      id: "C",
-      name: "CSPポイント狙い特化プラン",
-      subtitle: "オープンリーグ2連戦",
-      rating: 4,
-      steps: [
-        { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋" },
-        { time: "17:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "竜のしっぽ 布施店", area: "布施" }
-      ],
-      merit: "チャンピオンシップポイント対象のオープンリーグを2連戦。CLやシティリーグ出場権を目指すプレイヤーに最適。日本橋→布施は電車で約15分。"
-    },
-    {
-      id: "D",
-      name: "梅田近辺ゆったりプラン",
-      subtitle: "移動楽々",
-      rating: 3,
-      steps: [
-        { time: "13:00〜", event: "ジムバトル", venue: "駿河屋高槻トレカ館", area: "高槻" },
-        { time: "18:00〜21:00", event: "ジムバトル", venue: "竜のしっぽ 大阪梅田店", area: "梅田" }
-      ],
-      merit: "昼は高槻で1戦、夕方から梅田で1戦。高槻はJR大阪から快速15分、梅田店はJR大阪駅徒歩5分。間に食事やショッピングも余裕。ゆったり楽しみたい人向け。"
-    }
-  ],
-  notes: [
-    "シティリーグ（トイコンプ高槻店）は<strong>満席</strong>のため参加不可",
-    "自主イベント（タッグマッチSRC、ニンニンBOX争奪戦、GO!GO!リーグ）は公式ジムバトル/オープンリーグではありませんが、スタンダード60枚・定員32名以上のため参考掲載しています",
-    "各イベントの当日受付状況は変動する可能性があるため、早めの到着をおすすめします",
-    "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・その他レギュレーションのイベントは除外済み"
   ]
 };
 
@@ -710,36 +800,123 @@ const TAG_CONFIG = {
   beginner: { label: "初心者歓迎", cls: "tag-beginner" }
 };
 
+// ===== STATE =====
+let selectedDateIndex = 0;
+let selectedFilter = 'all';
+
 // ===== RENDER =====
 function init() {
   renderHeader();
-  renderFilters();
-  renderEvents('all');
   renderPlans();
+  renderDateTabs();
+  renderFilters();
+  renderEvents();
   renderNotes();
   renderFooter();
 }
 
+function getSelectedDate() {
+  return DATA.dates[selectedDateIndex];
+}
+
 function renderHeader() {
   const m = DATA.meta;
-  document.getElementById('headerDate').textContent = `${m.targetDate}（${m.targetDay}）`;
-  document.getElementById('headerArea').textContent = m.area;
+  document.getElementById('headerTitle').innerHTML =
+    `&#9889; ポケカ イベントプラン <span class="area">${m.area}</span>`;
   document.getElementById('headerMeta').innerHTML = `
-    <span>全${m.totalEvents}件中 ${m.filteredCount}件抽出</span>
     <span>検索日: ${m.reportDate}</span>
-    <a href="${m.searchUrl}" target="_blank" rel="noopener">Players Clubで確認</a>
+    <a href="${m.searchUrl}" target="_blank" rel="noopener">Players Club</a>
   `;
-  document.title = `ポケカ イベント ${m.targetDate}（${m.targetDay}）${m.area}`;
+  document.title = `ポケカ イベントプラン ${m.area}`;
+}
+
+function renderPlans() {
+  const dateData = getSelectedDate();
+  const container = document.getElementById('plansContainer');
+  let html = '';
+
+  dateData.plans.forEach((plan, idx) => {
+    const stars = '★'.repeat(plan.rating) + '☆'.repeat(5 - plan.rating);
+    const stepsHtml = plan.steps.map(s => `
+      <div class="plan-step">
+        <div class="plan-step-time">${s.time}</div>
+        <div class="plan-step-detail">
+          <div class="plan-step-event">${s.event}</div>
+          <div class="plan-step-venue">${s.venue}</div>
+          <span class="plan-step-area">${s.area}</span>
+        </div>
+      </div>
+    `).join('');
+
+    html += `
+      <div class="plan-card open" id="plan-${plan.id}" style="animation-delay: ${idx * 0.05}s">
+        <div class="plan-header" onclick="togglePlan('${plan.id}')">
+          <span class="plan-badge">プラン${plan.id}</span>
+          <div class="plan-info">
+            <div class="plan-name">${plan.name}</div>
+            <div class="plan-sub">${plan.subtitle}</div>
+          </div>
+          <span class="plan-rating">${stars}</span>
+          <span class="plan-chevron">&#9662;</span>
+        </div>
+        <div class="plan-body">
+          <div class="plan-body-inner">
+            ${stepsHtml}
+            <div class="plan-merit">
+              <strong>メリット：</strong>${plan.merit}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+function togglePlan(id) {
+  document.getElementById(`plan-${id}`).classList.toggle('open');
+}
+
+function renderDateTabs() {
+  const bar = document.getElementById('dateBar');
+  let html = '';
+
+  DATA.dates.forEach((d, i) => {
+    const dateObj = new Date(d.date.replace(/\//g, '-'));
+    const month = dateObj.getMonth() + 1;
+    const day = dateObj.getDate();
+    const active = i === selectedDateIndex ? 'active' : '';
+    html += `<button class="date-tab ${active}" data-index="${i}">
+      ${month}/${day}（${d.day}）
+      <span class="event-count">${d.filteredCount}件</span>
+    </button>`;
+  });
+
+  bar.innerHTML = html;
+
+  bar.querySelectorAll('.date-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedDateIndex = parseInt(btn.dataset.index);
+      selectedFilter = 'all';
+      renderDateTabs();
+      renderPlans();
+      renderFilters();
+      renderEvents();
+      renderNotes();
+    });
+  });
 }
 
 function renderFilters() {
   const bar = document.getElementById('filterBar');
-  const total = DATA.categories.reduce((s, c) => s + c.events.length, 0);
+  const dateData = getSelectedDate();
+  const total = dateData.categories.reduce((s, c) => s + c.events.length, 0);
 
-  let html = `<button class="filter-pill active" data-filter="all" style="--active-color: var(--primary)">すべて <span class="cnt">${total}</span></button>`;
+  let html = `<button class="filter-pill ${selectedFilter === 'all' ? 'active' : ''}" data-filter="all" style="--active-color: var(--primary)">すべて <span class="cnt">${total}</span></button>`;
 
-  DATA.categories.forEach(cat => {
-    html += `<button class="filter-pill" data-filter="${cat.id}" style="--active-color: ${cat.color}">
+  dateData.categories.forEach(cat => {
+    html += `<button class="filter-pill ${selectedFilter === cat.id ? 'active' : ''}" data-filter="${cat.id}" style="--active-color: ${cat.color}">
       <span class="dot" style="background: ${cat.color}"></span>
       ${cat.name.split('：').pop().split(' / ')[0]}
       <span class="cnt">${cat.events.length}</span>
@@ -750,19 +927,21 @@ function renderFilters() {
 
   bar.querySelectorAll('.filter-pill').forEach(btn => {
     btn.addEventListener('click', () => {
+      selectedFilter = btn.dataset.filter;
       bar.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      renderEvents(btn.dataset.filter);
+      renderEvents();
     });
   });
 }
 
-function renderEvents(filter) {
+function renderEvents() {
   const container = document.getElementById('eventsContainer');
+  const dateData = getSelectedDate();
   let html = '';
 
-  DATA.categories.forEach(cat => {
-    if (filter !== 'all' && filter !== cat.id) return;
+  dateData.categories.forEach(cat => {
+    if (selectedFilter !== 'all' && selectedFilter !== cat.id) return;
 
     html += `
       <div class="section-divider">
@@ -812,57 +991,10 @@ function renderEvents(filter) {
   container.innerHTML = html;
 }
 
-function renderPlans() {
-  const container = document.getElementById('plansContainer');
-  let html = '<h2 class="plans-header">行動プラン提案</h2><div class="plans-grid">';
-
-  DATA.plans.forEach((plan, idx) => {
-    const stars = '★'.repeat(plan.rating) + '☆'.repeat(5 - plan.rating);
-    const stepsHtml = plan.steps.map(s => `
-      <div class="plan-step">
-        <div class="plan-step-time">${s.time}</div>
-        <div class="plan-step-detail">
-          <div class="plan-step-event">${s.event}</div>
-          <div class="plan-step-venue">${s.venue}</div>
-          <span class="plan-step-area">${s.area}</span>
-        </div>
-      </div>
-    `).join('');
-
-    html += `
-      <div class="plan-card ${idx === 0 ? 'open' : ''}" id="plan-${plan.id}">
-        <div class="plan-header" onclick="togglePlan('${plan.id}')">
-          <span class="plan-badge">プラン${plan.id}</span>
-          <div class="plan-info">
-            <div class="plan-name">${plan.name}</div>
-            <div class="plan-sub">${plan.subtitle}</div>
-          </div>
-          <span class="plan-rating">${stars}</span>
-          <span class="plan-chevron">&#9662;</span>
-        </div>
-        <div class="plan-body">
-          <div class="plan-body-inner">
-            ${stepsHtml}
-            <div class="plan-merit">
-              <strong>メリット：</strong>${plan.merit}
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-  });
-
-  html += '</div>';
-  container.innerHTML = html;
-}
-
-function togglePlan(id) {
-  document.getElementById(`plan-${id}`).classList.toggle('open');
-}
-
 function renderNotes() {
   const container = document.getElementById('notesContainer');
-  const items = DATA.notes.map(n => `<li>${n}</li>`).join('');
+  const dateData = getSelectedDate();
+  const items = dateData.notes.map(n => `<li>${n}</li>`).join('');
   container.innerHTML = `
     <div class="notes-card">
       <div class="notes-title">注意事項</div>
