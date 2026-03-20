@@ -42,7 +42,7 @@
     .header {
       background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
       color: #fff;
-      padding: calc(16px + var(--safe-top)) 20px 14px;
+      padding: calc(12px + var(--safe-top)) 16px 10px;
       position: relative;
       overflow: hidden;
     }
@@ -64,12 +64,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 8px;
     }
     .header-title {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 800;
       letter-spacing: -0.3px;
+      white-space: nowrap;
     }
     .header-title .area {
       font-weight: 600;
@@ -78,21 +79,11 @@
     .header-meta {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 12px;
-      opacity: 0.85;
+      gap: 8px;
+      font-size: 11px;
+      opacity: 0.75;
       flex-shrink: 0;
     }
-    .header-meta a {
-      color: #fff;
-      text-decoration: none;
-      background: rgba(255,255,255,0.15);
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: background 0.2s;
-    }
-    .header-meta a:active { background: rgba(255,255,255,0.25); }
 
     /* ===== Plans Hero Section ===== */
     .plans-section {
@@ -205,6 +196,23 @@
     }
     .plan-step:last-child { border-bottom: none; }
 
+    .plan-step-link {
+      display: flex;
+      gap: 12px;
+      flex: 1;
+      text-decoration: none;
+      color: inherit;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+      transition: background 0.15s;
+      border-radius: 6px;
+      margin: 0 -6px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    .plan-step-link:last-child { border-bottom: none; }
+    .plan-step-link:active { background: var(--bg); }
+
     .plan-step-time {
       font-size: 12px;
       font-weight: 700;
@@ -216,14 +224,24 @@
     .plan-step-detail { flex: 1; }
     .plan-step-event { font-size: 13px; font-weight: 600; }
     .plan-step-venue { font-size: 12px; color: var(--text-sub); }
+    .plan-step-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 3px;
+    }
     .plan-step-area {
       display: inline-block;
-      margin-top: 3px;
       padding: 1px 7px;
       border-radius: 4px;
       background: var(--bg);
       font-size: 11px;
       color: var(--text-sub);
+    }
+    .plan-step-arrow {
+      font-size: 11px;
+      color: var(--primary-light);
+      font-weight: 700;
     }
 
     .plan-merit {
@@ -246,23 +264,47 @@
       border-bottom: 1px solid rgba(255,255,255,0.15);
       padding: 0 16px;
       display: flex;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      align-items: stretch;
       scrollbar-width: none;
     }
     .date-bar::-webkit-scrollbar { display: none; }
     .date-bar-inner {
       display: flex;
-      gap: 4px;
+      gap: 2px;
       max-width: 1200px;
       margin: 0 auto;
-      width: 100%;
+      flex: 1;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
     }
+    .date-bar-inner::-webkit-scrollbar { display: none; }
+    .date-bar-nav {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      margin-left: auto;
+      padding-left: 12px;
+      border-left: 1px solid rgba(255,255,255,0.2);
+    }
+    .date-bar-nav a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.1);
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .date-bar-nav a:active { background: rgba(255,255,255,0.25); }
+
     .date-tab {
-      padding: 10px 20px;
-      font-size: 14px;
+      padding: 10px 16px;
+      font-size: 13px;
       font-weight: 700;
-      color: rgba(255,255,255,0.7);
+      color: rgba(255,255,255,0.65);
       background: none;
       border: none;
       border-bottom: 3px solid transparent;
@@ -279,10 +321,10 @@
     }
     .date-tab .event-count {
       display: inline-block;
-      margin-left: 6px;
-      padding: 1px 7px;
+      margin-left: 4px;
+      padding: 1px 6px;
       border-radius: 10px;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 600;
       background: rgba(255,255,255,0.2);
     }
@@ -555,8 +597,8 @@
 
     /* ===== Tablet (640px+) ===== */
     @media (min-width: 640px) {
-      .header { padding: calc(16px + var(--safe-top)) 24px 14px; }
-      .header-title { font-size: 20px; }
+      .header { padding: calc(14px + var(--safe-top)) 24px 12px; }
+      .header-title { font-size: 18px; }
       .content { padding: 20px 24px; }
       .filter-bar { padding: 12px 24px; }
       .plans-section { padding: 28px 24px 24px; }
@@ -575,9 +617,9 @@
 
     /* ===== Desktop (1024px+) ===== */
     @media (min-width: 1024px) {
-      .header { padding: calc(18px + var(--safe-top)) 40px 16px; }
+      .header { padding: calc(16px + var(--safe-top)) 40px 14px; }
       .header-title { font-size: 22px; }
-      .header-meta { font-size: 13px; }
+      .header-meta { font-size: 12px; }
 
       .plans-section { padding: 36px 40px 28px; }
       .plans-grid {
@@ -593,6 +635,7 @@
       .plan-merit { font-size: 13px; padding: 14px; }
 
       .date-bar { padding: 0 40px; }
+      .date-tab { padding: 10px 20px; font-size: 14px; }
 
       .filter-bar { padding: 14px 40px; top: 43px; }
       .filter-pill { padding: 10px 18px; font-size: 14px; }
@@ -626,8 +669,8 @@
 
     /* ===== Wide Desktop (1400px+) ===== */
     @media (min-width: 1400px) {
-      .header-inner, .content, .filter-bar-inner, .plans-section-inner, .date-bar-inner { max-width: 1360px; }
-      .header { padding: calc(20px + var(--safe-top)) 60px 16px; }
+      .header-inner, .content, .filter-bar-inner, .plans-section-inner { max-width: 1360px; }
+      .header { padding: calc(18px + var(--safe-top)) 60px 14px; }
       .header-title { font-size: 24px; }
       .plans-section { padding: 40px 60px 32px; }
       .date-bar { padding: 0 60px; }
@@ -659,7 +702,10 @@
   </div>
 </section>
 
-<nav class="date-bar"><div class="date-bar-inner" id="dateBar"></div></nav>
+<nav class="date-bar">
+  <div class="date-bar-inner" id="dateBar"></div>
+  <div class="date-bar-nav" id="dateBarNav"></div>
+</nav>
 
 <nav class="filter-bar"><div class="filter-bar-inner" id="filterBar"></div></nav>
 
@@ -737,9 +783,9 @@ const DATA = {
           subtitle: "移動最小限で最大3戦",
           rating: 5,
           steps: [
-            { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋" },
-            { time: "16:30〜18:30", event: "ジムバトル（定員80人）", venue: "GIRAFULLなんば店", area: "なんば" },
-            { time: "19:00〜", event: "（余力あれば）ジムバトル", venue: "ドラゴンスター日本橋3号店", area: "日本橋" }
+            { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038" },
+            { time: "16:30〜18:30", event: "ジムバトル（定員80人）", venue: "GIRAFULLなんば店", area: "なんば", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146" },
+            { time: "19:00〜", event: "（余力あれば）ジムバトル", venue: "ドラゴンスター日本橋3号店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/973424/1/14773/20260322/1741167" }
           ],
           merit: "日本橋〜なんば間は徒歩圏内で移動ストレスなし。フルアヘッドはCSP対象の大型大会（64人）。GIRAFULLも80人規模で対戦の質が高い。夕方以降のドラゴンスター3号店も64人規模。"
         },
@@ -749,10 +795,10 @@ const DATA = {
           subtitle: "最大3〜4戦",
           rating: 4,
           steps: [
-            { time: "10:30〜12:30", event: "いっしょにフレンドバトル", venue: "カードショップきりん 天満橋", area: "天満橋" },
-            { time: "13:00〜15:00", event: "ジムバトル", venue: "トレカキャピタルなんば", area: "なんば" },
-            { time: "16:30〜18:30", event: "ジムバトル（80人）", venue: "GIRAFULLなんば店", area: "なんば" },
-            { time: "19:00〜21:30", event: "ジムバトル", venue: "TSUTAYA野田阪神店", area: "野田" }
+            { time: "10:30〜12:30", event: "いっしょにフレンドバトル", venue: "カードショップきりん 天満橋", area: "天満橋", url: "https://players.pokemon-card.com/event/detail/972431/1/22032/20260322/1734477" },
+            { time: "13:00〜15:00", event: "ジムバトル", venue: "トレカキャピタルなんば", area: "なんば", url: "https://players.pokemon-card.com/event/detail/972739/1/14219/20260322/1747730" },
+            { time: "16:30〜18:30", event: "ジムバトル（80人）", venue: "GIRAFULLなんば店", area: "なんば", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146" },
+            { time: "19:00〜21:30", event: "ジムバトル", venue: "TSUTAYA野田阪神店", area: "野田", url: "https://players.pokemon-card.com/event/detail/973577/1/19855/20260322/1755560" }
           ],
           merit: "朝のフレンドバトルでウォーミングアップ → なんばでガチ対戦 → 夜は野田で締め。幅広い対戦経験が積める。"
         },
@@ -762,8 +808,8 @@ const DATA = {
           subtitle: "オープンリーグ2連戦",
           rating: 4,
           steps: [
-            { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋" },
-            { time: "17:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "竜のしっぽ 布施店", area: "布施" }
+            { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038" },
+            { time: "17:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "竜のしっぽ 布施店", area: "布施", url: "https://players.pokemon-card.com/event/detail/973349/1/19938/20260322/1735846" }
           ],
           merit: "チャンピオンシップポイント対象のオープンリーグを2連戦。CLやシティリーグ出場権を目指すプレイヤーに最適。日本橋→布施は電車で約15分。"
         },
@@ -773,8 +819,8 @@ const DATA = {
           subtitle: "移動楽々",
           rating: 3,
           steps: [
-            { time: "13:00〜", event: "ジムバトル", venue: "駿河屋高槻トレカ館", area: "高槻" },
-            { time: "18:00〜21:00", event: "ジムバトル", venue: "竜のしっぽ 大阪梅田店", area: "梅田" }
+            { time: "13:00〜", event: "ジムバトル", venue: "駿河屋高槻トレカ館", area: "高槻", url: "https://players.pokemon-card.com/event/detail/972682/1/12227/20260322/1746272" },
+            { time: "18:00〜21:00", event: "ジムバトル", venue: "竜のしっぽ 大阪梅田店", area: "梅田", url: "https://players.pokemon-card.com/event/detail/973505/1/10894/20260322/1738467" }
           ],
           merit: "昼は高槻で1戦、夕方から梅田で1戦。高槻はJR大阪から快速15分、梅田店はJR大阪駅徒歩5分。間に食事やショッピングも余裕。ゆったり楽しみたい人向け。"
         }
@@ -822,11 +868,9 @@ function getSelectedDate() {
 function renderHeader() {
   const m = DATA.meta;
   document.getElementById('headerTitle').innerHTML =
-    `&#9889; ポケカ イベントプラン <span class="area">${m.area}</span>`;
-  document.getElementById('headerMeta').innerHTML = `
-    <span>検索日: ${m.reportDate}</span>
-    <a href="${m.searchUrl}" target="_blank" rel="noopener">Players Club</a>
-  `;
+    `&#9889; ポケカイベント <span class="area">${m.area}</span>`;
+  document.getElementById('headerMeta').innerHTML =
+    `<span>${m.reportDate} 時点</span>`;
   document.title = `ポケカ イベントプラン ${m.area}`;
 }
 
@@ -836,22 +880,41 @@ function renderPlans() {
   let html = '';
 
   dateData.plans.forEach((plan, idx) => {
-    const stars = '★'.repeat(plan.rating) + '☆'.repeat(5 - plan.rating);
-    const stepsHtml = plan.steps.map(s => `
-      <div class="plan-step">
-        <div class="plan-step-time">${s.time}</div>
-        <div class="plan-step-detail">
-          <div class="plan-step-event">${s.event}</div>
-          <div class="plan-step-venue">${s.venue}</div>
-          <span class="plan-step-area">${s.area}</span>
+    const stars = '\u2605'.repeat(plan.rating) + '\u2606'.repeat(5 - plan.rating);
+    const stepsHtml = plan.steps.map(s => {
+      if (s.url) {
+        return `
+          <a class="plan-step-link" href="${s.url}" target="_blank" rel="noopener">
+            <div class="plan-step-time">${s.time}</div>
+            <div class="plan-step-detail">
+              <div class="plan-step-event">${s.event}</div>
+              <div class="plan-step-venue">${s.venue}</div>
+              <div class="plan-step-meta">
+                <span class="plan-step-area">${s.area}</span>
+                <span class="plan-step-arrow">詳細 &#8250;</span>
+              </div>
+            </div>
+          </a>
+        `;
+      }
+      return `
+        <div class="plan-step">
+          <div class="plan-step-time">${s.time}</div>
+          <div class="plan-step-detail">
+            <div class="plan-step-event">${s.event}</div>
+            <div class="plan-step-venue">${s.venue}</div>
+            <div class="plan-step-meta">
+              <span class="plan-step-area">${s.area}</span>
+            </div>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
 
     html += `
       <div class="plan-card open" id="plan-${plan.id}" style="animation-delay: ${idx * 0.05}s">
         <div class="plan-header" onclick="togglePlan('${plan.id}')">
-          <span class="plan-badge">プラン${plan.id}</span>
+          <span class="plan-badge">${plan.id}</span>
           <div class="plan-info">
             <div class="plan-name">${plan.name}</div>
             <div class="plan-sub">${plan.subtitle}</div>
@@ -895,6 +958,10 @@ function renderDateTabs() {
 
   bar.innerHTML = html;
 
+  // Players Club link in nav area
+  document.getElementById('dateBarNav').innerHTML =
+    `<a href="${DATA.meta.searchUrl}" target="_blank" rel="noopener">Players Club</a>`;
+
   bar.querySelectorAll('.date-tab').forEach(btn => {
     btn.addEventListener('click', () => {
       selectedDateIndex = parseInt(btn.dataset.index);
@@ -904,7 +971,25 @@ function renderDateTabs() {
       renderFilters();
       renderEvents();
       renderNotes();
+      scrollToActiveTab();
     });
+  });
+
+  // Auto-scroll to active tab when many dates exist
+  scrollToActiveTab();
+}
+
+function scrollToActiveTab() {
+  requestAnimationFrame(() => {
+    const bar = document.getElementById('dateBar');
+    const activeTab = bar.querySelector('.date-tab.active');
+    if (activeTab) {
+      const barInner = document.getElementById('dateBar');
+      const barRect = barInner.getBoundingClientRect();
+      const tabRect = activeTab.getBoundingClientRect();
+      const scrollLeft = activeTab.offsetLeft - barRect.width / 2 + tabRect.width / 2;
+      barInner.scrollTo({ left: Math.max(0, scrollLeft), behavior: 'smooth' });
+    }
   });
 }
 
