@@ -56,7 +56,7 @@
       background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
       border-radius: 50%;
     }
-    .header-inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+    .header-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
     .header-label {
       font-size: 13px;
       font-weight: 600;
@@ -110,6 +110,13 @@
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
     }
+    .filter-bar-inner {
+      display: flex;
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
     .filter-bar::-webkit-scrollbar { display: none; }
 
     .filter-pill {
@@ -153,7 +160,7 @@
 
     /* ===== Content ===== */
     .content {
-      max-width: 720px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 16px;
     }
@@ -464,17 +471,92 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ===== Desktop ===== */
+    /* ===== Tablet (640px+) ===== */
     @media (min-width: 640px) {
       .header { padding: 32px 24px; }
       .header-date { font-size: 40px; }
       .content { padding: 20px 24px; }
+      .filter-bar { padding: 12px 24px; }
       .events-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 12px;
       }
       .events-grid .event-card { margin-bottom: 0; }
+      .plan-merit { font-size: 13px; }
+    }
+
+    /* ===== Desktop (1024px+) ===== */
+    @media (min-width: 1024px) {
+      .header { padding: 40px 40px 32px; }
+      .header-inner {
+        display: flex;
+        align-items: flex-end;
+        gap: 32px;
+      }
+      .header-main { flex: 1; }
+      .header-label { font-size: 14px; }
+      .header-date { font-size: 48px; margin: 2px 0; }
+      .header-area { font-size: 18px; }
+      .header-meta {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px;
+        font-size: 13px;
+      }
+
+      .filter-bar { padding: 14px 40px; }
+      .filter-pill { padding: 10px 18px; font-size: 14px; }
+      .filter-pill .cnt { padding: 2px 9px; font-size: 12px; }
+
+      .content { padding: 28px 40px; }
+
+      .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .event-card a { padding: 16px 20px; }
+      .event-time { font-size: 16px; }
+      .event-name { font-size: 16px; }
+      .event-venue { font-size: 14px; }
+      .event-address { font-size: 13px; }
+      .event-bottom { font-size: 13px; }
+
+      .section-divider { margin: 32px 0 18px; }
+      .section-icon { width: 36px; height: 36px; font-size: 18px; }
+      .section-label { font-size: 17px; }
+
+      .plans-header { font-size: 22px; margin: 40px 0 20px; }
+      .plans-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .plans-grid .plan-card { margin-bottom: 0; }
+      .plan-header { padding: 16px 20px; }
+      .plan-name { font-size: 15px; }
+      .plan-body-inner { padding: 0 20px 20px; }
+      .plan-step-time { font-size: 13px; min-width: 100px; }
+      .plan-step-event { font-size: 14px; }
+      .plan-merit { font-size: 13px; padding: 14px; }
+
+      .notes-card { padding: 24px; margin-top: 32px; }
+      .notes-title { font-size: 17px; }
+      .notes-list li { font-size: 14px; padding: 9px 0 9px 18px; }
+
+      .footer { padding: 36px 40px; font-size: 13px; }
+    }
+
+    /* ===== Wide Desktop (1400px+) ===== */
+    @media (min-width: 1400px) {
+      .header-inner, .content, .filter-bar-inner { max-width: 1360px; }
+      .header { padding: 48px 60px 36px; }
+      .header-date { font-size: 52px; }
+      .filter-bar { padding: 14px 60px; }
+      .content { padding: 32px 60px; }
+      .events-grid { gap: 16px; }
     }
   </style>
 </head>
@@ -482,14 +564,16 @@
 
 <header class="header">
   <div class="header-inner">
-    <div class="header-label">Pokemon Card Event Report</div>
-    <div class="header-date" id="headerDate"></div>
-    <div class="header-area" id="headerArea"></div>
+    <div class="header-main">
+      <div class="header-label">Pokemon Card Event Report</div>
+      <div class="header-date" id="headerDate"></div>
+      <div class="header-area" id="headerArea"></div>
+    </div>
     <div class="header-meta" id="headerMeta"></div>
   </div>
 </header>
 
-<nav class="filter-bar" id="filterBar"></nav>
+<nav class="filter-bar"><div class="filter-bar-inner" id="filterBar"></div></nav>
 
 <div class="content">
   <div id="eventsContainer"></div>
@@ -730,7 +814,7 @@ function renderEvents(filter) {
 
 function renderPlans() {
   const container = document.getElementById('plansContainer');
-  let html = '<h2 class="plans-header">行動プラン提案</h2>';
+  let html = '<h2 class="plans-header">行動プラン提案</h2><div class="plans-grid">';
 
   DATA.plans.forEach((plan, idx) => {
     const stars = '★'.repeat(plan.rating) + '☆'.repeat(5 - plan.rating);
@@ -768,6 +852,7 @@ function renderPlans() {
     `;
   });
 
+  html += '</div>';
   container.innerHTML = html;
 }
 
