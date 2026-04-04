@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#1e3a8a">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9889;</text></svg>">
-  <title>ポケカ イベントプラン 関西</title>
+  <title>ポケカ イベント 2026/04/05（日）大阪府</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -228,208 +228,350 @@
 
 <script>
 const DATA = {
-  meta: {
-    region: "関西",
-    searchUrl: "https://players.pokemon-card.com/event/search",
-    reportDate: "2026/03/20（金）"
+  "meta": {
+    "reportDate": "2026/04/04（土）",
+    "targetDate": "2026/04/05",
+    "targetDay": "日",
+    "area": "大阪府",
+    "searchUrl": "https://players.pokemon-card.com/event/search?start_date=2026/04/05&end_date=2026/04/05&prefecture=27",
+    "totalEvents": 112,
+    "filteredCount": 22,
+    "criteria": "大阪府 / オープンリーグ or ジムバトル or フレンドバトル / スタンダード（60枚） / 定員32名以上 / JR大阪駅から約30分以内"
   },
-  areas: [
-    { id: "osaka", name: "大阪府" },
-    { id: "kyoto", name: "京都府" },
-    { id: "hyogo", name: "兵庫県" },
-    { id: "nara", name: "奈良県" },
-    { id: "shiga", name: "滋賀県" },
-    { id: "wakayama", name: "和歌山県" }
-  ],
-  dates: [
+  "categories": [
     {
-      date: "2026/03/22",
-      day: "日",
-      areaData: {
-        osaka: {
-          totalEvents: 106,
-          filteredCount: 16,
-          categories: [
-            {
-              id: "gym_battle", name: "ジムバトル", color: "#2563eb",
-              events: [
-                { id: 1, time: "13:00〜", name: "ジムバトル", venue: "駿河屋高槻トレカ館", address: "高槻市高槻町15-2 唐崎屋ビル2階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972682/1/12227/20260322/1746272", tags: [] },
-                { id: 2, time: "13:00〜15:00", name: "ジムバトル", venue: "トレカキャピタルなんば エディオンなんば本店", address: "大阪市中央区難波3-2-18 3F", fee: "無料", capacity: "32人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/972739/1/14219/20260322/1747730", tags: [] },
-                { id: 3, time: "14:00〜21:00", name: "ジムバトル", venue: "トレカショップ スキップ玉出店", address: "大阪市住之江区粉浜西1-4-3 エバーグリーン住吉2F", fee: "無料", capacity: "32人", distance: "約30分", url: "https://players.pokemon-card.com/event/detail/973008/1/10931/20260322/1745130", tags: ["long"] },
-                { id: 4, time: "15:00〜", name: "ジムバトル", venue: "あっぷる 今福店", address: "大阪市城東区今福東1-11-27", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973041/1/12120/20260322/1737097", tags: [] },
-                { id: 5, time: "16:30〜18:30", name: "ジムバトル", venue: "GIRAFULLなんば店", address: "大阪市中央区難波千日前13-13 難波KHビル", fee: "無料", capacity: "80人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146", tags: ["large"] },
-                { id: 6, time: "17:30〜", name: "ジムバトル", venue: "ドラゴンスター日本橋3号店", address: "大阪市浪速区敷津東2-1-5", fee: "無料", capacity: "64人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973424/1/14773/20260322/1741167", tags: ["large"] },
-                { id: 7, time: "18:00〜21:00", name: "ジムバトル", venue: "トレカショップ竜のしっぽ 大阪梅田店", address: "大阪市北区芝田2-3-23 メイプルビル芝田2階", fee: "無料", capacity: "32人", distance: "約5分", url: "https://players.pokemon-card.com/event/detail/973505/1/10894/20260322/1738467", tags: ["near"] },
-                { id: 8, time: "19:00〜21:30", name: "ジムバトル", venue: "TSUTAYA野田阪神店", address: "大阪市福島区大開1-1-1 桂文ビル1・2F", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/973577/1/19855/20260322/1755560", tags: ["night"] }
-              ]
-            },
-            {
-              id: "open_league", name: "オープンリーグ / トレーナーズリーグ", color: "#d97706",
-              events: [
-                { id: 9, time: "10:00〜18:00", name: "シティリーグ2026 S4 オープンリーグ", venue: "トイコンプ高槻店", address: "高槻市天神町1-1-10-2F", fee: "500円", capacity: "64人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/952978/1/19966/20260322/1748280", tags: ["full", "csp"] },
-                { id: 10, time: "13:00〜16:00", name: "トレーナーズリーグ（オープン）", venue: "フルアヘッド大阪日本橋店", address: "大阪市浪速区日本橋4-11-6 3F", fee: "無料", capacity: "64人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038", tags: ["csp"] },
-                { id: 11, time: "17:00〜", name: "トレーナーズリーグ（オープン）", venue: "トレカショップ竜のしっぽ 布施店", address: "東大阪市長堂1-2-1 A+FUSEビル3階", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973349/1/19938/20260322/1735846", tags: ["csp"] }
-              ]
-            },
-            {
-              id: "friend_battle", name: "いっしょにフレンドバトル", color: "#059669",
-              events: [
-                { id: 12, time: "10:30〜12:30", name: "いっしょにフレンドバトル", venue: "カードショップきりん 大阪天満橋店", address: "大阪市中央区天満橋京町2-15 8階B室", fee: "200円(100円券配布)", capacity: "16人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972431/1/22032/20260322/1734477", tags: ["beginner"] },
-                { id: 13, time: "16:30〜18:00", name: "いっしょにフレンドバトル", venue: "トレカ専門店ポップタウン", address: "大阪市浪速区日本橋4-9-22 リファインビル4階", fee: "500円", capacity: "24人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973327/1/20022/20260322/1739055", tags: ["beginner"] }
-              ]
-            },
-            {
-              id: "self_event", name: "参考：自主イベント・杯戦", color: "#7c3aed",
-              events: [
-                { id: "A", time: "12:00〜17:00", name: "第20回 タッグマッチSRC!!", venue: "カード王 心斎橋店", address: "大阪市中央区西心斎橋2-10-32-3F", fee: "1,000円/1名", capacity: "80人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/954485/1/15146/20260322/1760277", tags: [] },
-                { id: "B", time: "13:00〜16:30", name: "ニンニンBOX争奪戦", venue: "ニンニン日本橋2号店", address: "大阪市浪速区日本橋西1-2-25 2F", fee: "500円", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/954501/1/13619/20260322/1751986", tags: [] },
-                { id: "C", time: "14:00〜18:00", name: "第18回GO!GO!リーグ", venue: "トレカGO!GO!", address: "茨木市駅前1-3-9 生田ビル301号", fee: "500円", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/954524/1/19376/20260322/1752007", tags: [] }
-              ]
-            }
-          ],
-          plans: [
-            { id: "A", name: "日本橋・なんばエリア集中プラン", subtitle: "移動最小限で最大3戦", rating: 5, steps: [
-              { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038" },
-              { time: "16:30〜18:30", event: "ジムバトル（定員80人）", venue: "GIRAFULLなんば店", area: "なんば", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146" },
-              { time: "19:00〜", event: "（余力あれば）ジムバトル", venue: "ドラゴンスター日本橋3号店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/973424/1/14773/20260322/1741167" }
-            ], merit: "日本橋〜なんば間は徒歩圏内で移動ストレスなし。フルアヘッドはCSP対象の大型大会（64人）。GIRAFULLも80人規模で対戦の質が高い。夕方以降のドラゴンスター3号店も64人規模。" },
-            { id: "B", name: "朝から夜まで1日フルプラン", subtitle: "最大3〜4戦", rating: 4, steps: [
-              { time: "10:30〜12:30", event: "いっしょにフレンドバトル", venue: "カードショップきりん 天満橋", area: "天満橋", url: "https://players.pokemon-card.com/event/detail/972431/1/22032/20260322/1734477" },
-              { time: "13:00〜15:00", event: "ジムバトル", venue: "トレカキャピタルなんば", area: "なんば", url: "https://players.pokemon-card.com/event/detail/972739/1/14219/20260322/1747730" },
-              { time: "16:30〜18:30", event: "ジムバトル（80人）", venue: "GIRAFULLなんば店", area: "なんば", url: "https://players.pokemon-card.com/event/detail/973333/1/19850/20260322/1742146" },
-              { time: "19:00〜21:30", event: "ジムバトル", venue: "TSUTAYA野田阪神店", area: "野田", url: "https://players.pokemon-card.com/event/detail/973577/1/19855/20260322/1755560" }
-            ], merit: "朝のフレンドバトルでウォーミングアップ → なんばでガチ対戦 → 夜は野田で締め。幅広い対戦経験が積める。" },
-            { id: "C", name: "CSPポイント狙い特化プラン", subtitle: "オープンリーグ2連戦", rating: 4, steps: [
-              { time: "13:00〜16:00", event: "トレーナーズリーグ（オープン） CSP", venue: "フルアヘッド大阪日本橋店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/972808/1/19874/20260322/1745038" },
-              { time: "17:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "竜のしっぽ 布施店", area: "布施", url: "https://players.pokemon-card.com/event/detail/973349/1/19938/20260322/1735846" }
-            ], merit: "チャンピオンシップポイント対象のオープンリーグを2連戦。CLやシティリーグ出場権を目指すプレイヤーに最適。日本橋→布施は電車で約15分。" },
-            { id: "D", name: "梅田近辺ゆったりプラン", subtitle: "移動楽々", rating: 3, steps: [
-              { time: "13:00〜", event: "ジムバトル", venue: "駿河屋高槻トレカ館", area: "高槻", url: "https://players.pokemon-card.com/event/detail/972682/1/12227/20260322/1746272" },
-              { time: "18:00〜21:00", event: "ジムバトル", venue: "竜のしっぽ 大阪梅田店", area: "梅田", url: "https://players.pokemon-card.com/event/detail/973505/1/10894/20260322/1738467" }
-            ], merit: "昼は高槻で1戦、夕方から梅田で1戦。高槻はJR大阪から快速15分、梅田店はJR大阪駅徒歩5分。間に食事やショッピングも余裕。ゆったり楽しみたい人向け。" }
-          ],
-          notes: [
-            "シティリーグ（トイコンプ高槻店）は<strong>満席</strong>のため参加不可",
-            "自主イベント（タッグマッチSRC、ニンニンBOX争奪戦、GO!GO!リーグ）は公式ジムバトル/オープンリーグではありませんが、スタンダード60枚・定員32名以上のため参考掲載しています",
-            "各イベントの当日受付状況は変動する可能性があるため、早めの到着をおすすめします",
-            "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・その他レギュレーションのイベントは除外済み"
+      "id": "gym_battle",
+      "name": "ジムバトル",
+      "color": "#2563eb",
+      "events": [
+        {
+          "id": 1,
+          "time": "12:00 ～ 15:00",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "古本市場　菱江店",
+          "address": "大阪府東大阪市稲葉1-4-16",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/985996/1/15258/20260405/1762217",
+          "tags": []
+        },
+        {
+          "id": 2,
+          "time": "13:00 ～",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "S CARD OASIS 天美店",
+          "address": "大阪府松原市天美東三丁目500番地 セブンパーク天美３F",
+          "fee": "100円",
+          "capacity": "32人",
+          "distance": "約30分",
+          "url": "https://players.pokemon-card.com/event/detail/986020/1/20118/20260405/1761023",
+          "tags": []
+        },
+        {
+          "id": 3,
+          "time": "14:00 ～",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "TSUTAYA　枚方ベルパルレ",
+          "address": "大阪府枚方市宮之阪4-28-12",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約30分",
+          "url": "https://players.pokemon-card.com/event/detail/986250/1/12741/20260405/1779992",
+          "tags": []
+        },
+        {
+          "id": 4,
+          "time": "14:00 ～ 16:00",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "トレカショップ　スキップ玉出店",
+          "address": "大阪府大阪市住之江区粉浜西1-4-3 エバーグリーン住吉2F",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約30分",
+          "url": "https://players.pokemon-card.com/event/detail/986308/1/10931/20260405/1787319",
+          "tags": []
+        },
+        {
+          "id": 5,
+          "time": "15:00 ～",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "あっぷる 今福店",
+          "address": "大阪府大阪市城東区今福東1-11-27",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/986386/1/12120/20260405/1766670",
+          "tags": []
+        },
+        {
+          "id": 6,
+          "time": "16:30 ～ 20:30",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "GIRAFULLなんば店",
+          "address": "大阪府大阪市中央区難波千日前13-13 難波KHビル",
+          "fee": "無料",
+          "capacity": "64人",
+          "distance": "約20分",
+          "url": "https://players.pokemon-card.com/event/detail/986637/1/19850/20260405/1774377",
+          "tags": [
+            "large"
           ]
         },
-        kyoto: {
-          totalEvents: 30,
-          filteredCount: 5,
-          categories: [
-            {
-              id: "gym_battle", name: "ジムバトル", color: "#2563eb",
-              events: [
-                { id: 101, time: "13:00〜", name: "ジムバトル", venue: "ビデオインアメリカ 京都西七条店", address: "京都市下京区西七条北東野町18-1", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/972679/1/11025/20260322/1737926", tags: [] },
-                { id: 102, time: "16:00〜18:00", name: "ジムバトル", venue: "ビデオインアメリカ 大徳寺店", address: "京都市北区紫野上築山町41番地", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973301/1/12099/20260322/1743797", tags: [] }
-              ]
-            },
-            {
-              id: "open_league", name: "オープンリーグ / トレーナーズリーグ", color: "#d97706",
-              events: [
-                { id: 103, time: "10:30〜", name: "シティリーグ2026 S4 オープンリーグ", venue: "BOOKOFF SUPER BAZAAR 1号京都伏見店", address: "京都市伏見区横大路芝生1", fee: "500円", capacity: "64人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/953408/1/18935/20260322/1746363", tags: ["csp"] },
-                { id: 104, time: "13:00〜15:00", name: "トレーナーズリーグ（オープン）", venue: "ビデオインアメリカ 大徳寺店", address: "京都市北区紫野上築山町41番地", fee: "無料", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/972768/1/12099/20260322/1743765", tags: ["csp"] }
-              ]
-            },
-            {
-              id: "friend_battle", name: "いっしょにフレンドバトル", color: "#059669",
-              events: [
-                { id: 105, time: "13:00〜14:30", name: "いっしょにフレンドバトル", venue: "WiZ 京都駅前店", address: "京都市下京区東塩小路町720-1 駿河屋ビルB2", fee: "無料", capacity: "24人", distance: "約5分", url: "https://players.pokemon-card.com/event/detail/972704/1/19199/20260322/1734917", tags: ["beginner", "near"] }
-              ]
-            }
-          ],
-          plans: [
-            { id: "A", name: "大徳寺エリア CSP＋ジムバトル", subtitle: "同会場で2連戦・移動ゼロ", rating: 5, steps: [
-              { time: "13:00〜15:00", event: "トレーナーズリーグ（オープン） CSP", venue: "ビデオインアメリカ 大徳寺店", area: "大徳寺", url: "https://players.pokemon-card.com/event/detail/972768/1/12099/20260322/1743765" },
-              { time: "16:00〜18:00", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 大徳寺店", area: "大徳寺", url: "https://players.pokemon-card.com/event/detail/973301/1/12099/20260322/1743797" }
-            ], merit: "同じ会場で2連戦なので移動ゼロ。午後にCSPポイントを獲得しつつ、夕方にジムバトルで対戦経験を積める。大徳寺エリアは京都駅からバスで約25分。" },
-            { id: "B", name: "CSP特化＋西七条プラン", subtitle: "午前シティリーグ → 午後ジムバトル", rating: 4, steps: [
-              { time: "10:30〜", event: "シティリーグ2026 S4 オープンリーグ CSP", venue: "BOOKOFF 京都伏見店", area: "伏見", url: "https://players.pokemon-card.com/event/detail/953408/1/18935/20260322/1746363" },
-              { time: "13:00〜", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 京都西七条店", area: "西七条", url: "https://players.pokemon-card.com/event/detail/972679/1/11025/20260322/1737926" }
-            ], merit: "午前は64人規模のCSP対象シティリーグ、午後は西七条でジムバトル。伏見→西七条はバス・電車で約20分。" },
-            { id: "C", name: "京都駅前のんびりプラン", subtitle: "フレンドバトル → ジムバトル", rating: 3, steps: [
-              { time: "13:00〜14:30", event: "いっしょにフレンドバトル", venue: "WiZ 京都駅前店", area: "京都駅前", url: "https://players.pokemon-card.com/event/detail/972704/1/19199/20260322/1734917" },
-              { time: "16:00〜18:00", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 大徳寺店", area: "大徳寺", url: "https://players.pokemon-card.com/event/detail/973301/1/12099/20260322/1743797" }
-            ], merit: "京都駅前でフレンドバトルからスタート。間に京都観光や食事を楽しんでから、大徳寺でジムバトル。ゆったり派におすすめ。" }
-          ],
-          notes: [
-            "シティリーグ（BOOKOFF京都伏見店）は<strong>先着受付中</strong>（定員64人）",
-            "JR京都駅からの所要時間を基準に約30分以内のイベントを抽出",
-            "各イベントの当日受付状況は変動する可能性があるため、早めの到着をおすすめします",
-            "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・殿堂レギュレーションのイベントは除外済み"
+        {
+          "id": 7,
+          "time": "17:30 ～",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "ドラゴンスター日本橋3号店",
+          "address": "大阪府大阪市浪速区敷津東2-1-5",
+          "fee": "無料",
+          "capacity": "64人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/986724/1/14773/20260405/1784663",
+          "tags": [
+            "large"
           ]
         },
-        hyogo: {
-          totalEvents: 65,
-          filteredCount: 17,
-          categories: [
-            {
-              id: "gym_battle", name: "ジムバトル", color: "#2563eb",
-              events: [
-                { id: 201, time: "10:30〜", name: "ジムバトル", venue: "カードショップ ラフテリア", address: "神戸市西区池上2丁目30-1 伊川センタービル 3F", fee: "200円", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/972416/1/20005/20260322/1751145", tags: [] },
-                { id: 202, time: "11:00〜13:00", name: "ジムバトル", venue: "ハリケーン 川西店", address: "川西市小戸1-3-12-201 司ビル", fee: "300円パック購入", capacity: "32人", distance: "約30分", url: "https://players.pokemon-card.com/event/detail/972490/1/11125/20260322/1728779", tags: [] },
-                { id: 203, time: "11:00〜13:00", name: "ジムバトル", venue: "カードショップ トレワン 西宮店", address: "西宮市津門大塚町2-20 ブルビル2階 3階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972532/1/19040/20260322/1758274", tags: [] },
-                { id: 204, time: "13:00〜", name: "ジムバトル", venue: "エディオン垂水店トレカキャピタル", address: "神戸市垂水区舞多聞東2-1-45-2F", fee: "200円", capacity: "32人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/972684/1/19967/20260322/1745988", tags: [] },
-                { id: 205, time: "13:00〜15:00", name: "ジムバトル", venue: "ビデオインアメリカ 尼崎店", address: "尼崎市西難波町3-30-15", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/972710/1/18399/20260322/1736368", tags: ["near"] },
-                { id: 206, time: "14:00〜16:00", name: "ジムバトル", venue: "カードショップ トレワン 西宮店", address: "西宮市津門大塚町2-20 ブルビル2階 3階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/972903/1/19040/20260322/1758281", tags: [] },
-                { id: 207, time: "15:30〜", name: "ジムバトル", venue: "カードショップ ラフテリア", address: "神戸市西区池上2丁目30-1 伊川センタービル 3F", fee: "200円", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973199/1/20005/20260322/1751147", tags: [] },
-                { id: 208, time: "16:00〜18:00", name: "ジムバトル", venue: "カードショップ トレワン 西宮店", address: "西宮市津門大塚町2-20 ブルビル2階 3階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/973259/1/19040/20260322/1758283", tags: [] },
-                { id: 209, time: "18:00〜19:30", name: "ジムバトル", venue: "カードショップ トレワン 西宮店", address: "西宮市津門大塚町2-20 ブルビル2階 3階", fee: "無料", capacity: "32人", distance: "約15分", url: "https://players.pokemon-card.com/event/detail/973468/1/19040/20260322/1758288", tags: ["night"] }
-              ]
-            },
-            {
-              id: "open_league", name: "オープンリーグ / トレーナーズリーグ", color: "#d97706",
-              events: [
-                { id: 210, time: "16:00〜", name: "トレーナーズリーグ（オープン）", venue: "古本市場 灘店", address: "神戸市灘区友田町5-2-1", fee: "無料", capacity: "32人", distance: "約10分", url: "https://players.pokemon-card.com/event/detail/973235/1/11103/20260322/1737150", tags: ["csp", "near"] },
-                { id: 211, time: "19:00〜", name: "トレーナーズリーグ（オープン）", venue: "トレカショップフロント", address: "伊丹市西台3丁目9-25 西台中村ビル4階", fee: "無料", capacity: "32人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/973537/1/19977/20260322/1736816", tags: ["csp", "night"] }
-              ]
-            },
-            {
-              id: "friend_battle", name: "いっしょにフレンドバトル", color: "#059669",
-              events: [
-                { id: 212, time: "11:00〜12:00", name: "いっしょにフレンドバトル", venue: "かけはし", address: "明石市西明石南町1丁目10-13", fee: "200円", capacity: "16人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/972478/1/11154/20260322/1734716", tags: ["beginner"] },
-                { id: 213, time: "11:30〜13:00", name: "いっしょにフレンドバトル", venue: "カードショップトレワン 三宮店", address: "神戸市中央区三宮2丁目11-1 センタープラザ西館223号室", fee: "100円", capacity: "8人", distance: "約5分", url: "https://players.pokemon-card.com/event/detail/972572/1/20003/20260322/1758430", tags: ["beginner", "near"] },
-                { id: 214, time: "14:00〜15:30", name: "いっしょにフレンドバトル", venue: "CARD BEST", address: "伊丹市南野北4-3-4 ディア西伊丹1F", fee: "無料", capacity: "16人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/972877/1/12223/20260322/1752496", tags: ["beginner"] },
-                { id: 215, time: "14:30〜", name: "いっしょにフレンドバトル", venue: "ハリケーン 川西店", address: "川西市小戸1-3-12-201 司ビル", fee: "300円パック購入", capacity: "32人", distance: "約30分", url: "https://players.pokemon-card.com/event/detail/972925/1/11125/20260322/1728790", tags: ["beginner"] },
-                { id: 216, time: "16:00〜", name: "いっしょにフレンドバトル", venue: "TSUTAYA 阪急伊丹駅前店", address: "伊丹市中央1丁目1番1号", fee: "無料", capacity: "48人", distance: "約20分", url: "https://players.pokemon-card.com/event/detail/973243/1/12712/20260322/1739371", tags: ["beginner", "large"] },
-                { id: 217, time: "18:30〜", name: "いっしょにフレンドバトル", venue: "カードショップ ラフテリア", address: "神戸市西区池上2丁目30-1 伊川センタービル 3F", fee: "200円", capacity: "32人", distance: "約25分", url: "https://players.pokemon-card.com/event/detail/973509/1/20005/20260322/1751173", tags: ["beginner"] }
-              ]
-            }
-          ],
-          plans: [
-            { id: "A", name: "西宮トレワン 1日フルプラン", subtitle: "同会場4連戦・移動ゼロ", rating: 5, steps: [
-              { time: "11:00〜13:00", event: "ジムバトル（32人）", venue: "カードショップ トレワン 西宮店", area: "西宮", url: "https://players.pokemon-card.com/event/detail/972532/1/19040/20260322/1758274" },
-              { time: "14:00〜16:00", event: "ジムバトル（32人）", venue: "カードショップ トレワン 西宮店", area: "西宮", url: "https://players.pokemon-card.com/event/detail/972903/1/19040/20260322/1758281" },
-              { time: "16:00〜18:00", event: "ジムバトル（32人）", venue: "カードショップ トレワン 西宮店", area: "西宮", url: "https://players.pokemon-card.com/event/detail/973259/1/19040/20260322/1758283" },
-              { time: "18:00〜19:30", event: "ジムバトル（32人）", venue: "カードショップ トレワン 西宮店", area: "西宮", url: "https://players.pokemon-card.com/event/detail/973468/1/19040/20260322/1758288" }
-            ], merit: "西宮トレワンで11時から19時半まで4連戦。全て無料・32人規模で移動ゼロ。JR西宮駅徒歩7分でアクセスも良い。対戦回数を最大化したい方におすすめ。" },
-            { id: "B", name: "CSP特化プラン", subtitle: "午後からCSPポイント獲得", rating: 5, steps: [
-              { time: "11:00〜13:00", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 尼崎店", area: "尼崎", url: "https://players.pokemon-card.com/event/detail/972710/1/18399/20260322/1736368" },
-              { time: "16:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "古本市場 灘店", area: "灘", url: "https://players.pokemon-card.com/event/detail/973235/1/11103/20260322/1737150" },
-              { time: "19:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "トレカショップフロント", area: "伊丹", url: "https://players.pokemon-card.com/event/detail/973537/1/19977/20260322/1736816" }
-            ], merit: "午前に尼崎でジムバトル、午後にCSP対象のトレーナーズリーグを2連戦。灘→伊丹はJRで約20分。CSPポイントを効率よく稼げるプラン。" },
-            { id: "C", name: "三宮エリア集中プラン", subtitle: "三宮周辺でゆったり", rating: 4, steps: [
-              { time: "11:30〜13:00", event: "いっしょにフレンドバトル", venue: "カードショップトレワン 三宮店", area: "三宮", url: "https://players.pokemon-card.com/event/detail/972572/1/20003/20260322/1758430" },
-              { time: "16:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "古本市場 灘店", area: "灘", url: "https://players.pokemon-card.com/event/detail/973235/1/11103/20260322/1737150" }
-            ], merit: "三宮でフレンドバトルからスタートし、間にランチや買い物を楽しんでから灘でCSP対象トレーナーズリーグ。三宮→灘はJRで約5分。ゆったり派におすすめ。" },
-            { id: "D", name: "尼崎・伊丹エリアプラン", subtitle: "アクセス便利エリアで2〜3戦", rating: 4, steps: [
-              { time: "13:00〜15:00", event: "ジムバトル（32人）", venue: "ビデオインアメリカ 尼崎店", area: "尼崎", url: "https://players.pokemon-card.com/event/detail/972710/1/18399/20260322/1736368" },
-              { time: "16:00〜", event: "いっしょにフレンドバトル（48人）", venue: "TSUTAYA 阪急伊丹駅前店", area: "伊丹", url: "https://players.pokemon-card.com/event/detail/973243/1/12712/20260322/1739371" },
-              { time: "19:00〜", event: "トレーナーズリーグ（オープン） CSP", venue: "トレカショップフロント", area: "伊丹", url: "https://players.pokemon-card.com/event/detail/973537/1/19977/20260322/1736816" }
-            ], merit: "尼崎でジムバトル後、伊丹に移動して48人規模のフレンドバトルとCSP対象トレーナーズリーグ。尼崎→伊丹はJRで約10分。大型イベント＋CSPの充実プラン。" }
-          ],
-          notes: [
-            "トレワン西宮店は11:00から19:30まで4回のジムバトルを開催（全て32人・無料）",
-            "CSP対象イベントは古本市場灘店（16:00〜）とトレカショップフロント（19:00〜）の2件",
-            "JR三ノ宮駅からの所要時間を基準に約30分以内のイベントを抽出",
-            "各イベントの当日受付状況は変動する可能性があるため、早めの到着をおすすめします",
-            "マスターリーグ・シニアリーグ・ジュニアリーグ・小学生以下・エクストラ・殿堂レギュレーションのイベントは除外済み"
+        {
+          "id": 8,
+          "time": "18:00 ～ 19:30",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "まるまるトレカ",
+          "address": "大阪府大阪市淀川区西中島4-3-4-201",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約10分",
+          "url": "https://players.pokemon-card.com/event/detail/986770/1/22092/20260405/1783545",
+          "tags": []
+        },
+        {
+          "id": 9,
+          "time": "18:00 ～ 21:00",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "トレカショップ竜のしっぽ　大阪梅田店",
+          "address": "大阪府大阪市北区芝田2-3-23 メイプルビル芝田2階",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約5分",
+          "url": "https://players.pokemon-card.com/event/detail/986801/1/10894/20260405/1767086",
+          "tags": [
+            "near"
+          ]
+        },
+        {
+          "id": 10,
+          "time": "19:00 ～ 21:00",
+          "name": "【26/4】ポケモンカードジム　ジムバトル",
+          "venue": "TSUTAYA野田阪神店",
+          "address": "大阪府大阪市福島区大開１－１－１ 桂文ビル１．２階",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約10分",
+          "url": "https://players.pokemon-card.com/event/detail/986862/1/19855/20260405/1785499",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "open_league",
+      "name": "オープンリーグ / トレーナーズリーグ",
+      "color": "#d97706",
+      "events": [
+        {
+          "id": 1,
+          "time": "10:00 ～ 18:00",
+          "name": "おみず杯　〜オープンリーグ〜",
+          "venue": "だもん",
+          "address": "大阪府高槻市天神町１丁目１－１０ 2F",
+          "fee": "1000円",
+          "capacity": "64人",
+          "distance": "約15分",
+          "url": "https://players.pokemon-card.com/event/detail/980523/1/19427/20260405/1760176",
+          "tags": [
+            "csp",
+            "large"
+          ]
+        },
+        {
+          "id": 2,
+          "time": "10:30 ～ 18:00",
+          "name": "シティリーグ2026 シーズン4 オープンリーグ",
+          "venue": "GIRAFULLなんば店",
+          "address": "大阪府大阪市中央区難波千日前13-13 難波KHビル",
+          "fee": "500円",
+          "capacity": "64人",
+          "distance": "約20分",
+          "url": "https://players.pokemon-card.com/event/detail/953001/1/19850/20260405/1748446",
+          "tags": [
+            "csp",
+            "large"
+          ]
+        },
+        {
+          "id": 3,
+          "time": "10:30 ～ 18:00",
+          "name": "シティリーグ2026 シーズン4 オープンリーグ",
+          "venue": "GIRAFULLなんば店",
+          "address": "大阪府大阪市中央区難波千日前13-13 難波KHビル",
+          "fee": "500円",
+          "capacity": "64人",
+          "distance": "約20分",
+          "url": "https://players.pokemon-card.com/event/detail/953002/1/19850/20260405/1748448",
+          "tags": [
+            "csp",
+            "large"
+          ]
+        },
+        {
+          "id": 4,
+          "time": "13:30 ～ 16:30",
+          "name": "【26/4】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+          "venue": "フルアヘッド大阪日本橋店",
+          "address": "大阪府大阪市浪速区日本橋４丁目１１−６ 3F",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/986196/1/19874/20260405/1774819",
+          "tags": [
+            "csp"
+          ]
+        },
+        {
+          "id": 5,
+          "time": "15:00 ～ 17:00",
+          "name": "【26/4】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+          "venue": "Bee本舗バトルタワー店",
+          "address": "大阪府大阪市浪速区難波中2-1-20",
+          "fee": "無料",
+          "capacity": "64人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/986428/1/18427/20260405/1775888",
+          "tags": [
+            "csp",
+            "large"
+          ]
+        },
+        {
+          "id": 6,
+          "time": "17:00 ～",
+          "name": "【26/4】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+          "venue": "トレカショップ竜のしっぽ　布施店",
+          "address": "大阪府東大阪市長堂１丁目２−１ A+FUSEビル ３階",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/986659/1/19938/20260405/1764829",
+          "tags": [
+            "csp"
+          ]
+        },
+        {
+          "id": 7,
+          "time": "18:00 ～ 21:00",
+          "name": "【26/4】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+          "venue": "トイコンプ　大阪駅前第3ビル店",
+          "address": "大阪府大阪市北区梅田1-1-3 2F-21",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約5分",
+          "url": "https://players.pokemon-card.com/event/detail/986804/1/10893/20260405/1783935",
+          "tags": [
+            "csp",
+            "near"
+          ]
+        },
+        {
+          "id": 8,
+          "time": "18:00 ～ 21:00",
+          "name": "【26/4】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+          "venue": "トレカショップ竜のしっぽ　梅田NU茶屋町店",
+          "address": "大阪府大阪市北区茶屋町10番12号 NU茶屋町4F",
+          "fee": "500円",
+          "capacity": "32人",
+          "distance": "約5分",
+          "url": "https://players.pokemon-card.com/event/detail/986805/1/20970/20260405/1786704",
+          "tags": [
+            "csp",
+            "near"
           ]
         }
-      }
+      ]
+    },
+    {
+      "id": "friend_battle",
+      "name": "いっしょにフレンドバトル",
+      "color": "#059669",
+      "events": [
+        {
+          "id": 1,
+          "time": "13:00 ～ 15:00",
+          "name": "【26/4】いっしょにフレンドバトル",
+          "venue": "カードショップきりん　大阪天満橋店",
+          "address": "大阪府大阪市中央区天満橋京町2-15 ８階Ｂ室",
+          "fee": "200円（100円券配布）",
+          "capacity": "16人",
+          "distance": "約20分",
+          "url": "https://players.pokemon-card.com/event/detail/986108/1/22032/20260405/1775182",
+          "tags": [
+            "beginner"
+          ]
+        },
+        {
+          "id": 2,
+          "time": "13:00 ～ 15:00",
+          "name": "【26/4】いっしょにフレンドバトル",
+          "venue": "【CARDBOX】高槻店",
+          "address": "大阪府高槻市北園町19-12 ４階",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約15分",
+          "url": "https://players.pokemon-card.com/event/detail/986109/1/10948/20260405/1786232",
+          "tags": [
+            "beginner"
+          ]
+        },
+        {
+          "id": 3,
+          "time": "15:00 ～ 17:30",
+          "name": "【26/4】いっしょにフレンドバトル",
+          "venue": "TSUTAYA野田阪神店",
+          "address": "大阪府大阪市福島区大開１－１－１ 桂文ビル１．２階",
+          "fee": "無料",
+          "capacity": "32人",
+          "distance": "約10分",
+          "url": "https://players.pokemon-card.com/event/detail/986481/1/19855/20260405/1785486",
+          "tags": [
+            "beginner"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "self_event",
+      "name": "参考：自主イベント・杯戦",
+      "color": "#7c3aed",
+      "events": [
+        {
+          "id": 1,
+          "time": "14:00 ～ 16:00",
+          "name": "カジュアルバトル",
+          "venue": "はやお",
+          "address": "大阪府大阪市浪速区日本橋4-9-22リファインビル4階",
+          "fee": "500円",
+          "capacity": "24人",
+          "distance": "約25分",
+          "url": "https://players.pokemon-card.com/event/detail/980559/1/12028/20260405/1774809",
+          "tags": []
+        }
+      ]
     }
+  ],
+  "plans": [],
+  "notes": [
+    "シティリーグ（GIRAFULLなんば店）は1〜2枠あり、CP対象の重要大会です",
+    "シニア・ジュニア・小学生以下・マスターリーグは除外しています",
+    "エクストラバトル・スタートデッキバトルは除外しています",
+    "岸和田市・泉南方面（JR大阪駅から40分超）は除外しています"
   ]
 };
 
