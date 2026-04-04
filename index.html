@@ -577,7 +577,24 @@ const DATA = {
       ]
     }
           ],
-          plans: [],
+          plans: [
+            { id: "A", name: "GIRAFULLなんば店 集中プラン", subtitle: "シティリーグ → 同会場ジムバトル", rating: 5, steps: [
+              { time: "10:30〜18:00", event: "シティリーグ2026 S4 オープンリーグ CSP（64人）", venue: "GIRAFULLなんば店", area: "なんば", url: "https://players.pokemon-card.com/event/detail/953001/1/19850/20260405/1748446" },
+              { time: "16:30〜20:30", event: "ジムバトル（64人）", venue: "GIRAFULLなんば店", area: "なんば", url: "https://players.pokemon-card.com/event/detail/986637/1/19850/20260405/1774377" }
+            ], merit: "同じ会場でシティリーグとジムバトルを連戦。午前のシティリーグでCSPポイントを獲得後、夕方に64人規模のジムバトルで対戦経験を積める。移動ゼロで効率的なプラン。" },
+            { id: "B", name: "日本橋→梅田 CSP2連戦プラン", subtitle: "CSPポイントを効率よく2回稼ぐ", rating: 4, steps: [
+              { time: "13:30〜16:30", event: "トレーナーズリーグ（オープンリーグ）CSP（32人）", venue: "フルアヘッド大阪日本橋店", area: "日本橋", url: "https://players.pokemon-card.com/event/detail/986196/1/19874/20260405/1774819" },
+              { time: "18:00〜21:00", event: "トレーナーズリーグ（オープンリーグ）CSP（32人）", venue: "トイコンプ　大阪駅前第3ビル店", area: "梅田", url: "https://players.pokemon-card.com/event/detail/986804/1/10893/20260405/1783935" }
+            ], merit: "昼過ぎに日本橋でCSPポイント獲得後、夜は梅田の駅近でCSPトレーナーズリーグを追加。日本橋→梅田は地下鉄で約20分。1日でCSP対象イベント2本参加できる効率プラン。" },
+            { id: "C", name: "高槻CSP → 梅田夜活プラン", subtitle: "大型CSP大会から夜の梅田へ", rating: 4, steps: [
+              { time: "10:00〜18:00", event: "おみず杯〜オープンリーグ〜 CSP（64人）", venue: "だもん", area: "高槻", url: "https://players.pokemon-card.com/event/detail/980523/1/19427/20260405/1760176" },
+              { time: "18:00〜21:00", event: "トレーナーズリーグ（オープンリーグ）CSP（32人）", venue: "トレカショップ竜のしっぽ　梅田NU茶屋町店", area: "梅田", url: "https://players.pokemon-card.com/event/detail/986805/1/20970/20260405/1786704" }
+            ], merit: "午前は高槻で64人規模のCSP対象おみず杯に参加。夕方に梅田へ移動してCSPトレーナーズリーグをさらに1戦。高槻→梅田はJRで約20分。" },
+            { id: "D", name: "のんびり初心者プラン", subtitle: "フレンドバトル → 夜ジムバトル", rating: 3, steps: [
+              { time: "13:00〜15:00", event: "いっしょにフレンドバトル（32人）", venue: "【CARDBOX】高槻店", area: "高槻", url: "https://players.pokemon-card.com/event/detail/986109/1/10948/20260405/1786232" },
+              { time: "18:00〜21:00", event: "ジムバトル（32人）", venue: "トレカショップ竜のしっぽ　大阪梅田店", area: "梅田", url: "https://players.pokemon-card.com/event/detail/986801/1/10894/20260405/1767086" }
+            ], merit: "午後はのんびり高槻でフレンドバトル。間に食事や休憩を挟んで、夕方は梅田の駅近ジムバトルへ。初心者から経験者まで楽しめるゆったりプラン。" }
+          ],
           notes: [
             "シティリーグ（GIRAFULLなんば店）は1〜2枠あり、CSP対象の重要大会です",
             "シニア・ジュニア・小学生以下・マスターリーグは除外しています",
