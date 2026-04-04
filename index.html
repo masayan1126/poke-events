@@ -228,17 +228,28 @@
 
 <script>
 const DATA = {
-  "meta": {
-    "reportDate": "2026/04/04（土）",
-    "targetDate": "2026/04/05",
-    "targetDay": "日",
-    "area": "大阪府",
-    "searchUrl": "https://players.pokemon-card.com/event/search?start_date=2026/04/05&end_date=2026/04/05&prefecture=27",
-    "totalEvents": 112,
-    "filteredCount": 22,
-    "criteria": "大阪府 / オープンリーグ or ジムバトル or フレンドバトル / スタンダード（60枚） / 定員32名以上 / JR大阪駅から約30分以内"
+  meta: {
+    region: "関西",
+    searchUrl: "https://players.pokemon-card.com/event/search",
+    reportDate: "2026/04/04（土）"
   },
-  "categories": [
+  areas: [
+    { id: "osaka", name: "大阪府" },
+    { id: "kyoto", name: "京都府" },
+    { id: "hyogo", name: "兵庫県" },
+    { id: "nara", name: "奈良県" },
+    { id: "shiga", name: "滋賀県" },
+    { id: "wakayama", name: "和歌山県" }
+  ],
+  dates: [
+    {
+      date: "2026/04/05",
+      day: "日",
+      areaData: {
+        osaka: {
+          totalEvents: 112,
+          filteredCount: 22,
+          categories: [
     {
       "id": "gym_battle",
       "name": "ジムバトル",
@@ -565,13 +576,17 @@ const DATA = {
         }
       ]
     }
-  ],
-  "plans": [],
-  "notes": [
-    "シティリーグ（GIRAFULLなんば店）は1〜2枠あり、CP対象の重要大会です",
-    "シニア・ジュニア・小学生以下・マスターリーグは除外しています",
-    "エクストラバトル・スタートデッキバトルは除外しています",
-    "岸和田市・泉南方面（JR大阪駅から40分超）は除外しています"
+          ],
+          plans: [],
+          notes: [
+            "シティリーグ（GIRAFULLなんば店）は1〜2枠あり、CSP対象の重要大会です",
+            "シニア・ジュニア・小学生以下・マスターリーグは除外しています",
+            "エクストラバトル・スタートデッキバトルは除外しています",
+            "岸和田市・泉南方面（JR大阪駅から40分超）は除外しています"
+          ]
+        }
+      }
+    }
   ]
 };
 
