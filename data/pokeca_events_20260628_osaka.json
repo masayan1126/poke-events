@@ -1,0 +1,1874 @@
+{
+  "meta": {
+    "report_date": "2026/06/27",
+    "report_day": "土",
+    "target_date": "2026/06/28",
+    "target_day": "日",
+    "area": "大阪府",
+    "region": "関西",
+    "search_url": "https://players.pokemon-card.com/event/search?offset=0&order=1",
+    "total_events": 93,
+    "criteria": "Players Clubで大阪府・2026/06/28に絞り込み、開催中止を除外。行動プランは時間帯、CSP/大型、カジュアル参加、アクセスを基準に自動選定。"
+  },
+  "events": {
+    "gym_battle": [
+      {
+        "id": 1830151,
+        "datetime": "10:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トイコンプ岸和田店",
+        "address": "大阪府岸和田市春木若松町21-1 ラパーク岸和田2F",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/11016/20260628/1830151",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1054875,
+          "shop_id": 11016,
+          "date_id": 1830151
+        }
+      },
+      {
+        "id": 1839887,
+        "datetime": "10:10 ～ 12:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル／小学生以下（スタンダード）",
+        "venue": "TSUTAYA BOOKSTORE ビバモール寝屋川",
+        "address": "大阪府寝屋川市寝屋南2-22-2",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1178/1/19041/20260628/1839887",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1054898,
+          "shop_id": 19041,
+          "date_id": 1839887
+        }
+      },
+      {
+        "id": 1819660,
+        "datetime": "10:30 ～ 12:30",
+        "name": "ポケモンカードゲーム教室 in ポケモンカードプレイスポット（当日先着枠分・小学生以下）",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "4人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/722/1/20931/20260628/1819660",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1033706,
+          "shop_id": 20931,
+          "date_id": 1819660
+        }
+      },
+      {
+        "id": 1847775,
+        "datetime": "10:30 ～ 12:30",
+        "name": "ポケモンカードゲーム教室 2026年6月開催分（当日先着枠）",
+        "venue": "ポケモンセンターオーサカDX",
+        "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
+        "fee": "参加費 無料",
+        "capacity": "6人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1171/1/14160/20260628/1847775",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1033827,
+          "shop_id": 14160,
+          "date_id": 1847775
+        }
+      },
+      {
+        "id": 1841647,
+        "datetime": "10:30 ～ 13:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル／小学生以下（スタンダード）",
+        "venue": "e-forum 河内長野店",
+        "address": "大阪府河内長野市西之山町1-2",
+        "fee": "参加費 無料",
+        "capacity": "24人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1178/1/10996/20260628/1841647",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1054927,
+          "shop_id": 10996,
+          "date_id": 1841647
+        }
+      },
+      {
+        "id": 1811388,
+        "datetime": "11:00 ～",
+        "name": "【26/6】ポケモンカードゲーム スタートデッキ100 そのままバトル（オープン）",
+        "venue": "エディオン 堺店",
+        "address": "大阪府堺市堺区戎島町3-22-1",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1172/1/11005/20260628/1811388",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1035118,
+          "shop_id": 11005,
+          "date_id": 1811388
+        }
+      },
+      {
+        "id": 1841093,
+        "datetime": "11:00 ～ 12:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル／小学生以下（スタンダード）",
+        "venue": "トイコンプ 大阪駅前第3ビル店",
+        "address": "大阪府大阪市北区梅田1-1-3 2F-21",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1178/1/10893/20260628/1841093",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1054975,
+          "shop_id": 10893,
+          "date_id": 1841093
+        }
+      },
+      {
+        "id": 1845960,
+        "datetime": "11:00 ～ 13:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "シゲヤ",
+        "address": "大阪府大阪市平野区平野市町3丁目5-14",
+        "fee": "参加費 なし",
+        "capacity": "12人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10914/20260628/1845960",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055004,
+          "shop_id": 10914,
+          "date_id": 1845960
+        }
+      },
+      {
+        "id": 1834500,
+        "datetime": "11:00 ～ 13:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカGO!GO!",
+        "address": "大阪府茨木市駅前１丁目３番９号 生田ビル301号",
+        "fee": "参加費 100円",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20857/20260628/1834500",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1054986,
+          "shop_id": 20857,
+          "date_id": 1834500
+        }
+      },
+      {
+        "id": 1827880,
+        "datetime": "12:00 ～ 13:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "ALANN 日本橋",
+        "address": "大阪府大阪市浪速区難波中2-4-3 村上ビル305",
+        "fee": "参加費 無料",
+        "capacity": "8人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12789/20260628/1827880",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055086,
+          "shop_id": 12789,
+          "date_id": 1827880
+        }
+      },
+      {
+        "id": 1822311,
+        "datetime": "12:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 菱江店",
+        "address": "大阪府東大阪市稲葉1-4-16",
+        "fee": "参加費 無料",
+        "capacity": "24人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/15258/20260628/1822311",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055098,
+          "shop_id": 15258,
+          "date_id": 1822311
+        }
+      },
+      {
+        "id": 1832388,
+        "datetime": "12:30 ～ 14:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップマーキス",
+        "address": "大阪府箕面市桜4-1-24 アーバンハイツ桜地下1階",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/21995/20260628/1832388",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055117,
+          "shop_id": 21995,
+          "date_id": 1832388
+        }
+      },
+      {
+        "id": 1822036,
+        "datetime": "13:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "S CARD OASIS 天美店",
+        "address": "大阪府松原市天美東三丁目500番地 セブンパーク天美３F",
+        "fee": "参加費 100円",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20118/20260628/1822036",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055163,
+          "shop_id": 20118,
+          "date_id": 1822036
+        }
+      },
+      {
+        "id": 1832807,
+        "datetime": "13:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "おじゃま館蒲生店",
+        "address": "大阪府大阪市城東区今福西３丁目2-2 プレジデント城東１F",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/22019/20260628/1832807",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055144,
+          "shop_id": 22019,
+          "date_id": 1832807
+        }
+      },
+      {
+        "id": 1824186,
+        "datetime": "13:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル／小学生以下（スタンダード）",
+        "venue": "トレーディングカードショップ ジャスティス",
+        "address": "大阪府大阪市淀川区宮原5丁目3-55 カーサ東三国103",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1178/1/10897/20260628/1824186",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055128,
+          "shop_id": 10897,
+          "date_id": 1824186
+        }
+      },
+      {
+        "id": 1838921,
+        "datetime": "13:00 ～ 14:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 鶴見店",
+        "address": "大阪府大阪市鶴見区鶴見5-11-17",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/15245/20260628/1838921",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055173,
+          "shop_id": 15245,
+          "date_id": 1838921
+        }
+      },
+      {
+        "id": 1840662,
+        "datetime": "13:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "【CARDBOX】高槻店",
+        "address": "大阪府高槻市北園町19-12 ４階",
+        "fee": "参加費 100円",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10948/20260628/1840662",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055240,
+          "shop_id": 10948,
+          "date_id": 1840662
+        }
+      },
+      {
+        "id": 1845946,
+        "datetime": "13:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "BOOKOFF門真古川橋店",
+        "address": "大阪府門真市速見町9-12",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/22687/20260628/1845946",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055241,
+          "shop_id": 22687,
+          "date_id": 1845946
+        }
+      },
+      {
+        "id": 1843680,
+        "datetime": "13:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップきりん 大阪天満橋店",
+        "address": "大阪府大阪市中央区天満橋京町2-15 ８階Ｂ室",
+        "fee": "参加費 200円",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/22032/20260628/1843680",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055233,
+          "shop_id": 22032,
+          "date_id": 1843680
+        }
+      },
+      {
+        "id": 1831682,
+        "datetime": "13:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/19146/20260628/1831682",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055195,
+          "shop_id": 19146,
+          "date_id": 1831682
+        }
+      },
+      {
+        "id": 1808375,
+        "datetime": "13:00 ～ 15:30",
+        "name": "【26/6】ポケモンカードゲーム スタートデッキ100 そのままバトル（オープン）",
+        "venue": "TSUTAYAリノアス八尾店",
+        "address": "大阪府八尾市光町２丁目６０ リノアス １Ｆ",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1172/1/20786/20260628/1808375",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1035131,
+          "shop_id": 20786,
+          "date_id": 1808375
+        }
+      },
+      {
+        "id": 1843314,
+        "datetime": "13:00 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "エイトマン 泉佐野店",
+        "address": "大阪府泉佐野市下瓦屋2丁目2-77 いこらも～る泉佐野2階",
+        "fee": "参加費 無料",
+        "capacity": "36人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1177/1/20007/20260628/1843314",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055260,
+          "shop_id": 20007,
+          "date_id": 1843314
+        }
+      },
+      {
+        "id": 1844386,
+        "datetime": "13:00 ～ 16:30",
+        "name": "【26/6】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "TSUTAYA BOOKSTORE ビバモール寝屋川",
+        "address": "大阪府寝屋川市寝屋南2-22-2",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1179/1/19041/20260628/1844386",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055275,
+          "shop_id": 19041,
+          "date_id": 1844386
+        }
+      },
+      {
+        "id": 1839742,
+        "datetime": "13:30 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "エディオン 堺店",
+        "address": "大阪府堺市堺区戎島町3-22-1",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/11005/20260628/1839742",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055283,
+          "shop_id": 11005,
+          "date_id": 1839742
+        }
+      },
+      {
+        "id": 1822120,
+        "datetime": "13:30 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップ ペガサス",
+        "address": "大阪府堺市中区深井東町3059 センチュリーハウス106号",
+        "fee": "参加費 無料",
+        "capacity": "8人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12744/20260628/1822120",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055293,
+          "shop_id": 12744,
+          "date_id": 1822120
+        }
+      },
+      {
+        "id": 1821185,
+        "datetime": "13:30 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "ふるいちイオンモールりんくう泉南",
+        "address": "大阪府泉南市りんくう南浜3-12 イオンモールりんくう泉南２F",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20747/20260628/1821185",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055292,
+          "shop_id": 20747,
+          "date_id": 1821185
+        }
+      },
+      {
+        "id": 1847779,
+        "datetime": "13:30 ～ 15:00",
+        "name": "ポケモンカードゲーム教室 2026年6月開催分（当日先着枠）",
+        "venue": "ポケモンセンターオーサカDX",
+        "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
+        "fee": "参加費 無料",
+        "capacity": "6人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1171/1/14160/20260628/1847779",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1033828,
+          "shop_id": 14160,
+          "date_id": 1847779
+        }
+      },
+      {
+        "id": 1837469,
+        "datetime": "14:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードキングダム 布施店",
+        "address": "大阪府東大阪市足代1-17-7",
+        "fee": "参加費 300円",
+        "capacity": "16人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10979/20260628/1837469",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055371,
+          "shop_id": 10979,
+          "date_id": 1837469
+        }
+      },
+      {
+        "id": 1831134,
+        "datetime": "14:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 香里園店",
+        "address": "大阪府寝屋川市松屋町20-12",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/14180/20260628/1831134",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055373,
+          "shop_id": 14180,
+          "date_id": 1831134
+        }
+      },
+      {
+        "id": 1842305,
+        "datetime": "14:00 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "TSUTAYA 枚方ベルパルレ",
+        "address": "大阪府枚方市宮之阪4-28-12",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12741/20260628/1842305",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055401,
+          "shop_id": 12741,
+          "date_id": 1842305
+        }
+      },
+      {
+        "id": 1829025,
+        "datetime": "14:00 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "イエローサブマリン なんば本店",
+        "address": "大阪府大阪市浪速区難波中2-1-3",
+        "fee": "参加費 200円",
+        "capacity": "8人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10928/20260628/1829025",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055426,
+          "shop_id": 10928,
+          "date_id": 1829025
+        }
+      },
+      {
+        "id": 1845401,
+        "datetime": "14:00 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 高槻春日町店",
+        "address": "大阪府高槻市春日町店15-17",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/15277/20260628/1845401",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055408,
+          "shop_id": 15277,
+          "date_id": 1845401
+        }
+      },
+      {
+        "id": 1833007,
+        "datetime": "14:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカショップ スキップ玉出店",
+        "address": "大阪府大阪市住之江区粉浜西1-4-3 エバーグリーン住吉2F",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10931/20260628/1833007",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055441,
+          "shop_id": 10931,
+          "date_id": 1833007
+        }
+      },
+      {
+        "id": 1832371,
+        "datetime": "14:30 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップマーキス",
+        "address": "大阪府箕面市桜4-1-24 アーバンハイツ桜地下1階",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/21995/20260628/1832371",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055482,
+          "shop_id": 21995,
+          "date_id": 1832371
+        }
+      },
+      {
+        "id": 1802839,
+        "datetime": "15:00 ～",
+        "name": "【26/6】ポケモンカードゲーム スタートデッキ100 そのままバトル（小学生以下）",
+        "venue": "Chick Nook",
+        "address": "大阪府東大阪市東石切町2-8-15蔵4",
+        "fee": "参加費 500円",
+        "capacity": "16人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1173/1/20971/20260628/1802839",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1035069,
+          "shop_id": 20971,
+          "date_id": 1802839
+        }
+      },
+      {
+        "id": 1843954,
+        "datetime": "15:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "あっぷる 今福店",
+        "address": "大阪府大阪市城東区今福東1-11-27",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12120/20260628/1843954",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055539,
+          "shop_id": 12120,
+          "date_id": 1843954
+        }
+      },
+      {
+        "id": 1837507,
+        "datetime": "15:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "みどり文具店",
+        "address": "大阪府和泉市幸2-5-36",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/11012/20260628/1837507",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055505,
+          "shop_id": 11012,
+          "date_id": 1837507
+        }
+      },
+      {
+        "id": 1840428,
+        "datetime": "15:00 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "おじゃま館小路店",
+        "address": "大阪府大阪市生野区小路東1丁目1番18号",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/22684/20260628/1840428",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055547,
+          "shop_id": 22684,
+          "date_id": 1840428
+        }
+      },
+      {
+        "id": 1847783,
+        "datetime": "15:00 ～ 16:30",
+        "name": "ポケモンカードゲーム教室 2026年6月開催分（当日先着枠）",
+        "venue": "ポケモンセンターオーサカDX",
+        "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
+        "fee": "参加費 無料",
+        "capacity": "6人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1171/1/14160/20260628/1847783",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1033831,
+          "shop_id": 14160,
+          "date_id": 1847783
+        }
+      },
+      {
+        "id": 1810677,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードゲーム スタートデッキ100 そのままバトル（オープン）",
+        "venue": "【CARDBOX】高槻店",
+        "address": "大阪府高槻市北園町19-12 ４階",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1172/1/10948/20260628/1810677",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1035150,
+          "shop_id": 10948,
+          "date_id": 1810677
+        }
+      },
+      {
+        "id": 1813055,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードゲーム スタートデッキ100 そのままバトル（小学生以下）",
+        "venue": "S CARD OASIS鳳店",
+        "address": "大阪府堺市西区鳳南町3丁199番地12 アリオ鳳3F",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1173/1/20790/20260628/1813055",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1035148,
+          "shop_id": 20790,
+          "date_id": 1813055
+        }
+      },
+      {
+        "id": 1822752,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "ドラゴンスターららぽーと堺",
+        "address": "大阪府堺市美原区黒山22番地1 2階 21271",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/19021/20260628/1822752",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055560,
+          "shop_id": 19021,
+          "date_id": 1822752
+        }
+      },
+      {
+        "id": 1839217,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 久宝寺店",
+        "address": "大阪府八尾市久宝寺1-1-4",
+        "fee": "参加費 無料",
+        "capacity": "8人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/15255/20260628/1839217",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055611,
+          "shop_id": 15255,
+          "date_id": 1839217
+        }
+      },
+      {
+        "id": 1822196,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 生野店",
+        "address": "大阪府大阪市生野区巽東1-6-27",
+        "fee": "参加費 無料",
+        "capacity": "10人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/15270/20260628/1822196",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055559,
+          "shop_id": 15270,
+          "date_id": 1822196
+        }
+      },
+      {
+        "id": 1824627,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 西淀川店",
+        "address": "大阪府大阪市西淀川区千舟2-15-10",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/18200/20260628/1824627",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055601,
+          "shop_id": 18200,
+          "date_id": 1824627
+        }
+      },
+      {
+        "id": 1819668,
+        "datetime": "15:30 ～ 17:00",
+        "name": "ポケモンカードゲーム教室 in ポケモンカードプレイスポット（当日先着枠分・小学生以下）",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "4人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/722/1/20931/20260628/1819668",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1033709,
+          "shop_id": 20931,
+          "date_id": 1819668
+        }
+      },
+      {
+        "id": 1843692,
+        "datetime": "15:30 ～ 17:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップきりん 大阪天満橋店",
+        "address": "大阪府大阪市中央区天満橋京町2-15 ８階Ｂ室",
+        "fee": "参加費 200円",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/22032/20260628/1843692",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055673,
+          "shop_id": 22032,
+          "date_id": 1843692
+        }
+      },
+      {
+        "id": 1823696,
+        "datetime": "15:30 ～ 17:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "ホビーショップHI！TOY",
+        "address": "大阪府東大阪市西鴻池町2-2-33",
+        "fee": "参加費 100円又は１パック購入",
+        "capacity": "12人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/13116/20260628/1823696",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055674,
+          "shop_id": 13116,
+          "date_id": 1823696
+        }
+      },
+      {
+        "id": 1821510,
+        "datetime": "15:30 ～ 18:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 箕面店",
+        "address": "大阪府箕面市半町４－３－４０",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/18207/20260628/1821510",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055677,
+          "shop_id": 18207,
+          "date_id": 1821510
+        }
+      },
+      {
+        "id": 1839702,
+        "datetime": "16:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "【CARDBOX】江坂店",
+        "address": "大阪府吹田市豊津町9番15号 日本興業ビル307号",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12141/20260628/1839702",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055691,
+          "shop_id": 12141,
+          "date_id": 1839702
+        }
+      },
+      {
+        "id": 1839571,
+        "datetime": "16:00 ～ 17:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードプラン ジュークボックス",
+        "address": "大阪府堺市北区長曽根町735－3 新金岡ビル3F",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/13021/20260628/1839571",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055710,
+          "shop_id": 13021,
+          "date_id": 1839571
+        }
+      },
+      {
+        "id": 1846203,
+        "datetime": "16:00 ～ 18:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "Speak easy",
+        "address": "大阪府大阪市浪速区難波中1-16-11 レック難波503",
+        "fee": "参加費 300円",
+        "capacity": "8人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20821/20260628/1846203",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055724,
+          "shop_id": 20821,
+          "date_id": 1846203
+        }
+      },
+      {
+        "id": 1839036,
+        "datetime": "16:00 ～ 18:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップ あーと",
+        "address": "大阪府大阪市浪速区日本橋4-15-6",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/18981/20260628/1839036",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055746,
+          "shop_id": 18981,
+          "date_id": 1839036
+        }
+      },
+      {
+        "id": 1837294,
+        "datetime": "16:00 ～ 19:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカWIN",
+        "address": "大阪府大阪市北区天神橋4-10-20",
+        "fee": "参加費 無料",
+        "capacity": "8人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20862/20260628/1837294",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055760,
+          "shop_id": 20862,
+          "date_id": 1837294
+        }
+      },
+      {
+        "id": 1825063,
+        "datetime": "16:30 ～ 18:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "GIRAFULLなんば店",
+        "address": "大阪府大阪市中央区難波千日前13-13 難波KHビル",
+        "fee": "参加費 無料",
+        "capacity": "64人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/19850/20260628/1825063",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055775,
+          "shop_id": 19850,
+          "date_id": 1825063
+        }
+      },
+      {
+        "id": 1835774,
+        "datetime": "16:30 ～ 18:30",
+        "name": "【26/6】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "トレカ専門店ポップタウン",
+        "address": "大阪府大阪市浪速区日本橋4丁目9-22 リファインビル4階",
+        "fee": "参加費 500円",
+        "capacity": "24人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1180/1/20022/20260628/1835774",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055779,
+          "shop_id": 20022,
+          "date_id": 1835774
+        }
+      },
+      {
+        "id": 1829921,
+        "datetime": "17:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トイコンプ 住道店",
+        "address": "大阪府大東市赤井1-13-1 ポップタウン住道1番館2F",
+        "fee": "参加費 無料",
+        "capacity": "20人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10972/20260628/1829921",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055793,
+          "shop_id": 10972,
+          "date_id": 1829921
+        }
+      },
+      {
+        "id": 1837452,
+        "datetime": "17:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカショップ竜のしっぽ 布施店",
+        "address": "大阪府東大阪市長堂１丁目２−１ A+FUSEビル ３階",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/19938/20260628/1837452",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055786,
+          "shop_id": 19938,
+          "date_id": 1837452
+        }
+      },
+      {
+        "id": 1824717,
+        "datetime": "17:00 ～ 18:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップ 黄鶏屋",
+        "address": "大阪府堺市堺区三国ケ丘御幸通18-7 2階",
+        "fee": "参加費 150円以上のお買い物",
+        "capacity": "28人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/11001/20260628/1824717",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055808,
+          "shop_id": 11001,
+          "date_id": 1824717
+        }
+      },
+      {
+        "id": 1847947,
+        "datetime": "17:15 ～ 18:45",
+        "name": "ポケモンカードゲーム教室 in ポケモンカードプレイスポット（当日先着枠分・小学生以下）",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "4人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/722/1/20931/20260628/1847947",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1033710,
+          "shop_id": 20931,
+          "date_id": 1847947
+        }
+      },
+      {
+        "id": 1841071,
+        "datetime": "17:30 ～",
+        "name": "【26/6】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "ドラゴンスター日本橋3号店",
+        "address": "大阪府大阪市浪速区敷津東2-1-5",
+        "fee": "参加費 無料",
+        "capacity": "64人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1179/1/14773/20260628/1841071",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055861,
+          "shop_id": 14773,
+          "date_id": 1841071
+        }
+      },
+      {
+        "id": 1842011,
+        "datetime": "18:00 ～",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "カードショップONIGIRI",
+        "address": "大阪府堺市堺区戎島町2丁53-1 キッコービル204",
+        "fee": "参加費 100円以上のお買い物",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20760/20260628/1842011",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055897,
+          "shop_id": 20760,
+          "date_id": 1842011
+        }
+      },
+      {
+        "id": 1830657,
+        "datetime": "18:00 ～",
+        "name": "【26/6】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "トイコンプ高槻店",
+        "address": "大阪府高槻市天神町1丁目1-10-2F",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1179/1/19966/20260628/1830657",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055880,
+          "shop_id": 19966,
+          "date_id": 1830657
+        }
+      },
+      {
+        "id": 1841089,
+        "datetime": "18:00 ～ 21:00",
+        "name": "【26/6】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "トイコンプ 大阪駅前第3ビル店",
+        "address": "大阪府大阪市北区梅田1-1-3 2F-21",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1179/1/10893/20260628/1841089",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055945,
+          "shop_id": 10893,
+          "date_id": 1841089
+        }
+      },
+      {
+        "id": 1823259,
+        "datetime": "18:00 ～ 21:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカショップ竜のしっぽ 大阪梅田店",
+        "address": "大阪府大阪市北区芝田2-3-23 メイプルビル芝田2階",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/10894/20260628/1823259",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055948,
+          "shop_id": 10894,
+          "date_id": 1823259
+        }
+      },
+      {
+        "id": 1837257,
+        "datetime": "18:30 ～ 20:30",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トイコンプアリオ八尾店",
+        "address": "大阪府八尾市光町2丁目3 アリオ八尾１F",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/19788/20260628/1837257",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055960,
+          "shop_id": 19788,
+          "date_id": 1837257
+        }
+      },
+      {
+        "id": 1846211,
+        "datetime": "19:00 ～ 21:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "Speak easy",
+        "address": "大阪府大阪市浪速区難波中1-16-11 レック難波503",
+        "fee": "参加費 300円",
+        "capacity": "8人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20821/20260628/1846211",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1055990,
+          "shop_id": 20821,
+          "date_id": 1846211
+        }
+      },
+      {
+        "id": 1830507,
+        "datetime": "19:00 ～ 21:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トイコンプ堺東店",
+        "address": "大阪府堺市堺区北花田口町3丁1-15 東洋ビル1F",
+        "fee": "参加費 無料",
+        "capacity": "24人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12774/20260628/1830507",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1056009,
+          "shop_id": 12774,
+          "date_id": 1830507
+        }
+      },
+      {
+        "id": 1835812,
+        "datetime": "19:00 ～ 21:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカ専門店ポップタウン",
+        "address": "大阪府大阪市浪速区日本橋4丁目9-22 リファインビル4階",
+        "fee": "参加費 300円",
+        "capacity": "24人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/20022/20260628/1835812",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1056002,
+          "shop_id": 20022,
+          "date_id": 1835812
+        }
+      },
+      {
+        "id": 1834441,
+        "datetime": "20:00 ～ 22:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "BAR UNKNOWN trading card shop",
+        "address": "大阪府大阪市浪速区難波中2-7-7 ナンバＦＫビル2Ｆ",
+        "fee": "参加費 500円1drink付",
+        "capacity": "28人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/12188/20260628/1834441",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1056026,
+          "shop_id": 12188,
+          "date_id": 1834441
+        }
+      },
+      {
+        "id": 1822084,
+        "datetime": "20:00 ～ 22:00",
+        "name": "【26/6】ポケモンカードジム ジムバトル",
+        "venue": "トレカBOON",
+        "address": "大阪府東大阪市小若江4-12-18",
+        "fee": "参加費 200円",
+        "capacity": "32人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1174/1/22056/20260628/1822084",
+        "is_full": false,
+        "source": {
+          "event_type": 4,
+          "csp_flg": 0,
+          "event_holding_id": 1056028,
+          "shop_id": 22056,
+          "date_id": 1822084
+        }
+      }
+    ],
+    "open_league": [
+      {
+        "id": 1824748,
+        "datetime": "10:30 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（ジュニアリーグ）",
+        "venue": "ドラゴンスター日本橋3号店",
+        "address": "大阪府大阪市浪速区敷津東2-1-5",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1182/1/14773/20260628/1824748",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1054903,
+          "shop_id": 14773,
+          "date_id": 1824748
+        }
+      },
+      {
+        "id": 1824749,
+        "datetime": "10:30 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（シニアリーグ）",
+        "venue": "ドラゴンスター日本橋3号店",
+        "address": "大阪府大阪市浪速区敷津東2-1-5",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1181/1/14773/20260628/1824749",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1054906,
+          "shop_id": 14773,
+          "date_id": 1824749
+        }
+      },
+      {
+        "id": 1826122,
+        "datetime": "11:00 ～ 13:00",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（ジュニアリーグ）",
+        "venue": "カードショップJoe",
+        "address": "大阪府守口市大枝西町17-15",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1182/1/18397/20260628/1826122",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055023,
+          "shop_id": 18397,
+          "date_id": 1826122
+        }
+      },
+      {
+        "id": 1842344,
+        "datetime": "11:00 ～ 16:00",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "GIRAFULLなんば店",
+        "address": "大阪府大阪市中央区難波千日前13-13 難波KHビル",
+        "fee": "参加費 500円",
+        "capacity": "64人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/19850/20260628/1842344",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055054,
+          "shop_id": 19850,
+          "date_id": 1842344
+        }
+      },
+      {
+        "id": 1846269,
+        "datetime": "13:00 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "カードショップONIGIRI",
+        "address": "大阪府堺市堺区戎島町2丁53-1 キッコービル204",
+        "fee": "参加費 100円",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/20760/20260628/1846269",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055151,
+          "shop_id": 20760,
+          "date_id": 1846269
+        }
+      },
+      {
+        "id": 1846194,
+        "datetime": "13:00 ～ 15:00",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（マスターリーグ）",
+        "venue": "Speak easy",
+        "address": "大阪府大阪市浪速区難波中1-16-11 レック難波503",
+        "fee": "参加費 300円",
+        "capacity": "8人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1175/1/20821/20260628/1846194",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055231,
+          "shop_id": 20821,
+          "date_id": 1846194
+        }
+      },
+      {
+        "id": 1825309,
+        "datetime": "14:00 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "ドラゴンスター泉佐野店",
+        "address": "大阪府泉佐野市市場西3丁目7番15号",
+        "fee": "参加費 無料",
+        "capacity": "32人",
+        "travel_time": 45,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/11021/20260628/1825309",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055325,
+          "shop_id": 11021,
+          "date_id": 1825309
+        }
+      },
+      {
+        "id": 1839556,
+        "datetime": "14:00 ～ 15:30",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "カードプラン ジュークボックス",
+        "address": "大阪府堺市北区長曽根町735－3 新金岡ビル3F",
+        "fee": "参加費 100円(小学生無料)",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/13021/20260628/1839556",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055384,
+          "shop_id": 13021,
+          "date_id": 1839556
+        }
+      },
+      {
+        "id": 1837743,
+        "datetime": "15:00 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "古本市場 寝屋川店",
+        "address": "大阪府寝屋川市仁和寺町32-28",
+        "fee": "参加費 無料",
+        "capacity": "8人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/18201/20260628/1837743",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055515,
+          "shop_id": 18201,
+          "date_id": 1837743
+        }
+      },
+      {
+        "id": 1839743,
+        "datetime": "15:30 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "エディオン 堺店",
+        "address": "大阪府堺市堺区戎島町3-22-1",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/11005/20260628/1839743",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055653,
+          "shop_id": 11005,
+          "date_id": 1839743
+        }
+      },
+      {
+        "id": 1838323,
+        "datetime": "16:00 ～",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（マスターリーグ）",
+        "venue": "TOY COMP 茨木店",
+        "address": "大阪府茨木市双葉町6丁目1番 暁ビル2F",
+        "fee": "参加費 無料",
+        "capacity": "16人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1175/1/10946/20260628/1838323",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055693,
+          "shop_id": 10946,
+          "date_id": 1838323
+        }
+      },
+      {
+        "id": 1828789,
+        "datetime": "16:30 ～ 18:00",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "古本市場 くずは店",
+        "address": "大阪府枚方市船橋本町2-56",
+        "fee": "参加費 無料",
+        "capacity": "8人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1176/1/10968/20260628/1828789",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055773,
+          "shop_id": 10968,
+          "date_id": 1828789
+        }
+      },
+      {
+        "id": 1844351,
+        "datetime": "18:00 ～ 21:00",
+        "name": "【26/6】ポケモンカードジム トレーナーズリーグ（マスターリーグ）",
+        "venue": "カードショップきりん 大阪天満橋店",
+        "address": "大阪府大阪市中央区天満橋京町2-15 ８階Ｂ室",
+        "fee": "参加費 300円",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1175/1/22032/20260628/1844351",
+        "is_full": false,
+        "source": {
+          "event_type": 3,
+          "csp_flg": 1,
+          "event_holding_id": 1055946,
+          "shop_id": 22032,
+          "date_id": 1844351
+        }
+      }
+    ],
+    "friend_battle": [],
+    "self_event": [
+      {
+        "id": 1819186,
+        "datetime": "10:00 ～ 19:00",
+        "name": "KJCS",
+        "venue": "だもん",
+        "address": "大阪府高槻市天神町１丁目１－１０ 2F",
+        "fee": "参加費 1000円",
+        "capacity": "128人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1168/1/19427/20260628/1819186",
+        "is_full": false,
+        "source": {
+          "event_type": 6,
+          "csp_flg": 0,
+          "event_holding_id": 1032917,
+          "shop_id": 19427,
+          "date_id": 1819186
+        }
+      },
+      {
+        "id": 1819684,
+        "datetime": "10:30 ～ 12:00",
+        "name": "ポケモンカードゲーム教室 in ポケモンカードプレイスポット（事前予約枠分・小学生以下）",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "4人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/692/1/20931/20260628/1819684",
+        "is_full": false,
+        "source": {
+          "event_type": 7,
+          "csp_flg": 0,
+          "event_holding_id": 1033648,
+          "shop_id": 20931,
+          "date_id": 1819684
+        }
+      },
+      {
+        "id": 1835122,
+        "datetime": "10:30 ～ 12:30",
+        "name": "パック争奪戦",
+        "venue": "ぽとふ",
+        "address": "大阪府大阪市中央区天満橋京町2ー15ー8B",
+        "fee": "参加費 300円",
+        "capacity": "16人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1167/1/20523/20260628/1835122",
+        "is_full": false,
+        "source": {
+          "event_type": 6,
+          "csp_flg": 0,
+          "event_holding_id": 1033138,
+          "shop_id": 20523,
+          "date_id": 1835122
+        }
+      },
+      {
+        "id": 1819815,
+        "datetime": "12:30 ～ 15:00",
+        "name": "「スタートデッキ100 バトルコレクション」お試しバトル in プレイスポット【購入可能/小学生以下版】",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料 ※デッキ購入時：1個891円（税込）、デッキレンタル時：1個につき100円（税込）",
+        "capacity": "8人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/990/1/20931/20260628/1819815",
+        "is_full": true,
+        "source": {
+          "event_type": 7,
+          "csp_flg": 0,
+          "event_holding_id": 1033707,
+          "shop_id": 20931,
+          "date_id": 1819815
+        }
+      },
+      {
+        "id": 1832335,
+        "datetime": "13:00 ～ 17:00",
+        "name": "ニンニンGLCレギュBOX争奪戦",
+        "venue": "テイーガ",
+        "address": "大阪府大阪市浪速区日本橋西１丁目２−２５ 2F",
+        "fee": "参加費 500円",
+        "capacity": "32人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1168/1/13619/20260628/1832335",
+        "is_full": false,
+        "source": {
+          "event_type": 6,
+          "csp_flg": 0,
+          "event_holding_id": 1032703,
+          "shop_id": 13619,
+          "date_id": 1832335
+        }
+      },
+      {
+        "id": 1835727,
+        "datetime": "14:00 ～ 16:00",
+        "name": "カジュアルバトル",
+        "venue": "はやお",
+        "address": "大阪府大阪市浪速区日本橋4-9-22リファインビル4階",
+        "fee": "参加費 500円",
+        "capacity": "24人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1167/1/12028/20260628/1835727",
+        "is_full": false,
+        "source": {
+          "event_type": 6,
+          "csp_flg": 0,
+          "event_holding_id": 1032705,
+          "shop_id": 12028,
+          "date_id": 1835727
+        }
+      },
+      {
+        "id": 1792524,
+        "datetime": "14:00 ～ 18:30",
+        "name": "第２１回GO!GO!リーグ",
+        "venue": "とも",
+        "address": "大阪府茨木市駅前４丁目6-16",
+        "fee": "参加費 800円",
+        "capacity": "40人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/1168/1/19376/20260628/1792524",
+        "is_full": false,
+        "source": {
+          "event_type": 6,
+          "csp_flg": 0,
+          "event_holding_id": 1033389,
+          "shop_id": 19376,
+          "date_id": 1792524
+        }
+      },
+      {
+        "id": 1819692,
+        "datetime": "15:30 ～ 17:00",
+        "name": "ポケモンカードゲーム教室 in ポケモンカードプレイスポット（事前予約枠分・小学生以下）",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "4人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/692/1/20931/20260628/1819692",
+        "is_full": false,
+        "source": {
+          "event_type": 7,
+          "csp_flg": 0,
+          "event_holding_id": 1033649,
+          "shop_id": 20931,
+          "date_id": 1819692
+        }
+      },
+      {
+        "id": 1819700,
+        "datetime": "17:15 ～ 18:45",
+        "name": "ポケモンカードゲーム教室 in ポケモンカードプレイスポット（事前予約枠分・小学生以下）",
+        "venue": "ポケモンカードプレイスポット in ドラゴンスターくずはモール",
+        "address": "大阪府枚方市楠葉花園町10-85 くずはモール南館2F",
+        "fee": "参加費 無料",
+        "capacity": "4人",
+        "travel_time": 30,
+        "url": "https://players.pokemon-card.com/event/detail/692/1/20931/20260628/1819700",
+        "is_full": false,
+        "source": {
+          "event_type": 7,
+          "csp_flg": 0,
+          "event_holding_id": 1033650,
+          "shop_id": 20931,
+          "date_id": 1819700
+        }
+      }
+    ]
+  },
+  "plans": [
+    {
+      "id": "competitive-day",
+      "name": "午前からCSP/大型狙い",
+      "subtitle": "朝の競技寄りイベントを軸に、昼以降のジムバトルへつなぐ",
+      "rating": 5,
+      "steps": [
+        {
+          "time": "10:30 ～",
+          "event": "【26/6】ポケモンカードジム トレーナーズリーグ（ジュニアリーグ）",
+          "venue": "ドラゴンスター日本橋3号店",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1182/1/14773/20260628/1824748"
+        },
+        {
+          "time": "12:00 ～ 13:30",
+          "event": "【26/6】ポケモンカードジム ジムバトル",
+          "venue": "ALANN 日本橋",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1174/1/12789/20260628/1827880"
+        }
+      ],
+      "merit": "CSP対象や大型寄りの予定を先に押さえ、午後に通常対戦を足せる。"
+    },
+    {
+      "id": "afternoon-evening",
+      "name": "午後から夜まで対戦",
+      "subtitle": "昼過ぎ開始で移動負担を抑え、夜枠まで候補を残す",
+      "rating": 4,
+      "steps": [
+        {
+          "time": "12:00 ～ 13:30",
+          "event": "【26/6】ポケモンカードジム ジムバトル",
+          "venue": "ALANN 日本橋",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1174/1/12789/20260628/1827880"
+        },
+        {
+          "time": "17:00 ～",
+          "event": "【26/6】ポケモンカードジム ジムバトル",
+          "venue": "トイコンプ 住道店",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1174/1/10972/20260628/1829921"
+        }
+      ],
+      "merit": "午前を空けつつ、1日2本の対戦機会を作れる。"
+    },
+    {
+      "id": "casual-entry",
+      "name": "カジュアル参加優先",
+      "subtitle": "無料/初心者寄りの候補から無理なく参加する",
+      "rating": 4,
+      "steps": [
+        {
+          "time": "10:00 ～",
+          "event": "【26/6】ポケモンカードジム ジムバトル",
+          "venue": "トイコンプ岸和田店",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1174/1/11016/20260628/1830151"
+        }
+      ],
+      "merit": "初参加や軽めの対戦でも選びやすい。"
+    },
+    {
+      "id": "central-access",
+      "name": "大阪市内アクセス重視",
+      "subtitle": "梅田/難波/日本橋周辺を優先して移動時間を短くする",
+      "rating": 4,
+      "steps": [
+        {
+          "time": "10:30 ～ 12:30",
+          "event": "ポケモンカードゲーム教室 2026年6月開催分（当日先着枠）",
+          "venue": "ポケモンセンターオーサカDX",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1171/1/14160/20260628/1847775"
+        }
+      ],
+      "merit": "交通の選択肢が多く、予定変更にも強い。"
+    }
+  ],
+  "notes": [
+    "ブラウザでPlayers Club検索画面を開き、同画面のevent_search JSONから収集。",
+    "travel_timeは住所からの粗い目安で、実移動時間は各自で確認してください。",
+    "満席/受付状況は変動するため、参加前にPlayers Club詳細ページを確認してください。"
+  ]
+}

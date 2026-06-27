@@ -5,7 +5,7 @@
 JSONデータからGitHub Pages用のHTMLページを生成する。
 
 使用方法:
-  python3 generate_page.py /path/to/pokeca_event_MMDD.json [--plans /path/to/plans.json]
+  python3 generate_page.py /path/to/pokeca_event_MMDD.json [--output /path/to/index.html]
 
 入力JSON形式:
   {
@@ -29,9 +29,10 @@ JSONデータからGitHub Pages用のHTMLページを生成する。
   }
 """
 
+import argparse
 import json
-import sys
 import os
+import re
 
 CATEGORY_CONFIG = {
     "gym_battle": {
@@ -54,6 +55,15 @@ CATEGORY_CONFIG = {
         "color": "#7c3aed",
         "icon": "&#127919;"
     }
+}
+
+AREA_IDS = {
+    "大阪府": "osaka",
+    "京都府": "kyoto",
+    "兵庫県": "hyogo",
+    "奈良県": "nara",
+    "滋賀県": "shiga",
+    "和歌山県": "wakayama",
 }
 
 
@@ -106,7 +116,6 @@ def detect_tags(event, category):
         tags.append("full")
 
     # 大型大会
-    import re
     cap_match = re.search(r"(\d+)", cap_str)
     if cap_match and int(cap_match.group(1)) >= 64:
         tags.append("large")
@@ -149,25 +158,46 @@ def generate_html(data):
     data_json = json.dumps(data, ensure_ascii=False, indent=2)
 
     # const DATA = { ... }; の部分を置換
-    import re
     pattern = r"const DATA = \{[\s\S]*?\n\};"
     replacement = f"const DATA = {data_json};"
-    new_html = re.sub(pattern, replacement, template)
+    new_html, replace_count = re.subn(pattern, replacement, template)
+    if replace_count != 1:
+        raise ValueError("index.html template must contain exactly one `const DATA = ...;` block")
 
     # titleも更新
-    meta = data.get("meta", {})
-    new_title = f"ポケカ イベント {meta.get('targetDate', '')}（{meta.get('targetDay', '')}）{meta.get('area', '')}"
+    first_date = data.get("dates", [{}])[0]
+    first_area_id = next(iter(first_date.get("areaData", {}) or {}), "")
+    area_name = next(
+        (area.get("name", "") for area in data.get("areas", []) if area.get("id") == first_area_id),
+        "",
+    )
+    new_title = f"ポケカ イベント {first_date.get('date', '')}（{first_date.get('day', '')}）{area_name}"
     new_html = re.sub(r"<title>.*?</title>", f"<title>{new_title}</title>", new_html)
 
     return new_html
 
 
-def main():
-    if len(sys.argv) < 2:
-        print("使用方法: python3 generate_page.py <events.json>", file=sys.stderr)
-        sys.exit(1)
+def area_id_for(area):
+    if area in AREA_IDS:
+        return AREA_IDS[area]
+    normalized = re.sub(r"[^0-9A-Za-z]+", "-", area).strip("-").lower()
+    return normalized or "area"
 
-    json_path = sys.argv[1]
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="ポケカイベントJSONからGitHub Pages用HTMLを生成する")
+    parser.add_argument("events_json", help="イベント収集・行動プラン生成済みJSON")
+    parser.add_argument(
+        "--output",
+        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "index.html"),
+        help="生成先HTML。既定値: リポジトリ直下のindex.html",
+    )
+    return parser.parse_args()
+
+
+def main():
+    args = parse_args()
+    json_path = args.events_json
 
     with open(json_path, "r", encoding="utf-8") as f:
         raw_data = json.load(f)
@@ -179,26 +209,42 @@ def main():
 
     filtered_count = sum(len(c["events"]) for c in categories)
 
-    page_data = {
-        "meta": {
-            "reportDate": f"{meta.get('report_date', '')}（{meta.get('report_day', '')}）",
-            "targetDate": meta.get("target_date", ""),
-            "targetDay": meta.get("target_day", "日"),
-            "area": meta.get("area", "大阪府"),
-            "searchUrl": meta.get("search_url", "https://players.pokemon-card.com/event/search"),
-            "totalEvents": meta.get("total_events", 0),
-            "filteredCount": filtered_count,
-            "criteria": meta.get("criteria", "")
-        },
+    area = meta.get("area", "大阪府")
+    target_date = meta.get("target_date", "")
+    target_day = meta.get("target_day", "日")
+    area_id = area_id_for(area)
+    area_data = {
+        "totalEvents": meta.get("total_events", 0),
+        "filteredCount": filtered_count,
+        "criteria": meta.get("criteria", ""),
         "categories": categories,
         "plans": raw_data.get("plans", []),
-        "notes": raw_data.get("notes", [])
+        "notes": raw_data.get("notes", []),
+    }
+
+    page_data = {
+        "meta": {
+            "region": meta.get("region", area),
+            "searchUrl": meta.get("search_url", "https://players.pokemon-card.com/event/search"),
+            "reportDate": f"{meta.get('report_date', '')}（{meta.get('report_day', '')}）",
+        },
+        "areas": [{"id": area_id, "name": area}],
+        "dates": [
+            {
+                "date": target_date,
+                "day": target_day,
+                "areaData": {
+                    area_id: area_data,
+                },
+            }
+        ],
     }
 
     html = generate_html(page_data)
 
     # 出力
-    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "index.html")
+    output_path = os.path.abspath(args.output)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pokeca Site Generate"
+  short_description: "Generate and validate the poke-events site."
+  default_prompt: "Use $pokeca-site-generate to generate index.html from the provided event JSON."
