@@ -3,6 +3,7 @@
 
 import argparse
 import json
+import re
 import sys
 from datetime import date, datetime
 
@@ -12,6 +13,23 @@ REQUIRED_META = ("report_date", "target_date", "area")
 REQUIRED_EVENT_FIELDS = ("datetime", "name", "venue", "address")
 REQUIRED_PLAN_FIELDS = ("id", "name", "subtitle", "rating", "steps", "merit")
 REQUIRED_STEP_FIELDS = ("time", "event", "venue", "area")
+FAVORITE_SHOPS = (
+    "おじゃま館蒲生店",
+    "あっぷる 今福店",
+    "カードショップきりん 大阪天満橋店",
+    "トレカWIN",
+)
+GIRAFULL_NAMBA_PATTERNS = ("GIRAFULLなんば", "ジラフルなんば")
+GIRAFULL_NAMBA_X_URL = "https://x.com/GIRAFULL_Namba"
+REQUIRED_GIRAFULL_X_FIELDS = (
+    "account_url",
+    "schedule_post_url",
+    "schedule_month",
+    "target_date",
+    "floor",
+    "label_color",
+    "summary",
+)
 
 
 def _is_non_empty_string(value):
@@ -27,6 +45,133 @@ def _parse_yyyy_mm_dd(value):
         except ValueError:
             pass
     return None
+
+
+def _parse_schedule_month(value):
+    if not isinstance(value, str):
+        return None
+    normalized = value.strip()
+    match = re.fullmatch(r"(\d{4})[-/](\d{1,2})", normalized)
+    if match:
+        return int(match.group(1)), int(match.group(2))
+    match = re.fullmatch(r"(\d{4})年\s*(\d{1,2})月", normalized)
+    if match:
+        return int(match.group(1)), int(match.group(2))
+    return None
+
+
+def _is_girafull_x_post_url(value):
+    if not isinstance(value, str):
+        return False
+    return value.startswith("https://x.com/GIRAFULL_Namba/status/")
+
+
+def _normalize_text(value):
+    return re.sub(r"\s+", "", str(value or "").replace("　", " "))
+
+
+def _matches_any(value, patterns):
+    normalized = _normalize_text(value)
+    return any(_normalize_text(pattern) in normalized for pattern in patterns)
+
+
+def _flatten_events(events):
+    flattened = []
+    for category in EVENT_CATEGORIES:
+        category_events = events.get(category, [])
+        if isinstance(category_events, list):
+            flattened.extend(event for event in category_events if isinstance(event, dict))
+    return flattened
+
+
+def _plan_uses_venue(plans, patterns):
+    for plan in plans:
+        if not isinstance(plan, dict):
+            continue
+        for step in plan.get("steps", []):
+            if isinstance(step, dict) and _matches_any(step.get("venue", ""), patterns):
+                return True
+    return False
+
+
+def _validate_favorite_shop_filters(data, events, errors):
+    meta = data.get("meta")
+    area = str(meta.get("area", "")) if isinstance(meta, dict) else ""
+    flattened_events = _flatten_events(events)
+    should_require = "大阪" in area or any(
+        _matches_any(event.get("venue", ""), FAVORITE_SHOPS) for event in flattened_events
+    )
+    if not should_require:
+        return
+
+    filters = data.get("favorite_shop_filters")
+    if not isinstance(filters, list):
+        errors.append("favorite_shop_filters must be a list for Osaka event generation")
+        return
+
+    entries_by_venue = {}
+    for idx, entry in enumerate(filters, start=1):
+        if not isinstance(entry, dict):
+            errors.append(f"favorite_shop_filters[{idx}] must be an object")
+            continue
+        venue = entry.get("venue")
+        if not _is_non_empty_string(venue):
+            errors.append(f"favorite_shop_filters[{idx}].venue is required")
+            continue
+        entries_by_venue[_normalize_text(venue)] = entry
+        if not _is_non_empty_string(entry.get("filter_conditions")):
+            errors.append(f"favorite_shop_filters[{idx}].filter_conditions is required")
+        if not (
+            _is_non_empty_string(entry.get("capacity"))
+            or _is_non_empty_string(entry.get("capacity_summary"))
+            or _is_non_empty_string(entry.get("participant_count"))
+        ):
+            errors.append(f"favorite_shop_filters[{idx}] must include capacity, capacity_summary, or participant_count")
+
+    for shop in FAVORITE_SHOPS:
+        entry = entries_by_venue.get(_normalize_text(shop))
+        if entry is None:
+            errors.append(f"favorite_shop_filters must include {shop}")
+
+
+def _validate_girafull_namba_x_check(data, events, plans, target_date, errors, warnings):
+    flattened_events = _flatten_events(events)
+    has_girafull_event = any(
+        _matches_any(event.get("venue", ""), GIRAFULL_NAMBA_PATTERNS) for event in flattened_events
+    )
+    has_girafull_plan = _plan_uses_venue(plans, GIRAFULL_NAMBA_PATTERNS)
+    if not has_girafull_event and not has_girafull_plan:
+        return
+
+    venue_checks = data.get("venue_checks")
+    if not isinstance(venue_checks, dict):
+        errors.append("venue_checks.girafull_namba_x is required when events or plans include GIRAFULLなんば")
+        return
+
+    check = venue_checks.get("girafull_namba_x")
+    if not isinstance(check, dict):
+        errors.append("venue_checks.girafull_namba_x must be an object when events or plans include GIRAFULLなんば")
+        return
+
+    for field in REQUIRED_GIRAFULL_X_FIELDS:
+        if not _is_non_empty_string(check.get(field)):
+            errors.append(f"venue_checks.girafull_namba_x.{field} is required")
+    if check.get("account_url") != GIRAFULL_NAMBA_X_URL:
+        errors.append(f"venue_checks.girafull_namba_x.account_url must be {GIRAFULL_NAMBA_X_URL}")
+    if check.get("schedule_post_url") and not _is_girafull_x_post_url(check.get("schedule_post_url")):
+        errors.append("venue_checks.girafull_namba_x.schedule_post_url must be a GIRAFULL_Namba X status URL")
+
+    check_target_date = _parse_yyyy_mm_dd(check.get("target_date"))
+    if check.get("target_date") and check_target_date is None:
+        errors.append("venue_checks.girafull_namba_x.target_date must be YYYY/MM/DD or YYYY-MM-DD")
+    elif target_date and check_target_date and check_target_date != target_date:
+        errors.append("venue_checks.girafull_namba_x.target_date must match meta.target_date")
+
+    schedule_month = _parse_schedule_month(check.get("schedule_month"))
+    if check.get("schedule_month") and schedule_month is None:
+        errors.append("venue_checks.girafull_namba_x.schedule_month must be YYYY-MM, YYYY/MM, or YYYY年M月")
+    elif target_date and schedule_month and schedule_month != (target_date.year, target_date.month):
+        errors.append("venue_checks.girafull_namba_x.schedule_month must match meta.target_date month")
 
 
 def validate(data, require_future_target=False):
@@ -122,6 +267,9 @@ def validate(data, require_future_target=False):
     notes = data.get("notes", [])
     if notes is not None and not isinstance(notes, list):
         errors.append("notes must be a list when present")
+
+    _validate_favorite_shop_filters(data, events, errors)
+    _validate_girafull_namba_x_check(data, events, plans, target_date, errors, warnings)
 
     return errors, warnings, total_events, len(plans)
 

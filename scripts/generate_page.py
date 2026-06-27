@@ -145,6 +145,47 @@ def detect_tags(event, category):
     return tags
 
 
+def build_context_notes(raw_data):
+    """構造化された確認結果をサイトの注意事項へ追加する。"""
+    notes = []
+
+    favorite_filters = raw_data.get("favorite_shop_filters", [])
+    if isinstance(favorite_filters, list) and favorite_filters:
+        for item in favorite_filters:
+            if not isinstance(item, dict):
+                continue
+            venue = item.get("venue", "")
+            capacity = item.get("capacity_summary") or item.get("capacity", "")
+            conditions = item.get("filter_conditions", "")
+            if venue and conditions:
+                detail = f"{venue}"
+                if capacity:
+                    detail += f"（{capacity}）"
+                detail += f": {conditions}"
+                notes.append("お気に入り店舗フィルター: " + detail)
+
+    venue_checks = raw_data.get("venue_checks", {})
+    girafull_check = venue_checks.get("girafull_namba_x") if isinstance(venue_checks, dict) else None
+    if isinstance(girafull_check, dict):
+        floor = girafull_check.get("floor", "")
+        label_color = girafull_check.get("label_color", "")
+        summary = girafull_check.get("summary", "")
+        post_url = girafull_check.get("schedule_post_url", "")
+        pieces = []
+        if floor:
+            pieces.append(f"フロア: {floor}")
+        if label_color:
+            pieces.append(f"ラベル色: {label_color}")
+        if summary:
+            pieces.append(summary)
+        if post_url:
+            pieces.append(f"確認ポスト: {post_url}")
+        if pieces:
+            notes.append("GIRAFULLなんば Xスケジュール確認: " + " / ".join(pieces))
+
+    return notes
+
+
 def generate_html(data):
     """データからHTML文字列を生成"""
     # index.htmlのテンプレートを読み込み、DATAを置換
@@ -213,13 +254,15 @@ def main():
     target_date = meta.get("target_date", "")
     target_day = meta.get("target_day", "日")
     area_id = area_id_for(area)
+    notes = list(raw_data.get("notes", []) or [])
+    notes.extend(build_context_notes(raw_data))
     area_data = {
         "totalEvents": meta.get("total_events", 0),
         "filteredCount": filtered_count,
         "criteria": meta.get("criteria", ""),
         "categories": categories,
         "plans": raw_data.get("plans", []),
-        "notes": raw_data.get("notes", []),
+        "notes": notes,
     }
 
     page_data = {

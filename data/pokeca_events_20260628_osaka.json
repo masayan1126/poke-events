@@ -1870,5 +1870,42 @@
     "ブラウザでPlayers Club検索画面を開き、同画面のevent_search JSONから収集。",
     "travel_timeは住所からの粗い目安で、実移動時間は各自で確認してください。",
     "満席/受付状況は変動するため、参加前にPlayers Club詳細ページを確認してください。"
-  ]
+  ],
+  "favorite_shop_filters": [
+    {
+      "venue": "おじゃま館蒲生店",
+      "status": "included",
+      "capacity": "16人",
+      "filter_conditions": "お気に入り店舗として候補に残し、16人枠、13:00開始、満席ではないこと、移動時間を確認。"
+    },
+    {
+      "venue": "あっぷる 今福店",
+      "status": "included",
+      "capacity": "32人",
+      "filter_conditions": "お気に入り店舗として候補に残し、32人枠、15:00開始、満席ではないこと、移動時間を確認。"
+    },
+    {
+      "venue": "カードショップきりん 大阪天満橋店",
+      "status": "included",
+      "capacity_summary": "各16人",
+      "filter_conditions": "お気に入り店舗として候補に残し、13:00/15:30のジムバトルと18:00のトレーナーズリーグ、各16人枠、満席ではないことを確認。"
+    },
+    {
+      "venue": "トレカWIN",
+      "status": "included",
+      "capacity": "8人",
+      "filter_conditions": "お気に入り店舗として候補に残し、8人枠、16:00開始、満席ではないこと、移動時間を確認。"
+    }
+  ],
+  "venue_checks": {
+    "girafull_namba_x": {
+      "account_url": "https://x.com/GIRAFULL_Namba",
+      "schedule_post_url": "https://x.com/GIRAFULL_Namba/status/2066788664383029249",
+      "schedule_month": "2026-06",
+      "target_date": "2026/06/28",
+      "floor": "5F",
+      "label_color": "黄色（PK: ポケモン）",
+      "summary": "6/28のX添付スケジュール画像では、GIRAFULLなんば店のポケカ行は11:00のPK行と16:30のPK ジムバトル行があり、どちらも5F・黄色ラベル。Players Club候補の11:00トレーナーズリーグと16:30ジムバトルはこのPK枠として扱う。"
+    }
+  }
 }
