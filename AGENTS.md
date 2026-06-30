@@ -24,6 +24,8 @@ This repository publishes a static GitHub Pages site for Pokemon Card event reco
 - Each plan must include `id`, `name`, `subtitle`, `rating`, `steps`, and `merit`.
 - Each plan step must include `time`, `event`, `venue`, and `area`; include `url` when a Players Club detail URL is available.
 - When any candidate event or recommended plan uses GIRAFULLなんば店, check https://x.com/GIRAFULL_Namba for the target month's event schedule post, inspect the attached schedule image carefully, and record the target day's floor and label color in `venue_checks.girafull_namba_x`.
+  - Do not give up after a text-only X page check. Open the X profile or status URL in the browser, inspect visible media, extract the `pbs.twimg.com/media/...` image URL when present, request the original-size image (`name=orig`), and crop/zoom the target date row before deciding whether the schedule is unreadable.
+  - Known proof point: the 2026/06 schedule image was readable this way; the 2026/06/28 row showed PK entries at 11:00（トレリ教室, 5F, 64人, 参加費500）and 16:30（ジムバトル, 5F, 64人）.
 - For the favorite shops `おじゃま館蒲生店`, `あっぷる 今福店`, `カードショップきりん 大阪天満橋店`, and `トレカWIN`, include `favorite_shop_filters` entries that state capacity/participant-count conditions and other filter criteria such as time, availability, and travel burden.
 - Keep `.github/workflows/deploy.yml` as the deployment surface. The generation automation should update site files, not bypass GitHub Pages.
 - For site reflection, use the GitHub Pages workflow by pushing the validated commit; do not use any separate deployment path.

@@ -50,6 +50,8 @@ Required contextual checks:
 - Each favorite shop entry must state the capacity or participant-count condition and the filter criteria used, such as time, availability, fee, category, or travel burden.
 - When candidate events or action plans include GIRAFULLなんば店, include `venue_checks.girafull_namba_x`.
 - `venue_checks.girafull_namba_x` must be based on https://x.com/GIRAFULL_Namba. Check the target month's event schedule post, inspect the attached schedule image carefully because it can be small, and record `account_url`, `schedule_post_url`, `schedule_month`, `target_date`, `floor`, `label_color`, and `summary`.
+- For GIRAFULL X image verification, open the X profile or known status URL in the browser first. If the page exposes `pbs.twimg.com/media/...` images, fetch the original-size image with `name=orig`, then crop/zoom the target date row before deciding whether the schedule can be read. Do not mark the image unverified solely because X search redirects to login.
+- Known proof point: the 2026/06 schedule image was readable from the browser-exposed media URL; for 2026/06/28, the PK rows showed 11:00 トレリ教室 on 5F with 64 people and fee 500, and 16:30 ジムバトル on 5F with 64 people.
 
 ## Commands
 
