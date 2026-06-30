@@ -7,7 +7,9 @@
 3. Run `python3 scripts/generate_site.py <events.json>` from the repository root.
 4. Review the generated `index.html` diff.
 5. If the user asked to run this automation, continue through site reflection without pausing: stage explicit changed files, commit, and push to `main`.
-6. Report validation results, changed files, commit, and push status.
+6. Wait for the GitHub Pages workflow to finish.
+7. Open `https://masayan1126.github.io/poke-events/` in the browser and verify the live rendered page. Confirm the target date/area is selected, event cards are visible, 3-4 plan cards are visible, and there are no blocking JavaScript console errors.
+8. Report validation results, changed files, commit, push status, Pages status, and browser verification status.
 
 Stop before commit/push only when the user explicitly says review only, do not publish, do not push, or dry run.
 Why: The user approved this automation to run nonstop through site reflection, and GitHub Pages publication is triggered by the existing workflow on `main`.
@@ -86,6 +88,7 @@ Adjust the staged paths to the actual changed files. Do not use `git add .` for 
 - `plans` has 3-4 items.
 - `index.html` has exactly one `const DATA = ...;` block.
 - `DATA.areas` and `DATA.dates[].areaData` exist because the current UI depends on them.
+- The browser-rendered live page opens after Pages deploy and shows event cards plus 3-4 action plan cards without blocking console errors.
 - The generated title includes the target date and area.
 - Event counts are plausible for the selected area/date.
 - Players Club detail links are present when available.

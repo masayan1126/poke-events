@@ -14,6 +14,8 @@ This repository publishes a static GitHub Pages site for Pokemon Card event reco
 6. When the user asks to run this automation, continue through site reflection without stopping: stage explicit changed files, commit, and push to `main` so the existing GitHub Pages workflow publishes the site. Stop before commit/push only when the user explicitly says review only, do not publish, do not push, or asks for a dry run.
    - Reason: The user approved this automation to run nonstop through site reflection.
    <!-- added: 2026-06-27 -->
+7. After the GitHub Pages workflow succeeds, open `https://masayan1126.github.io/poke-events/` in the browser and verify the rendered page, not only the HTML source. Confirm there are no console errors and that the page shows event cards and 3-4 plan cards for the target date/area before reporting completion.
+   <!-- added: 2026-06-30 -->
 
 ## Hard Gates
 
@@ -25,6 +27,7 @@ This repository publishes a static GitHub Pages site for Pokemon Card event reco
 - For the favorite shops `おじゃま館蒲生店`, `あっぷる 今福店`, `カードショップきりん 大阪天満橋店`, and `トレカWIN`, include `favorite_shop_filters` entries that state capacity/participant-count conditions and other filter criteria such as time, availability, and travel burden.
 - Keep `.github/workflows/deploy.yml` as the deployment surface. The generation automation should update site files, not bypass GitHub Pages.
 - For site reflection, use the GitHub Pages workflow by pushing the validated commit; do not use any separate deployment path.
+- Do not call the automation complete after push alone. The final gate is browser-visible verification of the live GitHub Pages URL, including rendered event cards, rendered action plans, and no blocking JavaScript console errors.
 
 ## Agent Roles
 
