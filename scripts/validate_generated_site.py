@@ -51,7 +51,9 @@ def validate_html(html):
         errors.append("generated title was not updated")
 
     parsed = try_parse_json_data(data_block)
-    if parsed is not None:
+    if parsed is None:
+        errors.append("DATA block is not valid JSON")
+    else:
         dates = parsed.get("dates", [])
         areas = parsed.get("areas", [])
         if not dates:

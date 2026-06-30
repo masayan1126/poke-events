@@ -201,7 +201,7 @@ def generate_html(data):
     # const DATA = { ... }; の部分を置換
     pattern = r"const DATA = \{[\s\S]*?\n\};"
     replacement = f"const DATA = {data_json};"
-    new_html, replace_count = re.subn(pattern, replacement, template)
+    new_html, replace_count = re.subn(pattern, lambda _match: replacement, template)
     if replace_count != 1:
         raise ValueError("index.html template must contain exactly one `const DATA = ...;` block")
 
