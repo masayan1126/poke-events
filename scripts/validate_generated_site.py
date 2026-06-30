@@ -72,6 +72,16 @@ def validate_html(html):
                     errors.append(f"DATA area {area_id} must contain 3 or 4 plans")
                 if not categories:
                     errors.append(f"DATA area {area_id} must contain categories")
+                location_filters = data.get("locationFilters", [])
+                if location_filters:
+                    filter_ids = {item.get("id") for item in location_filters if isinstance(item, dict)}
+                    if "all" not in filter_ids:
+                        errors.append(f"DATA area {area_id} locationFilters must include all")
+                    if "namba-umeda" in filter_ids:
+                        focus_plans = data.get("focusPlans", {})
+                        namba_umeda_plans = focus_plans.get("namba-umeda") if isinstance(focus_plans, dict) else None
+                        if not isinstance(namba_umeda_plans, list) or not namba_umeda_plans:
+                            errors.append(f"DATA area {area_id} must contain namba-umeda focusPlans")
 
     return errors
 

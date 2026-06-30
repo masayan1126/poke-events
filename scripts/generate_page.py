@@ -66,6 +66,31 @@ AREA_IDS = {
     "和歌山県": "wakayama",
 }
 
+LOCATION_FILTERS = [
+    {
+        "id": "all",
+        "name": "全エリア",
+        "description": "掲載候補をすべて表示",
+        "keywords": [],
+    },
+    {
+        "id": "namba-umeda",
+        "name": "なんば・梅田周辺",
+        "description": "なんば、日本橋、梅田、大阪駅、茶屋町周辺だけを表示",
+        "keywords": [
+            "なんば",
+            "難波",
+            "日本橋",
+            "浪速区",
+            "梅田",
+            "大阪駅",
+            "大阪駅前",
+            "茶屋町",
+            "芝田",
+        ],
+    },
+]
+
 
 def build_categories(events_dict):
     """フィルタ済みイベント辞書からカテゴリ配列を構築"""
@@ -281,6 +306,8 @@ def main():
         "criteria": meta.get("criteria", ""),
         "categories": categories,
         "plans": raw_data.get("plans", []),
+        "locationFilters": raw_data.get("location_filters", LOCATION_FILTERS),
+        "focusPlans": raw_data.get("focus_plans", {}),
         "notes": notes,
     }
 

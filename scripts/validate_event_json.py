@@ -207,6 +207,56 @@ def _validate_girafull_namba_x_check(data, events, plans, target_date, errors, w
                 errors.append(f"venue_checks.girafull_namba_x.target_day_events[{idx}].{field} is required")
 
 
+def _validate_plan_object(plan, label, errors, warnings):
+    if not isinstance(plan, dict):
+        errors.append(f"{label} must be an object")
+        return
+
+    for field in REQUIRED_PLAN_FIELDS:
+        if field not in plan:
+            errors.append(f"{label}.{field} is required")
+
+    plan_id = plan.get("id")
+    if plan_id is None or not str(plan_id).strip():
+        errors.append(f"{label}.id is required")
+
+    rating = plan.get("rating")
+    if not isinstance(rating, int) or not 1 <= rating <= 5:
+        errors.append(f"{label}.rating must be an integer from 1 to 5")
+
+    steps = plan.get("steps")
+    if not isinstance(steps, list) or not steps:
+        errors.append(f"{label}.steps must be a non-empty list")
+        return
+
+    for step_idx, step in enumerate(steps, start=1):
+        if not isinstance(step, dict):
+            errors.append(f"{label}.steps[{step_idx}] must be an object")
+            continue
+        for field in REQUIRED_STEP_FIELDS:
+            if not _is_non_empty_string(step.get(field)):
+                errors.append(f"{label}.steps[{step_idx}].{field} is required")
+        if "url" in step and step["url"] and not str(step["url"]).startswith("https://players.pokemon-card.com/event/detail/"):
+            warnings.append(f"{label}.steps[{step_idx}].url does not look like a Players Club event detail URL")
+
+
+def _validate_focus_plans(data, errors, warnings):
+    focus_plans = data.get("focus_plans")
+    if focus_plans is None:
+        return
+    if not isinstance(focus_plans, dict):
+        errors.append("focus_plans must be an object when present")
+        return
+    for focus_id, plans in focus_plans.items():
+        if not isinstance(focus_id, str) or not focus_id.strip():
+            errors.append("focus_plans keys must be non-empty strings")
+        if not isinstance(plans, list) or not plans:
+            errors.append(f"focus_plans.{focus_id} must be a non-empty list")
+            continue
+        for idx, plan in enumerate(plans, start=1):
+            _validate_plan_object(plan, f"focus_plans.{focus_id}[{idx}]", errors, warnings)
+
+
 def validate(data, require_future_target=False):
     errors = []
     warnings = []
@@ -262,45 +312,21 @@ def validate(data, require_future_target=False):
 
     seen_plan_ids = set()
     for idx, plan in enumerate(plans, start=1):
+        _validate_plan_object(plan, f"plans[{idx}]", errors, warnings)
         if not isinstance(plan, dict):
-            errors.append(f"plans[{idx}] must be an object")
             continue
-
-        for field in REQUIRED_PLAN_FIELDS:
-            if field not in plan:
-                errors.append(f"plans[{idx}].{field} is required")
 
         plan_id = plan.get("id")
-        if plan_id is None or not str(plan_id).strip():
-            errors.append(f"plans[{idx}].id is required")
-        elif plan_id in seen_plan_ids:
+        if plan_id and plan_id in seen_plan_ids:
             errors.append(f"plans[{idx}].id duplicates another plan")
-        else:
+        elif plan_id:
             seen_plan_ids.add(plan_id)
-
-        rating = plan.get("rating")
-        if not isinstance(rating, int) or not 1 <= rating <= 5:
-            errors.append(f"plans[{idx}].rating must be an integer from 1 to 5")
-
-        steps = plan.get("steps")
-        if not isinstance(steps, list) or not steps:
-            errors.append(f"plans[{idx}].steps must be a non-empty list")
-            continue
-
-        for step_idx, step in enumerate(steps, start=1):
-            if not isinstance(step, dict):
-                errors.append(f"plans[{idx}].steps[{step_idx}] must be an object")
-                continue
-            for field in REQUIRED_STEP_FIELDS:
-                if not _is_non_empty_string(step.get(field)):
-                    errors.append(f"plans[{idx}].steps[{step_idx}].{field} is required")
-            if "url" in step and step["url"] and not str(step["url"]).startswith("https://players.pokemon-card.com/event/detail/"):
-                warnings.append(f"plans[{idx}].steps[{step_idx}].url does not look like a Players Club event detail URL")
 
     notes = data.get("notes", [])
     if notes is not None and not isinstance(notes, list):
         errors.append("notes must be a list when present")
 
+    _validate_focus_plans(data, errors, warnings)
     _validate_favorite_shop_filters(data, events, errors)
     _validate_girafull_namba_x_check(data, events, plans, target_date, errors, warnings)
 

@@ -103,6 +103,8 @@
     .filter-pill.active { background: var(--active-color, var(--primary)); color: #fff; border-color: var(--active-color, var(--primary)); }
     .filter-pill.active .dot { opacity: 0; width: 0; }
     .filter-pill.active .cnt { background: rgba(255,255,255,0.25); }
+    .filter-pill.location { border-style: solid; }
+    .filter-separator { width: 1px; align-self: stretch; background: var(--border); margin: 4px 2px; flex-shrink: 0; }
 
     /* ===== Content ===== */
     .content { max-width: 1200px; margin: 0 auto; padding: 16px; display: none; }
@@ -1570,6 +1572,94 @@ const DATA = {
               "merit": "昼スタートでも参加しやすく、夜のオープンリーグを選択肢に残せる。"
             }
           ],
+          "locationFilters": [
+            {
+              "id": "all",
+              "name": "全エリア",
+              "description": "掲載候補をすべて表示",
+              "keywords": []
+            },
+            {
+              "id": "namba-umeda",
+              "name": "なんば・梅田周辺",
+              "description": "なんば、日本橋、梅田、大阪駅、茶屋町周辺だけを表示",
+              "keywords": [
+                "なんば",
+                "難波",
+                "日本橋",
+                "浪速区",
+                "梅田",
+                "大阪駅",
+                "大阪駅前",
+                "茶屋町",
+                "芝田"
+              ]
+            }
+          ],
+          "focusPlans": {
+            "namba-umeda": [
+              {
+                "id": "namba-umeda-csp",
+                "name": "なんば昼CSPから梅田夜リーグ",
+                "subtitle": "日本橋・なんばの昼イベントを軸に、夜は梅田NU茶屋町のオープンリーグへ",
+                "rating": 5,
+                "steps": [
+                  {
+                    "time": "11:00 ～ 13:00",
+                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
+                    "venue": "プレイズ　大阪日本橋本店",
+                    "area": "なんば・日本橋",
+                    "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978"
+                  },
+                  {
+                    "time": "13:00 ～ 15:00",
+                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+                    "venue": "Speak easy",
+                    "area": "なんば",
+                    "url": "https://players.pokemon-card.com/event/detail/1213/1/20821/20260705/1875607"
+                  },
+                  {
+                    "time": "18:00 ～ 21:00",
+                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+                    "venue": "トレカショップ竜のしっぽ　梅田NU茶屋町店",
+                    "area": "梅田・茶屋町",
+                    "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260705/1873685"
+                  }
+                ],
+                "merit": "CSP対象を昼と夜に置き、移動先をなんば・梅田周辺に絞れる。"
+              },
+              {
+                "id": "umeda-evening-route",
+                "name": "梅田夕方から参加ルート",
+                "subtitle": "夕方以降だけ動く場合に、大阪駅前第3ビルと梅田の大型枠を優先",
+                "rating": 4,
+                "steps": [
+                  {
+                    "time": "18:00 ～ 21:00",
+                    "event": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
+                    "venue": "トイコンプ　大阪駅前第3ビル店",
+                    "area": "梅田・大阪駅前",
+                    "url": "https://players.pokemon-card.com/event/detail/1217/1/10893/20260705/1876542"
+                  },
+                  {
+                    "time": "18:00 ～ 20:30",
+                    "event": "【26/7】ポケモンカードジム　ジムバトル",
+                    "venue": "トレカショップ竜のしっぽ　大阪梅田店",
+                    "area": "梅田・芝田",
+                    "url": "https://players.pokemon-card.com/event/detail/1210/1/10894/20260705/1849948"
+                  },
+                  {
+                    "time": "18:00 ～ 21:00",
+                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+                    "venue": "トレカショップ竜のしっぽ　梅田NU茶屋町店",
+                    "area": "梅田・茶屋町",
+                    "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260705/1873685"
+                  }
+                ],
+                "merit": "夕方からでも梅田周辺だけで32人規模の候補を比較できる。"
+              }
+            ]
+          },
           "notes": [
             "Players Club APIで2026/07/05の全国1358件を取得し、大阪府97件から開催中止とGIRAFULLなんば店2件を除外して95件を掲載。",
             "GIRAFULLなんば店は対象月のX添付スケジュール画像をこの実行環境から確実に検証できなかったため、AGENTS.mdのハードゲートに従い今回の候補から除外。",
@@ -1595,6 +1685,7 @@ const TAG_CONFIG = {
 let selectedDateIndex = -1;
 let selectedAreaId = null;
 let selectedFilter = 'all';
+let selectedLocationFilter = 'all';
 
 function init() {
   document.getElementById('headerMeta').textContent = DATA.meta.reportDate + ' 時点';
@@ -1634,6 +1725,7 @@ function renderDateChips() {
       selectedDateIndex = parseInt(btn.dataset.idx);
       selectFirstAvailableArea();
       selectedFilter = 'all';
+      selectedLocationFilter = 'all';
       renderDateChips();
       renderAreaChips();
       updateView();
@@ -1657,6 +1749,7 @@ function renderAreaChips() {
     btn.addEventListener('click', () => {
       selectedAreaId = btn.dataset.area;
       selectedFilter = 'all';
+      selectedLocationFilter = 'all';
       renderAreaChips();
       updateView();
     });
@@ -1688,7 +1781,6 @@ function updateView() {
   filterEl.className = 'filter-bar visible';
   contentEl.className = 'content visible';
 
-  document.getElementById('plansSub').textContent = areaName + 'のおすすめプラン';
   renderPlans(data);
   renderFilters(data);
   renderEvents(data);
@@ -1699,8 +1791,13 @@ function updateView() {
 
 function renderPlans(data) {
   const container = document.getElementById('plansContainer');
-  if (!data.plans.length) { container.innerHTML = '<div class="plans-empty">プランはまだありません</div>'; return; }
-  container.innerHTML = data.plans.map((plan, idx) => {
+  const plans = getVisiblePlans(data);
+  const filter = getLocationFilter(data, selectedLocationFilter);
+  document.getElementById('plansSub').textContent = filter && filter.id !== 'all'
+    ? `${filter.name}の専用プラン`
+    : `${DATA.areas.find(a => a.id === selectedAreaId).name}のおすすめプラン`;
+  if (!plans.length) { container.innerHTML = '<div class="plans-empty">プランはまだありません</div>'; return; }
+  container.innerHTML = plans.map((plan, idx) => {
     const stars = '\u2605'.repeat(plan.rating) + '\u2606'.repeat(5 - plan.rating);
     const steps = plan.steps.map(s => s.url
       ? `<a class="plan-step-link" href="${s.url}" target="_blank" rel="noopener"><div class="plan-step-time">${s.time}</div><div class="plan-step-detail"><div class="plan-step-event">${s.event}</div><div class="plan-step-venue">${s.venue}</div><div class="plan-step-meta"><span class="plan-step-area">${s.area}</span><span class="plan-step-arrow">詳細 &#8250;</span></div></div></a>`
@@ -1720,17 +1817,34 @@ function togglePlan(id) { document.getElementById('plan-' + id).classList.toggle
 
 function renderFilters(data) {
   const bar = document.getElementById('filterBar');
-  const total = data.categories.reduce((s, c) => s + c.events.length, 0);
-  let html = `<button class="filter-pill ${selectedFilter==='all'?'active':''}" data-filter="all" style="--active-color:var(--primary)">すべて <span class="cnt">${total}</span></button>`;
+  const locationFilters = getLocationFilters(data);
+  const selectedLocationEvents = countEventsForLocation(data, selectedLocationFilter);
+  let html = locationFilters.map(filter => {
+    const count = countEventsForLocation(data, filter.id).length;
+    const color = filter.id === 'all' ? 'var(--primary)' : '#0f766e';
+    return `<button class="filter-pill location ${selectedLocationFilter===filter.id?'active':''}" data-location-filter="${filter.id}" style="--active-color:${color}" title="${filter.description || filter.name}">${filter.name}<span class="cnt">${count}</span></button>`;
+  }).join('');
+  html += '<span class="filter-separator" aria-hidden="true"></span>';
+  let total = selectedLocationEvents.length;
+  html += `<button class="filter-pill ${selectedFilter==='all'?'active':''}" data-filter="all" style="--active-color:var(--primary)">すべて <span class="cnt">${total}</span></button>`;
   data.categories.forEach(cat => {
-    html += `<button class="filter-pill ${selectedFilter===cat.id?'active':''}" data-filter="${cat.id}" style="--active-color:${cat.color}"><span class="dot" style="background:${cat.color}"></span>${cat.name.split('：').pop().split(' / ')[0]}<span class="cnt">${cat.events.length}</span></button>`;
+    const count = cat.events.filter(ev => matchesLocationFilter(data, ev, selectedLocationFilter)).length;
+    html += `<button class="filter-pill ${selectedFilter===cat.id?'active':''}" data-filter="${cat.id}" style="--active-color:${cat.color}"><span class="dot" style="background:${cat.color}"></span>${cat.name.split('：').pop().split(' / ')[0]}<span class="cnt">${count}</span></button>`;
   });
   bar.innerHTML = html;
-  bar.querySelectorAll('.filter-pill').forEach(btn => {
+  bar.querySelectorAll('[data-location-filter]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      selectedLocationFilter = btn.dataset.locationFilter;
+      selectedFilter = 'all';
+      renderPlans(getSelected());
+      renderFilters(getSelected());
+      renderEvents(getSelected());
+    });
+  });
+  bar.querySelectorAll('[data-filter]').forEach(btn => {
     btn.addEventListener('click', () => {
       selectedFilter = btn.dataset.filter;
-      bar.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      renderFilters(getSelected());
       renderEvents(getSelected());
     });
   });
@@ -1741,15 +1855,45 @@ function renderEvents(data) {
   let html = '';
   data.categories.forEach(cat => {
     if (selectedFilter !== 'all' && selectedFilter !== cat.id) return;
+    const visibleEvents = cat.events.filter(ev => matchesLocationFilter(data, ev, selectedLocationFilter));
+    if (!visibleEvents.length) return;
     const icon = cat.id==='gym_battle'?'&#9876;':cat.id==='open_league'?'&#127942;':cat.id==='friend_battle'?'&#129309;':'&#127919;';
-    html += `<div class="section-divider"><div class="section-icon" style="background:${cat.color}">${icon}</div><div><span class="section-label">${cat.name}</span><span class="section-count">（${cat.events.length}件）</span></div></div><div class="events-grid">`;
-    cat.events.forEach((ev, i) => {
+    html += `<div class="section-divider"><div class="section-icon" style="background:${cat.color}">${icon}</div><div><span class="section-label">${cat.name}</span><span class="section-count">（${visibleEvents.length}件）</span></div></div><div class="events-grid">`;
+    visibleEvents.forEach((ev, i) => {
       const tags = ev.tags.map(t => { const c = TAG_CONFIG[t]; return c ? `<span class="tag ${c.cls}">${c.label}</span>` : ''; }).join('');
       html += `<div class="event-card" style="animation-delay:${i*0.05}s"><div class="category-accent" style="background:${cat.color}"></div><a href="${ev.url||DATA.meta.searchUrl}" target="_blank" rel="noopener"><div class="event-top"><span class="event-time" style="color:${cat.color}">${ev.time}</span><div class="event-tags">${tags}</div></div><div class="event-name">${ev.name}</div><div class="event-venue">${ev.venue}</div><div class="event-address">${ev.address}</div><div class="event-bottom"><span class="meta-item">${ev.fee}</span><span class="meta-item">${ev.capacity}</span><span class="meta-item">${ev.distance}</span><span class="event-link-arrow">詳細 &#8250;</span></div></a></div>`;
     });
     html += '</div>';
   });
   container.innerHTML = html || '<div class="empty"><div class="empty-icon">&#128269;</div><p>イベントデータがありません</p></div>';
+}
+
+function getLocationFilters(data) {
+  return data.locationFilters && data.locationFilters.length
+    ? data.locationFilters
+    : [{ id: 'all', name: '全エリア', description: '', keywords: [] }];
+}
+
+function getLocationFilter(data, id) {
+  return getLocationFilters(data).find(filter => filter.id === id) || getLocationFilters(data)[0];
+}
+
+function matchesLocationFilter(data, ev, filterId) {
+  const filter = getLocationFilter(data, filterId);
+  if (!filter || filter.id === 'all') return true;
+  const keywords = filter.keywords || [];
+  const text = `${ev.venue || ''} ${ev.address || ''} ${ev.name || ''}`;
+  return keywords.some(keyword => text.includes(keyword));
+}
+
+function countEventsForLocation(data, filterId) {
+  return data.categories.flatMap(cat => cat.events).filter(ev => matchesLocationFilter(data, ev, filterId));
+}
+
+function getVisiblePlans(data) {
+  if (selectedLocationFilter === 'all') return data.plans || [];
+  const focusPlans = data.focusPlans || {};
+  return focusPlans[selectedLocationFilter] || data.plans || [];
 }
 
 function renderNotes(data) {
