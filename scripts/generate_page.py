@@ -182,6 +182,25 @@ def build_context_notes(raw_data):
             pieces.append(f"確認ポスト: {post_url}")
         if pieces:
             notes.append("GIRAFULLなんば Xスケジュール確認: " + " / ".join(pieces))
+        target_day_events = girafull_check.get("target_day_events", [])
+        if isinstance(target_day_events, list):
+            event_summaries = []
+            for event in target_day_events:
+                if not isinstance(event, dict):
+                    continue
+                time = event.get("time", "")
+                type_code = event.get("type_code", "")
+                name = event.get("event", "")
+                event_floor = event.get("floor", "")
+                event_color = event.get("label_color", "")
+                capacity = event.get("capacity", "")
+                fee = event.get("fee", "")
+                detail = " ".join(part for part in (time, type_code, name) if part)
+                meta = " / ".join(part for part in (event_floor, event_color, capacity, fee) if part)
+                if detail and meta:
+                    event_summaries.append(f"{detail}（{meta}）")
+            if event_summaries:
+                notes.append("GIRAFULLなんば X対象日イベント: " + "、".join(event_summaries))
 
     return notes
 

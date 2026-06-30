@@ -24,11 +24,22 @@ GIRAFULL_NAMBA_X_URL = "https://x.com/GIRAFULL_Namba"
 REQUIRED_GIRAFULL_X_FIELDS = (
     "account_url",
     "schedule_post_url",
+    "image_url",
     "schedule_month",
     "target_date",
     "floor",
     "label_color",
+    "target_day_events",
     "summary",
+)
+REQUIRED_GIRAFULL_TARGET_EVENT_FIELDS = (
+    "time",
+    "type_code",
+    "event",
+    "floor",
+    "label_color",
+    "capacity",
+    "fee",
 )
 
 
@@ -64,6 +75,12 @@ def _is_girafull_x_post_url(value):
     if not isinstance(value, str):
         return False
     return value.startswith("https://x.com/GIRAFULL_Namba/status/")
+
+
+def _is_girafull_media_url(value):
+    if not isinstance(value, str):
+        return False
+    return value.startswith("https://pbs.twimg.com/media/")
 
 
 def _normalize_text(value):
@@ -154,12 +171,16 @@ def _validate_girafull_namba_x_check(data, events, plans, target_date, errors, w
         return
 
     for field in REQUIRED_GIRAFULL_X_FIELDS:
+        if field == "target_day_events":
+            continue
         if not _is_non_empty_string(check.get(field)):
             errors.append(f"venue_checks.girafull_namba_x.{field} is required")
     if check.get("account_url") != GIRAFULL_NAMBA_X_URL:
         errors.append(f"venue_checks.girafull_namba_x.account_url must be {GIRAFULL_NAMBA_X_URL}")
     if check.get("schedule_post_url") and not _is_girafull_x_post_url(check.get("schedule_post_url")):
         errors.append("venue_checks.girafull_namba_x.schedule_post_url must be a GIRAFULL_Namba X status URL")
+    if check.get("image_url") and not _is_girafull_media_url(check.get("image_url")):
+        errors.append("venue_checks.girafull_namba_x.image_url must be a pbs.twimg.com media URL")
 
     check_target_date = _parse_yyyy_mm_dd(check.get("target_date"))
     if check.get("target_date") and check_target_date is None:
@@ -172,6 +193,18 @@ def _validate_girafull_namba_x_check(data, events, plans, target_date, errors, w
         errors.append("venue_checks.girafull_namba_x.schedule_month must be YYYY-MM, YYYY/MM, or YYYY年M月")
     elif target_date and schedule_month and schedule_month != (target_date.year, target_date.month):
         errors.append("venue_checks.girafull_namba_x.schedule_month must match meta.target_date month")
+
+    target_day_events = check.get("target_day_events")
+    if not isinstance(target_day_events, list) or not target_day_events:
+        errors.append("venue_checks.girafull_namba_x.target_day_events must be a non-empty list")
+        return
+    for idx, event in enumerate(target_day_events, start=1):
+        if not isinstance(event, dict):
+            errors.append(f"venue_checks.girafull_namba_x.target_day_events[{idx}] must be an object")
+            continue
+        for field in REQUIRED_GIRAFULL_TARGET_EVENT_FIELDS:
+            if not _is_non_empty_string(event.get(field)):
+                errors.append(f"venue_checks.girafull_namba_x.target_day_events[{idx}].{field} is required")
 
 
 def validate(data, require_future_target=False):

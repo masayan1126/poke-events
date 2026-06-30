@@ -1905,7 +1905,28 @@
       "target_date": "2026/06/28",
       "floor": "5F",
       "label_color": "黄色（PK: ポケモン）",
-      "summary": "6/28のX添付スケジュール画像では、GIRAFULLなんば店のポケカ行は11:00のPK行と16:30のPK ジムバトル行があり、どちらも5F・黄色ラベル。Players Club候補の11:00トレーナーズリーグと16:30ジムバトルはこのPK枠として扱う。"
+      "summary": "6/28のX添付スケジュール画像では、PK（ポケモン）は黄色ラベル。対象日のPK行は11:00 トレリ教室（5F・64人・500円）と16:30 ジムバトル（5F・64人）で、Players Club候補の11:00トレーナーズリーグと16:30ジムバトルをこのPK枠として扱う。",
+      "image_url": "https://pbs.twimg.com/media/HK6xOPKakAAb-m8?format=jpg&name=orig",
+      "target_day_events": [
+        {
+          "time": "11:00",
+          "type_code": "PK",
+          "event": "トレリ教室",
+          "floor": "5F",
+          "label_color": "黄色（PK: ポケモン）",
+          "capacity": "64人",
+          "fee": "500円"
+        },
+        {
+          "time": "16:30",
+          "type_code": "PK",
+          "event": "ジムバトル",
+          "floor": "5F",
+          "label_color": "黄色（PK: ポケモン）",
+          "capacity": "64人",
+          "fee": "-"
+        }
+      ]
     }
   }
 }
