@@ -1599,9 +1599,19 @@ let selectedFilter = 'all';
 function init() {
   document.getElementById('headerMeta').textContent = DATA.meta.reportDate + ' 時点';
   document.title = 'ポケカ イベントプラン ' + DATA.meta.region;
+  selectedDateIndex = DATA.dates.length ? 0 : -1;
+  selectFirstAvailableArea();
   renderDateChips();
   renderAreaChips();
   renderFooter();
+  updateView();
+}
+
+function selectFirstAvailableArea() {
+  const dateEntry = selectedDateIndex >= 0 ? DATA.dates[selectedDateIndex] : null;
+  if (!dateEntry) { selectedAreaId = null; return; }
+  if (selectedAreaId && dateEntry.areaData[selectedAreaId]) return;
+  selectedAreaId = Object.keys(dateEntry.areaData)[0] || null;
 }
 
 function getSelected() {
@@ -1622,6 +1632,7 @@ function renderDateChips() {
   el.querySelectorAll('.chip').forEach(btn => {
     btn.addEventListener('click', () => {
       selectedDateIndex = parseInt(btn.dataset.idx);
+      selectFirstAvailableArea();
       selectedFilter = 'all';
       renderDateChips();
       renderAreaChips();
