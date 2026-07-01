@@ -21,6 +21,56 @@ def try_parse_json_data(data_block):
         return None
 
 
+def normalize_text(value):
+    return re.sub(r"\s+", "", str(value or "").replace("　", " "))
+
+
+def contains_girafull(value):
+    return "GIRAFULLなんば" in normalize_text(value) or "ジラフルなんば" in normalize_text(value)
+
+
+def collect_values(value):
+    values = []
+    if isinstance(value, dict):
+        for item in value.values():
+            values.extend(collect_values(item))
+    elif isinstance(value, list):
+        for item in value:
+            values.extend(collect_values(item))
+    elif value is not None:
+        values.append(str(value))
+    return values
+
+
+def validate_girafull_notes(area_id, data, errors):
+    candidate_values = []
+    for key in ("categories", "plans", "focusPlans"):
+        candidate_values.extend(collect_values(data.get(key)))
+    if not any(contains_girafull(value) for value in candidate_values):
+        return
+
+    notes = data.get("notes", [])
+    if not isinstance(notes, list):
+        errors.append(f"DATA area {area_id} notes must be a list when GIRAFULL is present")
+        return
+
+    notes_text = "\n".join(str(note) for note in notes)
+    normalized_notes = normalize_text(notes_text)
+    required_patterns = {
+        "GIRAFULL X schedule note": "GIRAFULLなんばXスケジュール確認",
+        "GIRAFULL target-day event note": "GIRAFULLなんばX対象日イベント",
+        "GIRAFULL X status URL": "https://x.com/GIRAFULL_Namba/status/",
+        "GIRAFULL original image URL": "https://pbs.twimg.com/media/",
+        "GIRAFULL label color": "ラベル色",
+        "GIRAFULL event floor": "F",
+        "GIRAFULL event capacity": "人",
+        "GIRAFULL event fee": "参加費",
+    }
+    for label, pattern in required_patterns.items():
+        if normalize_text(pattern) not in normalized_notes:
+            errors.append(f"DATA area {area_id} notes must include {label}")
+
+
 def validate_html(html):
     errors = []
 
@@ -72,6 +122,7 @@ def validate_html(html):
                     errors.append(f"DATA area {area_id} must contain 3 or 4 plans")
                 if not categories:
                     errors.append(f"DATA area {area_id} must contain categories")
+                validate_girafull_notes(area_id, data, errors)
                 location_filters = data.get("locationFilters", [])
                 if location_filters:
                     filter_ids = {item.get("id") for item in location_filters if isinstance(item, dict)}

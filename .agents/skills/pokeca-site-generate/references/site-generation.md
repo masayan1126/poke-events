@@ -10,6 +10,7 @@
 6. Wait for the GitHub Pages workflow to finish.
 7. Open `https://masayan1126.github.io/poke-events/` in the browser and verify the live rendered page. Confirm the target date/area is selected, event cards are visible, 3-4 plan cards are visible, and there are no blocking JavaScript console errors.
 8. Report validation results, changed files, commit, push status, Pages status, and browser verification status.
+9. If GIRAFULLなんば店 is included in candidate events, focus plans, or action plans, include a dedicated GIRAFULL detail block in the final automation result. The block must list `schedule_post_url`, `image_url`, `label_color`, and each `target_day_events` row with `time`, `type_code`, `event`, `floor`, `capacity`, and `fee`.
 
 Stop before commit/push only when the user explicitly says review only, do not publish, do not push, or dry run.
 Why: The user approved this automation to run nonstop through site reflection, and GitHub Pages publication is triggered by the existing workflow on `main`.
@@ -50,7 +51,10 @@ Required contextual checks:
 - Each favorite shop entry must state the capacity or participant-count condition and the filter criteria used, such as time, availability, fee, category, or travel burden.
 - When candidate events or action plans include GIRAFULLなんば店, include `venue_checks.girafull_namba_x`.
 - `venue_checks.girafull_namba_x` must be based on https://x.com/GIRAFULL_Namba. Check the target month's event schedule post, inspect the attached schedule image carefully because it can be small, and record `account_url`, `schedule_post_url`, `image_url`, `schedule_month`, `target_date`, `floor`, `label_color`, `target_day_events`, and `summary`.
-- `target_day_events` must list what was read from the X image for the target date, with `time`, `type_code`, `event`, `floor`, `label_color`, `capacity`, and `fee`. Use this field in the final report so the user can see what X contributed beyond Players Club data.
+- `target_day_events` must list what was read from the X image for the target date, with `time`, `type_code`, `event`, `floor`, `label_color`, `capacity`, and `fee`. Use this field in the generated notes and final report so the user can see what X contributed beyond Players Club data.
+- The generated site must expose the GIRAFULL X details in `DATA...notes`; `scripts/validate_generated_site.py` is expected to fail when GIRAFULL events are present but the notes omit the X post URL, image URL, label color, target-day event time/type/event, floor, capacity, or fee.
+  - Why: final automation summaries are easy to compress, so the generated artifact and validation harness must preserve the decision-critical external check.
+  <!-- added: 2026-07-01 from user feedback -->
 - For GIRAFULL X image verification, open the X profile or known status URL in the browser first. If the page exposes `pbs.twimg.com/media/...` images, fetch the original-size image with `name=orig`, then crop/zoom the target date row before deciding whether the schedule can be read. Do not mark the image unverified solely because X search redirects to login.
 - Known proof point: the 2026/06 schedule image was readable from the browser-exposed media URL; for 2026/06/28, the PK rows showed 11:00 トレリ教室 on 5F with 64 people and fee 500, and 16:30 ジムバトル on 5F with 64 people.
 
@@ -97,5 +101,5 @@ Adjust the staged paths to the actual changed files. Do not use `git add .` for 
 - Players Club detail links are present when available.
 - Favorite shop filter entries are visible in the generated notes.
 - GIRAFULLなんば candidates or recommendations include X schedule floor and label color notes.
-- GIRAFULLなんば X checks include target-day event details from the image (`time`, `type_code`, `event`, `floor`, `label_color`, `capacity`, `fee`) and the final report summarizes them.
+- GIRAFULLなんば X checks include target-day event details from the image (`time`, `type_code`, `event`, `floor`, `label_color`, `capacity`, `fee`), the generated notes expose the X post URL and image URL, and the final report summarizes them in a dedicated GIRAFULL block.
 - If this is a normal automation run, push the validated commit to `main`; skip push only for review-only, no-publish, no-push, or dry-run requests.

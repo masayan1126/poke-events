@@ -196,6 +196,7 @@ def build_context_notes(raw_data):
         label_color = girafull_check.get("label_color", "")
         summary = girafull_check.get("summary", "")
         post_url = girafull_check.get("schedule_post_url", "")
+        image_url = girafull_check.get("image_url", "")
         pieces = []
         if floor:
             pieces.append(f"フロア: {floor}")
@@ -205,6 +206,8 @@ def build_context_notes(raw_data):
             pieces.append(summary)
         if post_url:
             pieces.append(f"確認ポスト: {post_url}")
+        if image_url:
+            pieces.append(f"原寸画像: {image_url}")
         if pieces:
             notes.append("GIRAFULLなんば Xスケジュール確認: " + " / ".join(pieces))
         target_day_events = girafull_check.get("target_day_events", [])
@@ -221,7 +224,16 @@ def build_context_notes(raw_data):
                 capacity = event.get("capacity", "")
                 fee = event.get("fee", "")
                 detail = " ".join(part for part in (time, type_code, name) if part)
-                meta = " / ".join(part for part in (event_floor, event_color, capacity, fee) if part)
+                meta_parts = []
+                if event_floor:
+                    meta_parts.append(f"階: {event_floor}")
+                if event_color:
+                    meta_parts.append(f"ラベル色: {event_color}")
+                if capacity:
+                    meta_parts.append(f"定員: {capacity}")
+                if fee:
+                    meta_parts.append(f"参加費: {fee}")
+                meta = " / ".join(meta_parts)
                 if detail and meta:
                     event_summaries.append(f"{detail}（{meta}）")
             if event_summaries:
