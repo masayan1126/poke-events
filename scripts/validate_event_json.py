@@ -20,6 +20,7 @@ FAVORITE_SHOPS = (
     "トレカWIN",
 )
 GIRAFULL_NAMBA_PATTERNS = ("GIRAFULLなんば", "ジラフルなんば")
+EXCLUDED_LEAGUE_PATTERNS = ("ジュニア", "シニア")
 GIRAFULL_NAMBA_X_URL = "https://x.com/GIRAFULL_Namba"
 REQUIRED_GIRAFULL_X_FIELDS = (
     "account_url",
@@ -109,6 +110,42 @@ def _plan_uses_venue(plans, patterns):
             if isinstance(step, dict) and _matches_any(step.get("venue", ""), patterns):
                 return True
     return False
+
+
+def _contains_excluded_league(value):
+    return _matches_any(value, EXCLUDED_LEAGUE_PATTERNS)
+
+
+def _validate_excluded_leagues(events, plans, data, errors):
+    for category in EVENT_CATEGORIES:
+        category_events = events.get(category, [])
+        if not isinstance(category_events, list):
+            continue
+        for idx, event in enumerate(category_events, start=1):
+            if isinstance(event, dict) and _contains_excluded_league(event.get("name", "")):
+                errors.append(f"events.{category}[{idx}].name must exclude junior/senior league events")
+
+    for plan_idx, plan in enumerate(plans, start=1):
+        if not isinstance(plan, dict):
+            continue
+        for step_idx, step in enumerate(plan.get("steps", []), start=1):
+            if isinstance(step, dict) and _contains_excluded_league(step.get("event", "")):
+                errors.append(f"plans[{plan_idx}].steps[{step_idx}].event must exclude junior/senior league events")
+
+    focus_plans = data.get("focus_plans", {})
+    if not isinstance(focus_plans, dict):
+        return
+    for focus_id, focus_plan_list in focus_plans.items():
+        if not isinstance(focus_plan_list, list):
+            continue
+        for plan_idx, plan in enumerate(focus_plan_list, start=1):
+            if not isinstance(plan, dict):
+                continue
+            for step_idx, step in enumerate(plan.get("steps", []), start=1):
+                if isinstance(step, dict) and _contains_excluded_league(step.get("event", "")):
+                    errors.append(
+                        f"focus_plans.{focus_id}[{plan_idx}].steps[{step_idx}].event must exclude junior/senior league events"
+                    )
 
 
 def _validate_favorite_shop_filters(data, events, errors):
@@ -327,6 +364,7 @@ def validate(data, require_future_target=False):
         errors.append("notes must be a list when present")
 
     _validate_focus_plans(data, errors, warnings)
+    _validate_excluded_leagues(events, plans, data, errors)
     _validate_favorite_shop_filters(data, events, errors)
     _validate_girafull_namba_x_check(data, events, plans, target_date, errors, warnings)
 

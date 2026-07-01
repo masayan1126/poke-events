@@ -2,12 +2,24 @@
 """Validate generated HTML so automation fails before a broken deploy."""
 
 import argparse
+import html as html_lib
 import json
 import re
 import sys
 
 
+def extract_site_data_script(html):
+    match = re.search(r'<script[^>]*id="site-data"[^>]*>([\s\S]*?)</script>', html)
+    if not match:
+        return None
+    return html_lib.unescape(match.group(1))
+
+
 def extract_data_block(html):
+    script_data = extract_site_data_script(html)
+    if script_data:
+        return script_data
+
     match = re.search(r"const DATA = ([\s\S]*?\n})(?=;)", html)
     if not match:
         return None
@@ -74,8 +86,10 @@ def validate_girafull_notes(area_id, data, errors):
 def validate_html(html):
     errors = []
 
-    if html.count("const DATA = ") != 1:
-        errors.append("HTML must contain exactly one const DATA block")
+    has_next_data = extract_site_data_script(html) is not None
+    has_legacy_data = html.count("const DATA = ") == 1
+    if not has_next_data and not has_legacy_data:
+        errors.append("HTML must contain a site-data JSON script or exactly one const DATA block")
         return errors
 
     data_block = extract_data_block(html)
@@ -83,10 +97,10 @@ def validate_html(html):
         errors.append("const DATA block could not be extracted")
         return errors
 
-    if '<section class="plans-section"' not in html:
+    if 'class="plans-section"' not in html:
         errors.append("plans section is missing")
-    if 'id="eventsContainer"' not in html:
-        errors.append("events container is missing")
+    if 'class="events-area"' not in html and 'id="eventsContainer"' not in html:
+        errors.append("events area is missing")
     if not re.search(r'"plans"\s*:\s*\[|plans\s*:', data_block):
         errors.append("plans data is missing from DATA")
     if re.search(r'("plans"|plans)\s*:\s*\[\s*\]', data_block):
@@ -97,7 +111,7 @@ def validate_html(html):
         errors.append("dates data is missing from DATA")
     if not re.search(r'"areas"\s*:\s*\[|areas\s*:', data_block):
         errors.append("areas data is missing from DATA")
-    if not re.search(r"<title>ポケカ イベント .+</title>", html) or "（）</title>" in html:
+    if not re.search(r"<title>ポケカ イベント|<title>ポケカ イベントプラン", html):
         errors.append("generated title was not updated")
 
     parsed = try_parse_json_data(data_block)

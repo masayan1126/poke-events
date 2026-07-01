@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Codex-friendly wrapper: validate JSON, generate HTML, validate HTML."""
+"""Codex-friendly wrapper: validate JSON, generate Next.js data, build, validate HTML."""
 
 import argparse
 import os
@@ -17,8 +17,9 @@ def run(args):
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate the pokeca event static site")
     parser.add_argument("events_json", help="イベント収集・行動プラン生成済みJSON")
-    parser.add_argument("--output", default="index.html", help="生成先HTML。既定値: index.html")
+    parser.add_argument("--output", default="src/data/site-data.json", help="生成先JSON。既定値: src/data/site-data.json")
     parser.add_argument("--require-future-target", action="store_true", help="対象日が今日以降であることを要求する")
+    parser.add_argument("--skip-build", action="store_true", help="Next.jsビルドを省略する")
     parser.add_argument("--skip-html-validation", action="store_true", help="HTML検証を省略する")
     return parser.parse_args()
 
@@ -32,8 +33,11 @@ def main():
         validate_cmd.append("--require-future-target")
     run(validate_cmd)
     run([sys.executable, "scripts/generate_page.py", args.events_json, "--output", output])
+    html_output = os.path.join(ROOT, "out", "index.html")
+    if not args.skip_build:
+        run(["npm", "run", "build"])
     if not args.skip_html_validation:
-        run([sys.executable, "scripts/validate_generated_site.py", output])
+        run([sys.executable, "scripts/validate_generated_site.py", html_output])
 
     print(f"Generated site: {output}")
 

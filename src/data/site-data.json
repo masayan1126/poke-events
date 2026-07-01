@@ -1,235 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#1e3a8a">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9889;</text></svg>">
-  <title>ポケカ イベント 2026/07/05（日）大阪府</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --primary: #1e40af; --primary-light: #3b82f6; --bg: #f1f5f9;
-      --card: #ffffff; --text: #0f172a; --text-sub: #64748b; --border: #e2e8f0;
-      --radius: 14px; --radius-sm: 10px;
-      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
-      --safe-top: env(safe-area-inset-top, 0px); --safe-bottom: env(safe-area-inset-bottom, 0px);
-    }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; padding-bottom: var(--safe-bottom); }
-
-    /* ===== Header ===== */
-    .header { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%); color: #fff; padding: calc(12px + var(--safe-top)) 16px 10px; position: relative; overflow: hidden; }
-    .header::after { content: ''; position: absolute; top: -40%; right: -20%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%); border-radius: 50%; }
-    .header-inner { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-    .header-title { font-size: 15px; font-weight: 800; white-space: nowrap; }
-    .header-meta { font-size: 11px; opacity: 0.75; flex-shrink: 0; }
-
-    /* ===== Selector Section ===== */
-    .selector-section { background: linear-gradient(180deg, #eff6ff 0%, var(--bg) 100%); padding: 28px 16px 24px; }
-    .selector-inner { max-width: 1200px; margin: 0 auto; }
-    .selector-title { font-size: 18px; font-weight: 800; margin-bottom: 16px; color: var(--text); }
-
-    .selector-group { margin-bottom: 20px; }
-    .selector-label { font-size: 13px; font-weight: 700; color: var(--text-sub); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
-    .selector-label-icon { font-size: 16px; }
-
-    .date-chips, .area-chips { display: flex; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 2px; }
-    .date-chips::-webkit-scrollbar, .area-chips::-webkit-scrollbar { display: none; }
-
-    .chip {
-      display: flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 12px;
-      border: 2px solid var(--border); background: var(--card); font-size: 14px; font-weight: 700;
-      color: var(--text); cursor: pointer; white-space: nowrap; flex-shrink: 0;
-      transition: all 0.2s; -webkit-tap-highlight-color: transparent;
-    }
-    .chip:active { transform: scale(0.96); }
-    .chip .chip-sub { font-size: 11px; font-weight: 600; color: var(--text-sub); background: var(--bg); padding: 2px 7px; border-radius: 8px; }
-    .chip.active { background: var(--primary); color: #fff; border-color: var(--primary); }
-    .chip.active .chip-sub { background: rgba(255,255,255,0.25); color: #fff; }
-    .chip.disabled { opacity: 0.35; cursor: default; }
-
-    .current-selection { display: none; margin-top: 16px; padding: 12px 16px; background: var(--card); border-radius: var(--radius-sm); border: 1px solid var(--border); font-size: 13px; color: var(--text-sub); }
-    .current-selection.visible { display: flex; align-items: center; gap: 8px; }
-    .current-selection strong { color: var(--text); font-size: 15px; }
-
-    /* ===== Plans Section ===== */
-    .plans-section { padding: 24px 16px 20px; display: none; }
-    .plans-section.visible { display: block; }
-    .plans-section-inner { max-width: 1200px; margin: 0 auto; }
-    .plans-section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-    .plans-section-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 18px; color: #fff; }
-    .plans-section-title { font-size: 20px; font-weight: 800; color: var(--text); }
-    .plans-section-sub { font-size: 13px; color: var(--text-sub); }
-    .plans-empty { text-align: center; padding: 24px; color: var(--text-sub); font-size: 14px; }
-
-    .plans-grid { display: grid; gap: 12px; }
-    .plan-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); overflow: hidden; }
-    .plan-header { padding: 14px 16px; display: flex; align-items: center; gap: 12px; cursor: pointer; -webkit-tap-highlight-color: transparent; user-select: none; }
-    .plan-header:active { background: var(--bg); }
-    .plan-badge { padding: 3px 10px; border-radius: 6px; font-size: 13px; font-weight: 800; color: #fff; background: var(--primary); flex-shrink: 0; }
-    .plan-info { flex: 1; min-width: 0; }
-    .plan-name { font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .plan-sub { font-size: 12px; color: var(--text-sub); }
-    .plan-rating { font-size: 13px; white-space: nowrap; letter-spacing: 1px; }
-    .plan-chevron { font-size: 18px; color: var(--text-sub); transition: transform 0.25s; flex-shrink: 0; }
-    .plan-card.open .plan-chevron { transform: rotate(180deg); }
-    .plan-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .plan-card.open .plan-body { max-height: 600px; }
-    .plan-body-inner { padding: 0 16px 16px; }
-    .plan-step-link { display: flex; gap: 12px; flex: 1; text-decoration: none; color: inherit; padding: 10px 6px; border-bottom: 1px dashed var(--border); transition: background 0.15s; border-radius: 6px; margin: 0 -6px; }
-    .plan-step-link:last-child { border-bottom: none; }
-    .plan-step-link:active { background: var(--bg); }
-    .plan-step { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px dashed var(--border); }
-    .plan-step:last-child { border-bottom: none; }
-    .plan-step-time { font-size: 12px; font-weight: 700; color: var(--primary); min-width: 80px; white-space: nowrap; padding-top: 2px; }
-    .plan-step-detail { flex: 1; }
-    .plan-step-event { font-size: 13px; font-weight: 600; }
-    .plan-step-venue { font-size: 12px; color: var(--text-sub); }
-    .plan-step-meta { display: flex; align-items: center; gap: 6px; margin-top: 3px; }
-    .plan-step-area { display: inline-block; padding: 1px 7px; border-radius: 4px; background: var(--bg); font-size: 11px; color: var(--text-sub); }
-    .plan-step-arrow { font-size: 11px; color: var(--primary-light); font-weight: 700; }
-    .plan-merit { margin-top: 12px; padding: 12px; background: #f0f9ff; border-radius: var(--radius-sm); font-size: 12px; line-height: 1.7; color: #1e3a8a; }
-    .plan-merit strong { color: var(--primary); }
-
-    /* ===== Filter Bar ===== */
-    .filter-bar { position: sticky; top: 0; z-index: 100; background: var(--card); border-bottom: 1px solid var(--border); padding: 10px 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; display: none; }
-    .filter-bar.visible { display: flex; }
-    .filter-bar::-webkit-scrollbar { display: none; }
-    .filter-bar-inner { display: flex; gap: 8px; max-width: 1200px; margin: 0 auto; width: 100%; }
-    .filter-pill { display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 20px; border: 1.5px solid var(--border); background: var(--card); font-size: 13px; font-weight: 600; color: var(--text-sub); cursor: pointer; white-space: nowrap; flex-shrink: 0; transition: all 0.2s; -webkit-tap-highlight-color: transparent; }
-    .filter-pill:active { transform: scale(0.96); }
-    .filter-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; opacity: 0.5; }
-    .filter-pill .cnt { background: var(--bg); padding: 1px 7px; border-radius: 10px; font-size: 11px; }
-    .filter-pill.active { background: var(--active-color, var(--primary)); color: #fff; border-color: var(--active-color, var(--primary)); }
-    .filter-pill.active .dot { opacity: 0; width: 0; }
-    .filter-pill.active .cnt { background: rgba(255,255,255,0.25); }
-    .filter-pill.location { border-style: solid; }
-    .filter-separator { width: 1px; align-self: stretch; background: var(--border); margin: 4px 2px; flex-shrink: 0; }
-
-    /* ===== Content ===== */
-    .content { max-width: 1200px; margin: 0 auto; padding: 16px; display: none; }
-    .content.visible { display: block; }
-    .section-divider { display: flex; align-items: center; gap: 10px; margin: 24px 0 14px; padding-bottom: 8px; }
-    .section-divider:first-child { margin-top: 8px; }
-    .section-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; color: #fff; flex-shrink: 0; }
-    .section-label { font-size: 15px; font-weight: 700; }
-    .section-count { font-size: 13px; color: var(--text-sub); font-weight: 400; }
-
-    /* ===== Event Card ===== */
-    .event-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 10px; border: 1px solid var(--border); overflow: hidden; transition: box-shadow 0.2s, transform 0.15s; position: relative; }
-    .event-card:active { transform: scale(0.985); }
-    .event-card a { display: block; padding: 14px 16px 14px 18px; text-decoration: none; color: inherit; }
-    .event-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
-    .event-time { font-size: 15px; font-weight: 800; white-space: nowrap; }
-    .event-tags { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
-    .tag { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; white-space: nowrap; }
-    .tag-csp { background: #fef3c7; color: #92400e; } .tag-large { background: #dbeafe; color: #1e40af; }
-    .tag-near { background: #d1fae5; color: #065f46; } .tag-long { background: #e0e7ff; color: #3730a3; }
-    .tag-night { background: #ede9fe; color: #5b21b6; } .tag-full { background: #fee2e2; color: #991b1b; }
-    .tag-beginner { background: #d1fae5; color: #065f46; }
-    .event-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; line-height: 1.4; }
-    .event-venue { font-size: 13px; color: var(--text); margin-bottom: 2px; }
-    .event-address { font-size: 12px; color: var(--text-sub); margin-bottom: 10px; }
-    .event-bottom { display: flex; align-items: center; gap: 14px; padding-top: 10px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-sub); }
-    .event-bottom .meta-item { display: flex; align-items: center; gap: 3px; }
-    .event-link-arrow { margin-left: auto; color: var(--primary-light); font-weight: 700; font-size: 13px; display: flex; align-items: center; gap: 2px; }
-    .category-accent { width: 4px; position: absolute; left: 0; top: 0; bottom: 0; border-radius: 2px 0 0 2px; }
-
-    /* ===== Notes ===== */
-    .notes-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); padding: 16px; margin-top: 24px; }
-    .notes-title { font-size: 15px; font-weight: 700; margin-bottom: 10px; }
-    .notes-list { list-style: none; }
-    .notes-list li { padding: 7px 0 7px 14px; position: relative; font-size: 13px; color: var(--text-sub); line-height: 1.6; border-bottom: 1px solid var(--border); }
-    .notes-list li:last-child { border-bottom: none; }
-    .notes-list li::before { content: ''; position: absolute; left: 0; top: 14px; width: 5px; height: 5px; border-radius: 50%; background: var(--primary-light); }
-
-    /* ===== Footer ===== */
-    .footer { text-align: center; padding: 28px 16px 24px; font-size: 12px; color: var(--text-sub); }
-    .footer a { color: var(--primary-light); text-decoration: none; }
-    .footer a:hover { text-decoration: underline; }
-    .footer-source { display: inline-block; margin-top: 8px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; }
-
-    .empty { text-align: center; padding: 40px 20px; color: var(--text-sub); }
-    .empty-icon { font-size: 40px; margin-bottom: 8px; }
-
-    .event-card, .plan-card { animation: slideUp 0.3s ease-out both; }
-    @keyframes slideUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-
-    @media (min-width: 640px) {
-      .header { padding: calc(14px + var(--safe-top)) 24px 12px; } .header-title { font-size: 18px; }
-      .selector-section { padding: 32px 24px 28px; } .content { padding: 20px 24px; }
-      .filter-bar { padding: 12px 24px; } .plans-section { padding: 28px 24px 24px; }
-      .plans-grid { grid-template-columns: repeat(2, 1fr); }
-      .events-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .events-grid .event-card { margin-bottom: 0; }
-    }
-    @media (min-width: 1024px) {
-      .header { padding: calc(16px + var(--safe-top)) 40px 14px; } .header-title { font-size: 22px; }
-      .selector-section { padding: 36px 40px 32px; } .selector-title { font-size: 22px; }
-      .chip { padding: 12px 22px; font-size: 15px; }
-      .plans-section { padding: 36px 40px 28px; } .plans-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
-      .filter-bar { padding: 14px 40px; } .filter-pill { padding: 10px 18px; font-size: 14px; }
-      .content { padding: 28px 40px; } .events-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
-      .event-card a { padding: 16px 20px; } .event-time { font-size: 16px; } .event-name { font-size: 16px; }
-      .section-divider { margin: 32px 0 18px; } .section-icon { width: 36px; height: 36px; font-size: 18px; }
-      .notes-card { padding: 24px; margin-top: 32px; } .footer { padding: 36px 40px; font-size: 13px; }
-    }
-    @media (min-width: 1400px) {
-      .header-inner, .content, .filter-bar-inner, .plans-section-inner, .selector-inner { max-width: 1360px; }
-      .header { padding: calc(18px + var(--safe-top)) 60px 14px; } .selector-section { padding: 40px 60px 36px; }
-      .plans-section { padding: 40px 60px 32px; } .filter-bar { padding: 14px 60px; }
-      .content { padding: 32px 60px; }
-    }
-  </style>
-</head>
-<body>
-
-<header class="header">
-  <div class="header-inner">
-    <div class="header-title">&#9889; ポケカイベント <span style="font-weight:600;opacity:.9">関西</span></div>
-    <div class="header-meta" id="headerMeta"></div>
-  </div>
-</header>
-
-<section class="selector-section">
-  <div class="selector-inner">
-    <div class="selector-title">日付とエリアを選択</div>
-    <div class="selector-group">
-      <div class="selector-label"><span class="selector-label-icon">&#128197;</span> 日付</div>
-      <div class="date-chips" id="dateChips"></div>
-    </div>
-    <div class="selector-group">
-      <div class="selector-label"><span class="selector-label-icon">&#128205;</span> エリア</div>
-      <div class="area-chips" id="areaChips"></div>
-    </div>
-    <div class="current-selection" id="currentSelection"></div>
-  </div>
-</section>
-
-<section class="plans-section" id="plansSection">
-  <div class="plans-section-inner">
-    <div class="plans-section-header">
-      <div class="plans-section-icon">&#128203;</div>
-      <div>
-        <div class="plans-section-title">行動プラン提案</div>
-        <div class="plans-section-sub" id="plansSub"></div>
-      </div>
-    </div>
-    <div class="plans-grid" id="plansContainer"></div>
-  </div>
-</section>
-
-<nav class="filter-bar" id="filterBarWrap"><div class="filter-bar-inner" id="filterBar"></div></nav>
-
-<div class="content" id="contentWrap">
-  <div id="eventsContainer"></div>
-  <div id="notesContainer"></div>
-</div>
-
-<footer class="footer" id="footer"></footer>
-
-<script>
-const DATA = {
+{
   "meta": {
     "region": "関西",
     "searchUrl": "https://players.pokemon-card.com/event/search?offset=0&order=1",
@@ -247,9 +16,9 @@ const DATA = {
       "day": "日",
       "areaData": {
         "osaka": {
-          "totalEvents": 97,
-          "filteredCount": 97,
-          "criteria": "Players Club event_search APIで2026/07/05・大阪府を再収集。開催中止を除外し、GIRAFULLなんば店はXの7月イベントカレンダー原寸画像で対象日のPK行を確認。行動プランはCSP対象、お気に入り店舗、時間帯、移動負担を基準に自動選定。",
+          "totalEvents": 94,
+          "filteredCount": 94,
+          "criteria": "Players Club event_search APIで2026/07/05・大阪府を再収集。開催中止を除外し、GIRAFULLなんば店はXの7月イベントカレンダー原寸画像で対象日のPK行を確認。行動プランはCSP対象、お気に入り店舗、時間帯、移動負担を基準に自動選定。 ジュニアリーグ・シニアリーグは収集対象から除外。",
           "categories": [
             {
               "id": "gym_battle",
@@ -1142,20 +911,6 @@ const DATA = {
               "color": "#d97706",
               "events": [
                 {
-                  "id": 1862978,
-                  "time": "11:00 ～ 13:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-                  "venue": "プレイズ　大阪日本橋本店",
-                  "address": "大阪府大阪市浪速区日本橋3丁目7番6号",
-                  "fee": "参加費 無料",
-                  "capacity": "16人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
                   "id": 1875607,
                   "time": "13:00 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
@@ -1179,34 +934,6 @@ const DATA = {
                   "capacity": "32人",
                   "distance": "約40分",
                   "url": "https://players.pokemon-card.com/event/detail/1214/1/20007/20260705/1870407",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1870791,
-                  "time": "13:30 ～",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-                  "venue": "カードショップキャット桃谷店",
-                  "address": "大阪府大阪市天王寺区堂ケ芝1-5-1阪奈ビル101",
-                  "fee": "参加費 無料",
-                  "capacity": "8人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1219/1/18177/20260705/1870791",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1870799,
-                  "time": "13:30 ～",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（シニアリーグ）",
-                  "venue": "カードショップキャット桃谷店",
-                  "address": "大阪府大阪市天王寺区堂ケ芝1-5-1阪奈ビル101",
-                  "fee": "参加費 無料",
-                  "capacity": "8人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1216/1/18177/20260705/1870799",
                   "tags": [
                     "csp"
                   ]
@@ -1477,13 +1204,6 @@ const DATA = {
               "rating": 5,
               "steps": [
                 {
-                  "time": "11:00 ～ 13:00",
-                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-                  "venue": "プレイズ　大阪日本橋本店",
-                  "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978"
-                },
-                {
                   "time": "13:00 ～ 15:00",
                   "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
                   "venue": "Speak easy",
@@ -1496,6 +1216,13 @@ const DATA = {
                   "venue": "TOY　COMP　茨木店",
                   "area": "大阪府",
                   "url": "https://players.pokemon-card.com/event/detail/1213/1/10946/20260705/1850936"
+                },
+                {
+                  "time": "17:00 ～",
+                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+                  "venue": "トレカショップ竜のしっぽ　布施店",
+                  "area": "大阪府",
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/19938/20260705/1855058"
                 }
               ],
               "merit": "CSP対象を複数候補にして、午前から夕方まで競技寄りに動ける。"
@@ -1625,17 +1352,17 @@ const DATA = {
           "focusPlans": {
             "namba-umeda": [
               {
-                "id": "namba-umeda-csp",
-                "name": "なんば昼CSPから梅田夜リーグ",
+                "id": "namba-umeda-day-night",
+                "name": "なんば昼から梅田夜リーグ",
                 "subtitle": "日本橋・なんばの昼イベントを軸に、夜は梅田NU茶屋町のオープンリーグへ",
                 "rating": 5,
                 "steps": [
                   {
-                    "time": "11:00 ～ 13:00",
-                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-                    "venue": "プレイズ　大阪日本橋本店",
+                    "time": "12:00 ～ 13:30",
+                    "event": "【26/7】ポケモンカードジム　ジムバトル",
+                    "venue": "ALANN　日本橋",
                     "area": "なんば・日本橋",
-                    "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978"
+                    "url": "https://players.pokemon-card.com/event/detail/1210/1/12789/20260705/1869606"
                   },
                   {
                     "time": "13:00 ～ 15:00",
@@ -1652,7 +1379,7 @@ const DATA = {
                     "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260705/1873685"
                   }
                 ],
-                "merit": "CSP対象を昼と夜に置き、移動先をなんば・梅田周辺に絞れる。"
+                "merit": "昼のなんば・日本橋候補から始めて、夜のオープンリーグを選択肢に残せる。"
               },
               {
                 "id": "umeda-evening-route",
@@ -1687,7 +1414,7 @@ const DATA = {
             ]
           },
           "notes": [
-            "Players Club APIで2026/07/05・大阪府の99件を再収集し、開催中止を除外して97件を掲載。",
+            "Players Club APIで2026/07/05・大阪府の99件を再収集し、開催中止とジュニアリーグ・シニアリーグを除外して94件を掲載。",
             "GIRAFULLなんば店はX固定ポストの7月イベントカレンダー原寸画像を確認し、7/5のPK行（11:00 4F、16:30 5F）をvenue_checksに記録。",
             "カードショップきりん 大阪天満橋店は同日4枠あり、移動負担を抑えた集中ルートとして優先。",
             "お気に入り店舗フィルター: おじゃま館蒲生店（16人）: お気に入り店舗として候補に残し、13:00開始、満席ではないこと、参加枠、時間帯、移動負担を確認。",
@@ -1701,240 +1428,4 @@ const DATA = {
       }
     }
   ]
-};
-
-const TAG_CONFIG = {
-  csp: { label: "CSP対象", cls: "tag-csp" }, large: { label: "大型大会", cls: "tag-large" },
-  near: { label: "駅近", cls: "tag-near" }, long: { label: "長時間開催", cls: "tag-long" },
-  night: { label: "夜遅くまで", cls: "tag-night" }, full: { label: "満席", cls: "tag-full" },
-  beginner: { label: "初心者歓迎", cls: "tag-beginner" }
-};
-
-let selectedDateIndex = -1;
-let selectedAreaId = null;
-let selectedFilter = 'all';
-let selectedLocationFilter = 'all';
-
-function init() {
-  document.getElementById('headerMeta').textContent = DATA.meta.reportDate + ' 時点';
-  document.title = 'ポケカ イベントプラン ' + DATA.meta.region;
-  selectedDateIndex = DATA.dates.length ? 0 : -1;
-  selectFirstAvailableArea();
-  renderDateChips();
-  renderAreaChips();
-  renderFooter();
-  updateView();
 }
-
-function selectFirstAvailableArea() {
-  const dateEntry = selectedDateIndex >= 0 ? DATA.dates[selectedDateIndex] : null;
-  if (!dateEntry) { selectedAreaId = null; return; }
-  if (selectedAreaId && dateEntry.areaData[selectedAreaId]) return;
-  selectedAreaId = Object.keys(dateEntry.areaData)[0] || null;
-}
-
-function getSelected() {
-  if (selectedDateIndex < 0 || !selectedAreaId) return null;
-  const d = DATA.dates[selectedDateIndex];
-  return d.areaData[selectedAreaId] || null;
-}
-
-function renderDateChips() {
-  const el = document.getElementById('dateChips');
-  el.innerHTML = DATA.dates.map((d, i) => {
-    const dt = new Date(d.date.replace(/\//g, '-'));
-    const totalFiltered = Object.values(d.areaData).reduce((s, a) => s + a.filteredCount, 0);
-    return `<button class="chip ${i === selectedDateIndex ? 'active' : ''}" data-idx="${i}">
-      ${dt.getMonth()+1}/${dt.getDate()}（${d.day}）<span class="chip-sub">${totalFiltered}件</span>
-    </button>`;
-  }).join('');
-  el.querySelectorAll('.chip').forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedDateIndex = parseInt(btn.dataset.idx);
-      selectFirstAvailableArea();
-      selectedFilter = 'all';
-      selectedLocationFilter = 'all';
-      renderDateChips();
-      renderAreaChips();
-      updateView();
-    });
-  });
-}
-
-function renderAreaChips() {
-  const el = document.getElementById('areaChips');
-  const dateEntry = selectedDateIndex >= 0 ? DATA.dates[selectedDateIndex] : null;
-  el.innerHTML = DATA.areas.map(a => {
-    const hasData = dateEntry && dateEntry.areaData[a.id];
-    const count = hasData ? dateEntry.areaData[a.id].filteredCount : 0;
-    const active = selectedAreaId === a.id ? 'active' : '';
-    const disabled = !hasData ? 'disabled' : '';
-    return `<button class="chip ${active} ${disabled}" data-area="${a.id}" ${hasData ? '' : 'disabled'}>
-      ${a.name} <span class="chip-sub">${count}件</span>
-    </button>`;
-  }).join('');
-  el.querySelectorAll('.chip:not([disabled])').forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedAreaId = btn.dataset.area;
-      selectedFilter = 'all';
-      selectedLocationFilter = 'all';
-      renderAreaChips();
-      updateView();
-    });
-  });
-}
-
-function updateView() {
-  const sel = document.getElementById('currentSelection');
-  const plansEl = document.getElementById('plansSection');
-  const filterEl = document.getElementById('filterBarWrap');
-  const contentEl = document.getElementById('contentWrap');
-  const data = getSelected();
-
-  if (!data) {
-    sel.className = 'current-selection';
-    plansEl.className = 'plans-section';
-    filterEl.className = 'filter-bar';
-    contentEl.className = 'content';
-    return;
-  }
-
-  const d = DATA.dates[selectedDateIndex];
-  const dt = new Date(d.date.replace(/\//g, '-'));
-  const areaName = DATA.areas.find(a => a.id === selectedAreaId).name;
-  sel.className = 'current-selection visible';
-  sel.innerHTML = `&#128204; <strong>${dt.getMonth()+1}/${dt.getDate()}（${d.day}）${areaName}</strong> のイベント ${data.filteredCount}件（全${data.totalEvents}件中）`;
-
-  plansEl.className = 'plans-section visible';
-  filterEl.className = 'filter-bar visible';
-  contentEl.className = 'content visible';
-
-  renderPlans(data);
-  renderFilters(data);
-  renderEvents(data);
-  renderNotes(data);
-
-  plansEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function renderPlans(data) {
-  const container = document.getElementById('plansContainer');
-  const plans = getVisiblePlans(data);
-  const filter = getLocationFilter(data, selectedLocationFilter);
-  document.getElementById('plansSub').textContent = filter && filter.id !== 'all'
-    ? `${filter.name}の専用プラン`
-    : `${DATA.areas.find(a => a.id === selectedAreaId).name}のおすすめプラン`;
-  if (!plans.length) { container.innerHTML = '<div class="plans-empty">プランはまだありません</div>'; return; }
-  container.innerHTML = plans.map((plan, idx) => {
-    const stars = '\u2605'.repeat(plan.rating) + '\u2606'.repeat(5 - plan.rating);
-    const steps = plan.steps.map(s => s.url
-      ? `<a class="plan-step-link" href="${s.url}" target="_blank" rel="noopener"><div class="plan-step-time">${s.time}</div><div class="plan-step-detail"><div class="plan-step-event">${s.event}</div><div class="plan-step-venue">${s.venue}</div><div class="plan-step-meta"><span class="plan-step-area">${s.area}</span><span class="plan-step-arrow">詳細 &#8250;</span></div></div></a>`
-      : `<div class="plan-step"><div class="plan-step-time">${s.time}</div><div class="plan-step-detail"><div class="plan-step-event">${s.event}</div><div class="plan-step-venue">${s.venue}</div><div class="plan-step-meta"><span class="plan-step-area">${s.area}</span></div></div></div>`
-    ).join('');
-    return `<div class="plan-card open" id="plan-${plan.id}" style="animation-delay:${idx*0.05}s">
-      <div class="plan-header" onclick="togglePlan('${plan.id}')">
-        <span class="plan-badge">${plan.id}</span>
-        <div class="plan-info"><div class="plan-name">${plan.name}</div><div class="plan-sub">${plan.subtitle}</div></div>
-        <span class="plan-rating">${stars}</span><span class="plan-chevron">&#9662;</span>
-      </div>
-      <div class="plan-body"><div class="plan-body-inner">${steps}<div class="plan-merit"><strong>メリット：</strong>${plan.merit}</div></div></div>
-    </div>`;
-  }).join('');
-}
-function togglePlan(id) { document.getElementById('plan-' + id).classList.toggle('open'); }
-
-function renderFilters(data) {
-  const bar = document.getElementById('filterBar');
-  const locationFilters = getLocationFilters(data);
-  const selectedLocationEvents = countEventsForLocation(data, selectedLocationFilter);
-  let html = locationFilters.map(filter => {
-    const count = countEventsForLocation(data, filter.id).length;
-    const color = filter.id === 'all' ? 'var(--primary)' : '#0f766e';
-    return `<button class="filter-pill location ${selectedLocationFilter===filter.id?'active':''}" data-location-filter="${filter.id}" style="--active-color:${color}" title="${filter.description || filter.name}">${filter.name}<span class="cnt">${count}</span></button>`;
-  }).join('');
-  html += '<span class="filter-separator" aria-hidden="true"></span>';
-  let total = selectedLocationEvents.length;
-  html += `<button class="filter-pill ${selectedFilter==='all'?'active':''}" data-filter="all" style="--active-color:var(--primary)">すべて <span class="cnt">${total}</span></button>`;
-  data.categories.forEach(cat => {
-    const count = cat.events.filter(ev => matchesLocationFilter(data, ev, selectedLocationFilter)).length;
-    html += `<button class="filter-pill ${selectedFilter===cat.id?'active':''}" data-filter="${cat.id}" style="--active-color:${cat.color}"><span class="dot" style="background:${cat.color}"></span>${cat.name.split('：').pop().split(' / ')[0]}<span class="cnt">${count}</span></button>`;
-  });
-  bar.innerHTML = html;
-  bar.querySelectorAll('[data-location-filter]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedLocationFilter = btn.dataset.locationFilter;
-      selectedFilter = 'all';
-      renderPlans(getSelected());
-      renderFilters(getSelected());
-      renderEvents(getSelected());
-    });
-  });
-  bar.querySelectorAll('[data-filter]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      selectedFilter = btn.dataset.filter;
-      renderFilters(getSelected());
-      renderEvents(getSelected());
-    });
-  });
-}
-
-function renderEvents(data) {
-  const container = document.getElementById('eventsContainer');
-  let html = '';
-  data.categories.forEach(cat => {
-    if (selectedFilter !== 'all' && selectedFilter !== cat.id) return;
-    const visibleEvents = cat.events.filter(ev => matchesLocationFilter(data, ev, selectedLocationFilter));
-    if (!visibleEvents.length) return;
-    const icon = cat.id==='gym_battle'?'&#9876;':cat.id==='open_league'?'&#127942;':cat.id==='friend_battle'?'&#129309;':'&#127919;';
-    html += `<div class="section-divider"><div class="section-icon" style="background:${cat.color}">${icon}</div><div><span class="section-label">${cat.name}</span><span class="section-count">（${visibleEvents.length}件）</span></div></div><div class="events-grid">`;
-    visibleEvents.forEach((ev, i) => {
-      const tags = ev.tags.map(t => { const c = TAG_CONFIG[t]; return c ? `<span class="tag ${c.cls}">${c.label}</span>` : ''; }).join('');
-      html += `<div class="event-card" style="animation-delay:${i*0.05}s"><div class="category-accent" style="background:${cat.color}"></div><a href="${ev.url||DATA.meta.searchUrl}" target="_blank" rel="noopener"><div class="event-top"><span class="event-time" style="color:${cat.color}">${ev.time}</span><div class="event-tags">${tags}</div></div><div class="event-name">${ev.name}</div><div class="event-venue">${ev.venue}</div><div class="event-address">${ev.address}</div><div class="event-bottom"><span class="meta-item">${ev.fee}</span><span class="meta-item">${ev.capacity}</span><span class="meta-item">${ev.distance}</span><span class="event-link-arrow">詳細 &#8250;</span></div></a></div>`;
-    });
-    html += '</div>';
-  });
-  container.innerHTML = html || '<div class="empty"><div class="empty-icon">&#128269;</div><p>イベントデータがありません</p></div>';
-}
-
-function getLocationFilters(data) {
-  return data.locationFilters && data.locationFilters.length
-    ? data.locationFilters
-    : [{ id: 'all', name: '全エリア', description: '', keywords: [] }];
-}
-
-function getLocationFilter(data, id) {
-  return getLocationFilters(data).find(filter => filter.id === id) || getLocationFilters(data)[0];
-}
-
-function matchesLocationFilter(data, ev, filterId) {
-  const filter = getLocationFilter(data, filterId);
-  if (!filter || filter.id === 'all') return true;
-  const keywords = filter.keywords || [];
-  const text = `${ev.venue || ''} ${ev.address || ''} ${ev.name || ''}`;
-  return keywords.some(keyword => text.includes(keyword));
-}
-
-function countEventsForLocation(data, filterId) {
-  return data.categories.flatMap(cat => cat.events).filter(ev => matchesLocationFilter(data, ev, filterId));
-}
-
-function getVisiblePlans(data) {
-  if (selectedLocationFilter === 'all') return data.plans || [];
-  const focusPlans = data.focusPlans || {};
-  return focusPlans[selectedLocationFilter] || data.plans || [];
-}
-
-function renderNotes(data) {
-  const container = document.getElementById('notesContainer');
-  if (!data.notes.length) { container.innerHTML = ''; return; }
-  container.innerHTML = `<div class="notes-card"><div class="notes-title">注意事項</div><ul class="notes-list">${data.notes.map(n=>`<li>${n}</li>`).join('')}</ul></div>`;
-}
-
-function renderFooter() {
-  document.getElementById('footer').innerHTML = `<p>データ元: <a href="${DATA.meta.searchUrl}" target="_blank" rel="noopener">ポケモンカードゲーム プレイヤーズクラブ</a></p><p style="margin-top:4px">検索日 ${DATA.meta.reportDate} 自動実行</p><a href="${DATA.meta.searchUrl}" target="_blank" rel="noopener" class="footer-source">Players Clubで最新情報を確認</a>`;
-}
-
-document.addEventListener('DOMContentLoaded', init);
-</script>
-</body>
-</html>

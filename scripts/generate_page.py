@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-ポケカ イベントレポート HTML生成スクリプト
+ポケカ イベントレポート用 Next.js データ生成スクリプト
 
-JSONデータからGitHub Pages用のHTMLページを生成する。
+JSONデータからNext.jsアプリが読むsite-data.jsonを生成する。
 
 使用方法:
-  python3 generate_page.py /path/to/pokeca_event_MMDD.json [--output /path/to/index.html]
+  python3 generate_page.py /path/to/pokeca_event_MMDD.json [--output /path/to/src/data/site-data.json]
 
 入力JSON形式:
   {
@@ -242,38 +242,6 @@ def build_context_notes(raw_data):
     return notes
 
 
-def generate_html(data):
-    """データからHTML文字列を生成"""
-    # index.htmlのテンプレートを読み込み、DATAを置換
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    template_path = os.path.join(script_dir, "..", "index.html")
-
-    with open(template_path, "r", encoding="utf-8") as f:
-        template = f.read()
-
-    # DATA部分を置換
-    data_json = json.dumps(data, ensure_ascii=False, indent=2)
-
-    # const DATA = { ... }; の部分を置換
-    pattern = r"const DATA = \{[\s\S]*?\n\};"
-    replacement = f"const DATA = {data_json};"
-    new_html, replace_count = re.subn(pattern, lambda _match: replacement, template)
-    if replace_count != 1:
-        raise ValueError("index.html template must contain exactly one `const DATA = ...;` block")
-
-    # titleも更新
-    first_date = data.get("dates", [{}])[0]
-    first_area_id = next(iter(first_date.get("areaData", {}) or {}), "")
-    area_name = next(
-        (area.get("name", "") for area in data.get("areas", []) if area.get("id") == first_area_id),
-        "",
-    )
-    new_title = f"ポケカ イベント {first_date.get('date', '')}（{first_date.get('day', '')}）{area_name}"
-    new_html = re.sub(r"<title>.*?</title>", f"<title>{new_title}</title>", new_html)
-
-    return new_html
-
-
 def area_id_for(area):
     if area in AREA_IDS:
         return AREA_IDS[area]
@@ -282,12 +250,12 @@ def area_id_for(area):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="ポケカイベントJSONからGitHub Pages用HTMLを生成する")
+    parser = argparse.ArgumentParser(description="ポケカイベントJSONからNext.js用site-data.jsonを生成する")
     parser.add_argument("events_json", help="イベント収集・行動プラン生成済みJSON")
     parser.add_argument(
         "--output",
-        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "index.html"),
-        help="生成先HTML。既定値: リポジトリ直下のindex.html",
+        default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src", "data", "site-data.json"),
+        help="生成先JSON。既定値: src/data/site-data.json",
     )
     return parser.parse_args()
 
@@ -341,13 +309,12 @@ def main():
         ],
     }
 
-    html = generate_html(page_data)
-
     # 出力
     output_path = os.path.abspath(args.output)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write(html)
+        json.dump(page_data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
 
     print(f"Generated: {output_path}")
     print(f"Events: {filtered_count} ({len(categories)} categories)")

@@ -7,8 +7,8 @@
     "area": "大阪府",
     "region": "関西",
     "search_url": "https://players.pokemon-card.com/event/search?offset=0&order=1",
-    "total_events": 97,
-    "criteria": "Players Club event_search APIで2026/07/05・大阪府を再収集。開催中止を除外し、GIRAFULLなんば店はXの7月イベントカレンダー原寸画像で対象日のPK行を確認。行動プランはCSP対象、お気に入り店舗、時間帯、移動負担を基準に自動選定。"
+    "total_events": 94,
+    "criteria": "Players Club event_search APIで2026/07/05・大阪府を再収集。開催中止を除外し、GIRAFULLなんば店はXの7月イベントカレンダー原寸画像で対象日のPK行を確認。行動プランはCSP対象、お気に入り店舗、時間帯、移動負担を基準に自動選定。 ジュニアリーグ・シニアリーグは収集対象から除外。"
   },
   "events": {
     "gym_battle": [
@@ -1475,26 +1475,6 @@
     ],
     "open_league": [
       {
-        "id": 1862978,
-        "datetime": "11:00 ～ 13:00",
-        "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-        "venue": "プレイズ　大阪日本橋本店",
-        "address": "大阪府大阪市浪速区日本橋3丁目7番6号",
-        "fee": "参加費 無料",
-        "capacity": "16人",
-        "travel_time": 10,
-        "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978",
-        "is_full": false,
-        "source": {
-          "event_type": 3,
-          "event_attr_id": 3,
-          "csp_flg": 1,
-          "event_holding_id": 1063298,
-          "shop_id": 18422,
-          "date_id": 1862978
-        }
-      },
-      {
         "id": 1875607,
         "datetime": "13:00 ～ 15:00",
         "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
@@ -1532,46 +1512,6 @@
           "event_holding_id": 1063532,
           "shop_id": 20007,
           "date_id": 1870407
-        }
-      },
-      {
-        "id": 1870791,
-        "datetime": "13:30 ～",
-        "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-        "venue": "カードショップキャット桃谷店",
-        "address": "大阪府大阪市天王寺区堂ケ芝1-5-1阪奈ビル101",
-        "fee": "参加費 無料",
-        "capacity": "8人",
-        "travel_time": 30,
-        "url": "https://players.pokemon-card.com/event/detail/1219/1/18177/20260705/1870791",
-        "is_full": false,
-        "source": {
-          "event_type": 3,
-          "event_attr_id": 3,
-          "csp_flg": 1,
-          "event_holding_id": 1063550,
-          "shop_id": 18177,
-          "date_id": 1870791
-        }
-      },
-      {
-        "id": 1870799,
-        "datetime": "13:30 ～",
-        "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（シニアリーグ）",
-        "venue": "カードショップキャット桃谷店",
-        "address": "大阪府大阪市天王寺区堂ケ芝1-5-1阪奈ビル101",
-        "fee": "参加費 無料",
-        "capacity": "8人",
-        "travel_time": 30,
-        "url": "https://players.pokemon-card.com/event/detail/1216/1/18177/20260705/1870799",
-        "is_full": false,
-        "source": {
-          "event_type": 3,
-          "event_attr_id": 3,
-          "csp_flg": 1,
-          "event_holding_id": 1063549,
-          "shop_id": 18177,
-          "date_id": 1870799
         }
       },
       {
@@ -1967,13 +1907,6 @@
       "rating": 5,
       "steps": [
         {
-          "time": "11:00 ～ 13:00",
-          "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-          "venue": "プレイズ　大阪日本橋本店",
-          "area": "大阪府",
-          "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978"
-        },
-        {
           "time": "13:00 ～ 15:00",
           "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
           "venue": "Speak easy",
@@ -1986,6 +1919,13 @@
           "venue": "TOY　COMP　茨木店",
           "area": "大阪府",
           "url": "https://players.pokemon-card.com/event/detail/1213/1/10946/20260705/1850936"
+        },
+        {
+          "time": "17:00 ～",
+          "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+          "venue": "トレカショップ竜のしっぽ　布施店",
+          "area": "大阪府",
+          "url": "https://players.pokemon-card.com/event/detail/1213/1/19938/20260705/1855058"
         }
       ],
       "merit": "CSP対象を複数候補にして、午前から夕方まで競技寄りに動ける。"
@@ -2147,7 +2087,7 @@
     }
   },
   "notes": [
-    "Players Club APIで2026/07/05・大阪府の99件を再収集し、開催中止を除外して97件を掲載。",
+    "Players Club APIで2026/07/05・大阪府の99件を再収集し、開催中止とジュニアリーグ・シニアリーグを除外して94件を掲載。",
     "GIRAFULLなんば店はX固定ポストの7月イベントカレンダー原寸画像を確認し、7/5のPK行（11:00 4F、16:30 5F）をvenue_checksに記録。",
     "カードショップきりん 大阪天満橋店は同日4枠あり、移動負担を抑えた集中ルートとして優先。"
   ],
@@ -2160,17 +2100,17 @@
   "focus_plans": {
     "namba-umeda": [
       {
-        "id": "namba-umeda-csp",
-        "name": "なんば昼CSPから梅田夜リーグ",
+        "id": "namba-umeda-day-night",
+        "name": "なんば昼から梅田夜リーグ",
         "subtitle": "日本橋・なんばの昼イベントを軸に、夜は梅田NU茶屋町のオープンリーグへ",
         "rating": 5,
         "steps": [
           {
-            "time": "11:00 ～ 13:00",
-            "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（ジュニアリーグ）",
-            "venue": "プレイズ　大阪日本橋本店",
+            "time": "12:00 ～ 13:30",
+            "event": "【26/7】ポケモンカードジム　ジムバトル",
+            "venue": "ALANN　日本橋",
             "area": "なんば・日本橋",
-            "url": "https://players.pokemon-card.com/event/detail/1219/1/18422/20260705/1862978"
+            "url": "https://players.pokemon-card.com/event/detail/1210/1/12789/20260705/1869606"
           },
           {
             "time": "13:00 ～ 15:00",
@@ -2187,7 +2127,7 @@
             "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260705/1873685"
           }
         ],
-        "merit": "CSP対象を昼と夜に置き、移動先をなんば・梅田周辺に絞れる。"
+        "merit": "昼のなんば・日本橋候補から始めて、夜のオープンリーグを選択肢に残せる。"
       },
       {
         "id": "umeda-evening-route",
