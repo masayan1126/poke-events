@@ -2,7 +2,7 @@
   "meta": {
     "region": "関西",
     "searchUrl": "https://players.pokemon-card.com/event/search?offset=0&order=1",
-    "reportDate": "2026/07/10（金）"
+    "reportDate": "2026/07/17（金）"
   },
   "areas": [
     {
@@ -12,13 +12,13 @@
   ],
   "dates": [
     {
-      "date": "2026/07/12",
+      "date": "2026/07/19",
       "day": "日",
       "areaData": {
         "osaka": {
-          "totalEvents": 82,
-          "filteredCount": 82,
-          "criteria": "Players Club event_search APIで2026/07/12・大阪府を収集。開催中止、ジュニアリーグ、シニアリーグ、小学生以下イベントを除外し、GIRAFULLなんば店はXの7月イベントカレンダー原寸画像で対象日のPK行を確認。行動プランはCSP対象、お気に入り店舗、時間帯、移動負担を基準に選定。",
+          "totalEvents": 75,
+          "filteredCount": 75,
+          "criteria": "Players Club event_search APIで2026/07/19・大阪府を収集。開催中止、年齢限定リーグ、小学生以下イベント、Xカレンダー未検証のGIRAFULLなんば店を除外。行動プランはCSP対象、お気に入り店舗、なんば・梅田周辺、時間帯、移動負担を基準に選定。",
           "categories": [
             {
               "id": "gym_battle",
@@ -26,91 +26,95 @@
               "color": "#2563eb",
               "events": [
                 {
-                  "id": 1854998,
+                  "id": 1855001,
                   "time": "10:00 ～",
-                  "name": "【26/7】ポケモンカードジム マイジムNo.1決定戦",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "トイコンプ岸和田店",
                   "address": "大阪府岸和田市春木若松町21-1 ラパーク岸和田2F",
                   "fee": "参加費 無料",
                   "capacity": "32人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1211/1/11016/20260712/1854998",
+                  "distance": "約45分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/11016/20260719/1855001",
                   "tags": []
                 },
                 {
-                  "id": 1885162,
-                  "time": "10:30 ～ 12:00",
-                  "name": "ポケモンカードゲーム教室（当日先着枠）",
-                  "venue": "ポケモンセンターオーサカDX",
-                  "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
+                  "id": 1853741,
+                  "time": "11:00 ～",
+                  "name": "【26/7】エクストラバトルの日",
+                  "venue": "TSUTAYA 枚方ベルパルレ",
+                  "address": "大阪府枚方市宮之阪4-28-12",
                   "fee": "参加費 無料",
-                  "capacity": "6人",
+                  "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1222/1/14160/20260712/1885162",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/12741/20260719/1853741",
                   "tags": []
                 },
                 {
-                  "id": 1867541,
-                  "time": "11:00 ～ 13:00",
+                  "id": 1860801,
+                  "time": "11:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "ドラゴンスター日本橋2号店",
+                  "address": "大阪府大阪市浪速区難波中2-1-17　コスモビル6階",
+                  "fee": "参加費 無料",
+                  "capacity": "32人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10927/20260719/1860801",
+                  "tags": [
+                    "near"
+                  ]
+                },
+                {
+                  "id": 1867534,
+                  "time": "11:00 ～ 13:00",
+                  "name": "【26/7】エクストラバトルの日",
                   "venue": "シゲヤ",
                   "address": "大阪府大阪市平野区平野市町3丁目5-14",
                   "fee": "参加費 なし",
                   "capacity": "12人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10914/20260712/1867541",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/10914/20260719/1867534",
                   "tags": []
                 },
                 {
-                  "id": 1873700,
-                  "time": "12:00 ～ 13:00",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "Card Stand Ruby",
-                  "address": "大阪府東大阪市小若江1-10-14",
-                  "fee": "参加費 300円",
-                  "capacity": "8人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19749/20260712/1873700",
-                  "tags": []
-                },
-                {
-                  "id": 1869607,
+                  "id": 1869608,
                   "time": "12:00 ～ 13:30",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "ALANN　日本橋",
+                  "venue": "ALANN 日本橋",
                   "address": "大阪府大阪市浪速区難波中2-4-3　村上ビル305",
                   "fee": "参加費 無料",
                   "capacity": "8人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12789/20260712/1869607",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12789/20260719/1869608",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1860658,
+                  "id": 1860659,
                   "time": "12:00 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　菱江店",
+                  "venue": "古本市場 菱江店",
                   "address": "大阪府東大阪市稲葉1-4-16",
                   "fee": "参加費 無料",
                   "capacity": "24人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15258/20260712/1860658",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15258/20260719/1860659",
                   "tags": []
                 },
                 {
-                  "id": 1850001,
+                  "id": 1853006,
                   "time": "13:00 ～",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "name": "【26/7】ポケモンカードジム マイジムNo.1決定戦",
                   "venue": "S CARD OASIS 天美店",
                   "address": "大阪府松原市天美東三丁目500番地　 セブンパーク天美３F",
                   "fee": "参加費 100円",
                   "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20118/20260712/1850001",
+                  "url": "https://players.pokemon-card.com/event/detail/1211/1/20118/20260719/1853006",
                   "tags": []
                 },
                 {
-                  "id": 1851230,
+                  "id": 1851231,
                   "time": "13:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "おじゃま館蒲生店",
@@ -118,23 +122,75 @@
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約18分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22019/20260712/1851230",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22019/20260719/1851231",
                   "tags": []
                 },
                 {
-                  "id": 1859890,
-                  "time": "13:00 ～ 14:30",
+                  "id": 1874431,
+                  "time": "13:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　鶴見店",
-                  "address": "大阪府大阪市鶴見区鶴見5-11-17",
-                  "fee": "参加費 無料",
+                  "venue": "カードショップONIGIRI",
+                  "address": "大阪府堺市堺区戎島町2丁53-1　キッコービル204",
+                  "fee": "参加費 100円以上のお買い物",
                   "capacity": "16人",
-                  "distance": "約18分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15245/20260712/1859890",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20760/20260719/1874431",
                   "tags": []
                 },
                 {
-                  "id": 1868273,
+                  "id": 1867462,
+                  "time": "13:00 ～",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "駿河屋高槻トレカ館",
+                  "address": "大阪府高槻市高槻町15-2　唐崎屋ビル2階",
+                  "fee": "参加費 無料",
+                  "capacity": "24人",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12227/20260719/1867462",
+                  "tags": []
+                },
+                {
+                  "id": 1867448,
+                  "time": "13:00 ～",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "駿河屋高槻トレカ館",
+                  "address": "大阪府高槻市高槻町15-2　唐崎屋ビル2階",
+                  "fee": "参加費 無料",
+                  "capacity": "20人",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12227/20260719/1867448",
+                  "tags": []
+                },
+                {
+                  "id": 1875713,
+                  "time": "13:00 ～ 15:00",
+                  "name": "【26/7】エクストラバトルの日",
+                  "venue": "Bee本舗バトルタワー店",
+                  "address": "大阪府大阪市浪速区難波中2-1-20",
+                  "fee": "参加費 無料",
+                  "capacity": "32人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/18427/20260719/1875713",
+                  "tags": [
+                    "near"
+                  ]
+                },
+                {
+                  "id": 1875605,
+                  "time": "13:00 ～ 15:00",
+                  "name": "【26/7】エクストラバトルの日",
+                  "venue": "Speak easy",
+                  "address": "大阪府大阪市浪速区難波中1-16-11　レック難波503",
+                  "fee": "参加費 300円",
+                  "capacity": "8人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/20821/20260719/1875605",
+                  "tags": [
+                    "near"
+                  ]
+                },
+                {
+                  "id": 1868274,
                   "time": "13:00 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "【CARDBOX】高槻店",
@@ -142,107 +198,61 @@
                   "fee": "参加費 100円",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10948/20260712/1868273",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10948/20260719/1868274",
                   "tags": []
                 },
                 {
-                  "id": 1875623,
-                  "time": "13:00 ～ 15:00",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "Speak easy",
-                  "address": "大阪府大阪市浪速区難波中1-16-11　レック難波503",
-                  "fee": "参加費 300円",
-                  "capacity": "8人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260712/1875623",
-                  "tags": []
-                },
-                {
-                  "id": 1859947,
-                  "time": "13:00 ～ 15:00",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "カードショップきりん　大阪天満橋店",
-                  "address": "大阪府大阪市中央区天満橋京町2-15　８階Ｂ室",
-                  "fee": "参加費 200円",
-                  "capacity": "16人",
-                  "distance": "約12分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22032/20260712/1859947",
-                  "tags": []
-                },
-                {
-                  "id": 1849831,
-                  "time": "13:00 ～ 15:00",
-                  "name": "【26/7】エクストラバトルの日",
-                  "venue": "トレカチャンピオンなんば日本橋店",
-                  "address": "大阪府大阪市浪速区難波中2丁目2-15 3階、4階",
-                  "fee": "参加費 無料",
-                  "capacity": "16人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/19054/20260712/1849831",
-                  "tags": []
-                },
-                {
-                  "id": 1874131,
+                  "id": 1874138,
                   "time": "13:00 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "ロータス大阪日本橋店",
                   "address": "大阪府大阪市浪速区日本橋4町目11-10　　大南ビル204",
                   "fee": "参加費 無料",
                   "capacity": "16人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20822/20260712/1874131",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20822/20260719/1874138",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1840335,
-                  "time": "13:00 ～ 15:30",
-                  "name": "【26/7】ポケモンカードゲーム　スタートデッキ100　そのままバトル（オープン）",
-                  "venue": "TSUTAYAリノアス八尾店",
-                  "address": "大阪府八尾市光町２丁目６０ リノアス １Ｆ",
+                  "id": 1870401,
+                  "time": "13:00 ～ 16:00",
+                  "name": "【26/7】ポケモンカードジム   マイジムNo.1決定戦",
+                  "venue": "エイトマン 泉佐野店",
+                  "address": "大阪府泉佐野市下瓦屋2丁目2-77 　いこらも～る泉佐野2階",
                   "fee": "参加費 無料",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1209/1/20786/20260712/1840335",
+                  "capacity": "36人",
+                  "distance": "約45分",
+                  "url": "https://players.pokemon-card.com/event/detail/1218/1/20007/20260719/1870401",
                   "tags": []
                 },
                 {
-                  "id": 1851281,
+                  "id": 1851175,
+                  "time": "13:00 ～ 16:30",
+                  "name": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
+                  "venue": "TSUTAYA BOOKSTORE ビバモール寝屋川",
+                  "address": "大阪府寝屋川市寝屋南2-22-2",
+                  "fee": "参加費 無料",
+                  "capacity": "32人",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1217/1/19041/20260719/1851175",
+                  "tags": []
+                },
+                {
+                  "id": 1851282,
                   "time": "13:30 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "カードショップ　ペガサス",
+                  "venue": "カードショップ ペガサス",
                   "address": "大阪府堺市中区深井東町3059　センチュリーハウス106号",
                   "fee": "参加費 無料",
                   "capacity": "8人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12744/20260712/1851281",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12744/20260719/1851282",
                   "tags": []
                 },
                 {
-                  "id": 1821183,
-                  "time": "13:30 ～ 15:00",
-                  "name": "【26/7】ポケモンカードゲーム　スタートデッキ100　そのままバトル（オープン）",
-                  "venue": "ふるいちイオンモールりんくう泉南",
-                  "address": "大阪府泉南市りんくう南浜3-12　イオンモールりんくう泉南２F",
-                  "fee": "参加費 無料",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1209/1/20747/20260712/1821183",
-                  "tags": []
-                },
-                {
-                  "id": 1885166,
-                  "time": "13:30 ～ 15:00",
-                  "name": "ポケモンカードゲーム教室（当日先着枠）",
-                  "venue": "ポケモンセンターオーサカDX",
-                  "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
-                  "fee": "参加費 無料",
-                  "capacity": "6人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1222/1/14160/20260712/1885166",
-                  "tags": []
-                },
-                {
-                  "id": 1854439,
+                  "id": 1854440,
                   "time": "13:30 ～ 16:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "カードショップマーキス",
@@ -250,143 +260,181 @@
                   "fee": "参加費 無料",
                   "capacity": "24人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/21995/20260712/1854439",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/21995/20260719/1854440",
                   "tags": []
                 },
                 {
-                  "id": 1853738,
+                  "id": 1850517,
+                  "time": "13:30 ～ 16:30",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "ふるいちイオンモールりんくう泉南",
+                  "address": "大阪府泉南市りんくう南浜3-12　イオンモールりんくう泉南２F",
+                  "fee": "参加費 無料",
+                  "capacity": "16人",
+                  "distance": "約45分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20747/20260719/1850517",
+                  "tags": []
+                },
+                {
+                  "id": 1853840,
                   "time": "14:00 ～",
-                  "name": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
-                  "venue": "TSUTAYA　枚方ベルパルレ",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "TSUTAYA 枚方ベルパルレ",
                   "address": "大阪府枚方市宮之阪4-28-12",
                   "fee": "参加費 無料",
                   "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1217/1/12741/20260712/1853738",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12741/20260719/1853840",
                   "tags": []
                 },
                 {
-                  "id": 1873701,
-                  "time": "14:00 ～ 15:00",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "Card Stand Ruby",
-                  "address": "大阪府東大阪市小若江1-10-14",
-                  "fee": "参加費 300円",
-                  "capacity": "8人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19749/20260712/1873701",
+                  "id": 1852808,
+                  "time": "14:00 ～",
+                  "name": "【26/7】エクストラバトルの日",
+                  "venue": "ドラゴンスター泉佐野店",
+                  "address": "大阪府泉佐野市市場西3丁目7番15号",
+                  "fee": "参加費 無料",
+                  "capacity": "32人",
+                  "distance": "約45分",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/11021/20260719/1852808",
                   "tags": []
                 },
                 {
-                  "id": 1866718,
+                  "id": 1866719,
                   "time": "14:00 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "カードキングダム　布施店",
+                  "venue": "カードキングダム 布施店",
                   "address": "大阪府東大阪市足代1-17-7",
                   "fee": "参加費 300円",
                   "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10979/20260712/1866718",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10979/20260719/1866719",
                   "tags": []
                 },
                 {
-                  "id": 1862646,
+                  "id": 1862647,
                   "time": "14:00 ～ 15:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　香里園店",
+                  "venue": "古本市場 香里園店",
                   "address": "大阪府寝屋川市松屋町20-12",
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/14180/20260712/1862646",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/14180/20260719/1862647",
                   "tags": []
                 },
                 {
-                  "id": 1856471,
+                  "id": 1856474,
                   "time": "14:00 ～ 16:00",
-                  "name": "【26/7】エクストラバトルの日",
-                  "venue": "イエローサブマリン　なんば本店",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "イエローサブマリン なんば本店",
                   "address": "大阪府大阪市浪速区難波中2-1-3",
                   "fee": "参加費 200円",
                   "capacity": "8人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/10928/20260712/1856471",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10928/20260719/1856474",
+                  "tags": [
+                    "near"
+                  ]
+                },
+                {
+                  "id": 1824693,
+                  "time": "14:00 ～ 16:00",
+                  "name": "【26/7】ポケモンカードゲーム　スタートデッキ100　そのままバトル（オープン）",
+                  "venue": "カードショップ 黄鶏屋",
+                  "address": "大阪府堺市堺区三国ケ丘御幸通18-7 2階",
+                  "fee": "参加費 900円(商品代含む)",
+                  "capacity": "16人",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1209/1/11001/20260719/1824693",
                   "tags": []
                 },
                 {
-                  "id": 1872614,
+                  "id": 1872616,
                   "time": "14:00 ～ 16:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "トレカショップ　スキップ玉出店",
+                  "venue": "トレカショップ スキップ玉出店",
                   "address": "大阪府大阪市住之江区粉浜西1-4-3　エバーグリーン住吉2F",
                   "fee": "参加費 無料",
                   "capacity": "32人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10931/20260712/1872614",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10931/20260719/1872616",
                   "tags": []
                 },
                 {
-                  "id": 1860666,
-                  "time": "14:30 ～ 18:30",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　東住吉店",
-                  "address": "大阪府大阪市東住吉区公園南矢田1-28-6",
+                  "id": 1859673,
+                  "time": "14:00 ～ 16:30",
+                  "name": "【26/7】ポケモンカードジム   マイジムNo.1決定戦",
+                  "venue": "カードプラン ジュークボックス",
+                  "address": "大阪府堺市北区長曽根町735－3　新金岡ビル3F",
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12685/20260712/1860666",
+                  "url": "https://players.pokemon-card.com/event/detail/1218/1/13021/20260719/1859673",
                   "tags": []
                 },
                 {
-                  "id": 1870485,
-                  "time": "15:00 ～",
+                  "id": 1849229,
+                  "time": "14:00 ～ 16:30",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "ジョーシン日根野店 キッズランド",
+                  "address": "大阪府泉佐野市日根野2496-1",
+                  "fee": "参加費 無料",
+                  "capacity": "16人",
+                  "distance": "約45分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/11022/20260719/1849229",
+                  "tags": []
+                },
+                {
+                  "id": 1857906,
+                  "time": "14:00 ～ 16:30",
                   "name": "【26/7】エクストラバトルの日",
+                  "venue": "トレカGO!GO!",
+                  "address": "大阪府茨木市駅前１丁目３番９号　生田ビル301号",
+                  "fee": "参加費 100円",
+                  "capacity": "16人",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/20857/20260719/1857906",
+                  "tags": []
+                },
+                {
+                  "id": 1870531,
+                  "time": "15:00 ～",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "あっぷる 今福店",
                   "address": "大阪府大阪市城東区今福東1-11-27",
                   "fee": "参加費 無料",
                   "capacity": "32人",
                   "distance": "約18分",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/12120/20260712/1870485",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12120/20260719/1870531",
                   "tags": []
                 },
                 {
-                  "id": 1862713,
+                  "id": 1862715,
                   "time": "15:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "みどり文具店",
                   "address": "大阪府和泉市幸2-5-36",
                   "fee": "参加費 無料",
                   "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/11012/20260712/1862713",
+                  "distance": "約45分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/11012/20260719/1862715",
                   "tags": []
                 },
                 {
-                  "id": 1850041,
+                  "id": 1860618,
                   "time": "15:00 ～ 16:00",
-                  "name": "【26/7】エクストラバトルの日",
-                  "venue": "古本市場　東大阪店",
-                  "address": "大阪府東大阪市若江西新町4-7-25",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "おじゃま館小路店",
+                  "address": "大阪府大阪市生野区小路東1丁目1番18号",
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/10982/20260712/1850041",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22684/20260719/1860618",
                   "tags": []
                 },
                 {
-                  "id": 1885170,
-                  "time": "15:00 ～ 16:30",
-                  "name": "ポケモンカードゲーム教室（当日先着枠）",
-                  "venue": "ポケモンセンターオーサカDX",
-                  "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
-                  "fee": "参加費 無料",
-                  "capacity": "6人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1222/1/14160/20260712/1885170",
-                  "tags": []
-                },
-                {
-                  "id": 1876702,
+                  "id": 1876709,
                   "time": "15:00 ～ 17:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "BOOKOFF門真古川橋店",
@@ -394,11 +442,11 @@
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22687/20260712/1876702",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22687/20260719/1876709",
                   "tags": []
                 },
                 {
-                  "id": 1861874,
+                  "id": 1861876,
                   "time": "15:00 ～ 17:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "ドラゴンスターららぽーと堺",
@@ -406,47 +454,47 @@
                   "fee": "参加費 無料",
                   "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19021/20260712/1861874",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19021/20260719/1861876",
                   "tags": []
                 },
                 {
-                  "id": 1870942,
+                  "id": 1870943,
                   "time": "15:00 ～ 17:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　生野店",
+                  "venue": "古本市場 生野店",
                   "address": "大阪府大阪市生野区巽東1-6-27",
                   "fee": "参加費 無料",
                   "capacity": "10人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15270/20260712/1870942",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15270/20260719/1870943",
                   "tags": []
                 },
                 {
-                  "id": 1852586,
+                  "id": 1852587,
                   "time": "15:00 ～ 17:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　西淀川店",
+                  "venue": "古本市場 西淀川店",
                   "address": "大阪府大阪市西淀川区千舟2-15-10",
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/18200/20260712/1852586",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/18200/20260719/1852587",
                   "tags": []
                 },
                 {
-                  "id": 1871098,
+                  "id": 1871099,
                   "time": "15:00 ～ 17:30",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "古本市場　久宝寺店",
+                  "venue": "古本市場 久宝寺店",
                   "address": "大阪府八尾市久宝寺1-1-4",
                   "fee": "参加費 無料",
                   "capacity": "8人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15255/20260712/1871098",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/15255/20260719/1871099",
                   "tags": []
                 },
                 {
-                  "id": 1868277,
+                  "id": 1868278,
                   "time": "15:00 ～ 18:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "【CARDBOX】高槻店",
@@ -454,35 +502,35 @@
                   "fee": "参加費 100円",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10948/20260712/1868277",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10948/20260719/1868278",
                   "tags": []
                 },
                 {
-                  "id": 1859957,
+                  "id": 1860293,
                   "time": "15:30 ～ 17:30",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "カードショップきりん　大阪天満橋店",
+                  "name": "【26/7】ポケモンカードジム   マイジムNo.1決定戦",
+                  "venue": "カードショップきりん 大阪天満橋店",
                   "address": "大阪府大阪市中央区天満橋京町2-15　８階Ｂ室",
                   "fee": "参加費 200円",
                   "capacity": "16人",
-                  "distance": "約12分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22032/20260712/1859957",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1218/1/22032/20260719/1860293",
                   "tags": []
                 },
                 {
-                  "id": 1852299,
+                  "id": 1852309,
                   "time": "15:30 ～ 17:30",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "name": "【26/7】ポケモンカードジム   マイジムNo.1決定戦",
                   "venue": "ホビーショップHI！TOY",
                   "address": "大阪府東大阪市西鴻池町2-2-33",
                   "fee": "参加費 100円又は１パック購入",
                   "capacity": "12人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/13116/20260712/1852299",
+                  "url": "https://players.pokemon-card.com/event/detail/1218/1/13116/20260719/1852309",
                   "tags": []
                 },
                 {
-                  "id": 1861405,
+                  "id": 1861406,
                   "time": "16:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "【CARDBOX】江坂店",
@@ -490,11 +538,11 @@
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12141/20260712/1861405",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12141/20260719/1861406",
                   "tags": []
                 },
                 {
-                  "id": 1874433,
+                  "id": 1874434,
                   "time": "16:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "カードショップONIGIRI",
@@ -502,207 +550,163 @@
                   "fee": "参加費 100円以上のお買い物",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20760/20260712/1874433",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20760/20260719/1874434",
                   "tags": []
                 },
                 {
-                  "id": 1859684,
-                  "time": "16:00 ～ 17:30",
-                  "name": "【26/7】エクストラバトルの日",
-                  "venue": "カードプラン　ジュークボックス",
+                  "id": 1864650,
+                  "time": "16:00 ～ 17:00",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "カードプラン ジュークボックス",
                   "address": "大阪府堺市北区長曽根町735－3　新金岡ビル3F",
-                  "fee": "参加費 100円(学生無料)",
+                  "fee": "参加費 無料",
                   "capacity": "16人",
-                  "distance": "約8分",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/13021/20260712/1859684",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/13021/20260719/1864650",
                   "tags": []
                 },
                 {
-                  "id": 1875639,
+                  "id": 1875644,
                   "time": "16:00 ～ 18:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "Speak easy",
                   "address": "大阪府大阪市浪速区難波中1-16-11　レック難波503",
                   "fee": "参加費 300円",
                   "capacity": "8人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260712/1875639",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260719/1875644",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1852499,
+                  "id": 1852500,
                   "time": "16:00 ～ 18:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "カードショップ あーと",
                   "address": "大阪府大阪市浪速区日本橋4-15-6",
                   "fee": "参加費 無料",
                   "capacity": "16人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/18981/20260712/1852499",
-                  "tags": []
-                },
-                {
-                  "id": 1876410,
-                  "time": "16:00 ～ 19:00",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "GIRAFULLオタロード店",
-                  "address": "大阪府大阪市浪速区日本橋3丁目8-16　2階",
-                  "fee": "参加費 無料",
-                  "capacity": "64人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20895/20260712/1876410",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/18981/20260719/1852500",
                   "tags": [
-                    "large"
+                    "near"
                   ]
                 },
                 {
-                  "id": 1848361,
+                  "id": 1848362,
                   "time": "16:30 ～ 18:00",
-                  "name": "【26/7】ポケモンカードジム   マイジムNo.1決定戦",
-                  "venue": "古本市場　くずは店",
+                  "name": "【26/7】エクストラバトルの日",
+                  "venue": "古本市場 くずは店",
                   "address": "大阪府枚方市船橋本町2-56",
                   "fee": "参加費 無料",
                   "capacity": "8人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1218/1/10968/20260712/1848361",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/10968/20260719/1848362",
                   "tags": []
                 },
                 {
-                  "id": 1854246,
+                  "id": 1862182,
                   "time": "16:30 ～ 18:30",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "GIRAFULLなんば店",
-                  "address": "大阪府大阪市中央区難波千日前13-13 　難波KHビル",
-                  "fee": "参加費 無料",
-                  "capacity": "64人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19850/20260712/1854246",
+                  "name": "【26/7】エクストラバトルの日",
+                  "venue": "トレカ専門店ポップタウン",
+                  "address": "大阪府大阪市浪速区日本橋4丁目9-22　リファインビル4階",
+                  "fee": "参加費 500円",
+                  "capacity": "24人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1212/1/20022/20260719/1862182",
                   "tags": [
-                    "large"
+                    "near"
                   ]
                 },
                 {
-                  "id": 1865026,
+                  "id": 1865027,
                   "time": "17:00 ～",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "トイコンプ　住道店",
+                  "venue": "トイコンプ 住道店",
                   "address": "大阪府大東市赤井1-13-1 ポップタウン住道1番館2F",
                   "fee": "参加費 無料",
                   "capacity": "20人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10972/20260712/1865026",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10972/20260719/1865027",
                   "tags": []
                 },
                 {
-                  "id": 1854076,
+                  "id": 1855351,
+                  "time": "17:00 ～",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "トレカショップ竜のしっぽ 布施店",
+                  "address": "大阪府東大阪市長堂１丁目２−１  A+FUSEビル ３階",
+                  "fee": "参加費 無料",
+                  "capacity": "32人",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19938/20260719/1855351",
+                  "tags": []
+                },
+                {
+                  "id": 1854081,
                   "time": "17:00 ～ 18:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "カードショップ　黄鶏屋",
+                  "venue": "カードショップ 黄鶏屋",
                   "address": "大阪府堺市堺区三国ケ丘御幸通18-7 2階",
                   "fee": "参加費 150円以上のお買い物",
                   "capacity": "28人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/11001/20260712/1854076",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/11001/20260719/1854081",
                   "tags": []
                 },
                 {
-                  "id": 1870602,
-                  "time": "17:00 ～ 18:30",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "カードショップすけきよ南森町店",
-                  "address": "大阪府大阪市北区天神橋2丁目北2-26　マルサンビル803",
-                  "fee": "参加費 300円",
-                  "capacity": "12人",
-                  "distance": "約8分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20926/20260712/1870602",
-                  "tags": []
-                },
-                {
-                  "id": 1851688,
-                  "time": "17:00 ～ 19:00",
-                  "name": "【26/7】エクストラバトルの日",
-                  "venue": "トレカショップ ワンショット",
-                  "address": "大阪府池田市石橋1-8-1　サンロード石橋２階",
+                  "id": 1874941,
+                  "time": "17:30 ～",
+                  "name": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
+                  "venue": "ドラゴンスター日本橋3号店",
+                  "address": "大阪府大阪市浪速区敷津東2-1-5",
                   "fee": "参加費 無料",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/22714/20260712/1851688",
-                  "tags": []
+                  "capacity": "32人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1217/1/14773/20260719/1874941",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1858063,
-                  "time": "17:00 ～ 21:00",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "トレカGO!GO!",
-                  "address": "大阪府茨木市駅前１丁目３番９号　生田ビル301号",
-                  "fee": "参加費 100円",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20857/20260712/1858063",
-                  "tags": []
-                },
-                {
-                  "id": 1872652,
+                  "id": 1864463,
                   "time": "18:00 ～",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "TCGスタジアム ジャック∞ポット　豊新店",
-                  "address": "大阪府大阪市東淀川区豊新5-11-10",
-                  "fee": "参加費 300円",
-                  "capacity": "8人",
+                  "name": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
+                  "venue": "トイコンプ高槻店",
+                  "address": "大阪府高槻市天神町1丁目1-10-2F",
+                  "fee": "参加費 無料",
+                  "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10900/20260712/1872652",
+                  "url": "https://players.pokemon-card.com/event/detail/1217/1/19966/20260719/1864463",
                   "tags": []
                 },
                 {
-                  "id": 1827342,
-                  "time": "18:00 ～ 20:00",
-                  "name": "【26/7】ポケモンカードゲーム　スタートデッキ100　そのままバトル（オープン）",
-                  "venue": "ホビープラネット",
-                  "address": "大阪府寝屋川市東大利町2-8 若林ビル3F",
-                  "fee": "参加費 参加費500円＋デッキ購入代金890円",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1209/1/13145/20260712/1827342",
-                  "tags": []
-                },
-                {
-                  "id": 1849949,
+                  "id": 1849950,
                   "time": "18:00 ～ 20:30",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "トレカショップ竜のしっぽ　大阪梅田店",
+                  "venue": "トレカショップ竜のしっぽ 大阪梅田店",
                   "address": "大阪府大阪市北区芝田2-3-23　メイプルビル芝田2階",
                   "fee": "参加費 無料",
                   "capacity": "32人",
-                  "distance": "約8分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10894/20260712/1849949",
+                  "distance": "約12分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10894/20260719/1849950",
                   "tags": []
                 },
                 {
-                  "id": 1876543,
+                  "id": 1876544,
                   "time": "18:00 ～ 21:00",
                   "name": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
-                  "venue": "トイコンプ　大阪駅前第3ビル店",
+                  "venue": "トイコンプ 大阪駅前第3ビル店",
                   "address": "大阪府大阪市北区梅田1-1-3　2F-21",
                   "fee": "参加費 無料",
                   "capacity": "32人",
-                  "distance": "約8分",
-                  "url": "https://players.pokemon-card.com/event/detail/1217/1/10893/20260712/1876543",
+                  "distance": "約12分",
+                  "url": "https://players.pokemon-card.com/event/detail/1217/1/10893/20260719/1876544",
                   "tags": []
                 },
                 {
-                  "id": 1872653,
-                  "time": "18:30 ～",
-                  "name": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "TCGスタジアム ジャック∞ポット　豊新店",
-                  "address": "大阪府大阪市東淀川区豊新5-11-10",
-                  "fee": "参加費 300円",
-                  "capacity": "8人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10900/20260712/1872653",
-                  "tags": []
-                },
-                {
-                  "id": 1873853,
+                  "id": 1873854,
                   "time": "18:30 ～ 20:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "トイコンプアリオ八尾店",
@@ -710,23 +714,25 @@
                   "fee": "参加費 無料",
                   "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19788/20260712/1873853",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19788/20260719/1873854",
                   "tags": []
                 },
                 {
-                  "id": 1875653,
+                  "id": 1875655,
                   "time": "19:00 ～ 21:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "Speak easy",
                   "address": "大阪府大阪市浪速区難波中1-16-11　レック難波503",
                   "fee": "参加費 300円",
                   "capacity": "8人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260712/1875653",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260719/1875655",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1848898,
+                  "id": 1848872,
                   "time": "19:00 ～ 21:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "トイコンプ堺東店",
@@ -734,23 +740,25 @@
                   "fee": "参加費 無料",
                   "capacity": "24人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12774/20260712/1848898",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12774/20260719/1848872",
                   "tags": []
                 },
                 {
-                  "id": 1862212,
+                  "id": 1862213,
                   "time": "19:00 ～ 21:00",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "トレカ専門店ポップタウン",
                   "address": "大阪府大阪市浪速区日本橋4丁目9-22　リファインビル4階",
                   "fee": "参加費 300円",
                   "capacity": "24人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20022/20260712/1862212",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20022/20260719/1862213",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1850241,
+                  "id": 1850247,
                   "time": "19:30 ～ 21:30",
                   "name": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "トレカBOON",
@@ -758,8 +766,22 @@
                   "fee": "参加費 200円",
                   "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22056/20260712/1850241",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22056/20260719/1850247",
                   "tags": []
+                },
+                {
+                  "id": 1869007,
+                  "time": "20:00 ～ 22:00",
+                  "name": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "BAR UNKNOWN trading card shop",
+                  "address": "大阪府大阪市浪速区難波中2-7-7　ナンバＦＫビル2Ｆ",
+                  "fee": "参加費 500円1drink付",
+                  "capacity": "24人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12188/20260719/1869007",
+                  "tags": [
+                    "near"
+                  ]
                 }
               ]
             },
@@ -769,213 +791,110 @@
               "color": "#d97706",
               "events": [
                 {
-                  "id": 1876405,
-                  "time": "10:30 ～ 13:30",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "GIRAFULLオタロード店",
-                  "address": "大阪府大阪市浪速区日本橋3丁目8-16　2階",
-                  "fee": "参加費 無料",
-                  "capacity": "32人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20895/20260712/1876405",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1874465,
-                  "time": "13:00 ～",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "カードショップONIGIRI",
-                  "address": "大阪府堺市堺区戎島町2丁53-1　キッコービル204",
-                  "fee": "参加費 100円",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20760/20260712/1874465",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1870405,
-                  "time": "13:00 ～ 16:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "エイトマン 泉佐野店",
-                  "address": "大阪府泉佐野市下瓦屋2丁目2-77 　いこらも～る泉佐野2階",
-                  "fee": "参加費 無料",
-                  "capacity": "32人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20007/20260712/1870405",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1870807,
+                  "id": 1870781,
                   "time": "13:30 ～",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
+                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
                   "venue": "カードショップキャット桃谷店",
                   "address": "大阪府大阪市天王寺区堂ケ芝1-5-1阪奈ビル101",
                   "fee": "参加費 無料",
-                  "capacity": "8人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1214/1/18177/20260712/1870807",
+                  "capacity": "16人",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/18177/20260719/1870781",
                   "tags": [
                     "csp"
                   ]
                 },
                 {
-                  "id": 1852811,
+                  "id": 1874000,
                   "time": "14:00 ～",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "ドラゴンスター泉佐野店",
-                  "address": "大阪府泉佐野市市場西3丁目7番15号",
-                  "fee": "参加費 無料",
-                  "capacity": "32人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/11021/20260712/1852811",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1859679,
-                  "time": "14:00 ～ 15:30",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "カードプラン　ジュークボックス",
-                  "address": "大阪府堺市北区長曽根町735－3　新金岡ビル3F",
-                  "fee": "参加費 100円(学生無料)",
+                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
+                  "venue": "カードショップ路地裏オタロード本店",
+                  "address": "大阪府大阪市浪速区日本橋4丁目16-6　奥村ビル3階",
+                  "fee": "参加費 300円",
                   "capacity": "16人",
-                  "distance": "約8分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/13021/20260712/1859679",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1214/1/19917/20260719/1874000",
                   "tags": [
-                    "csp"
+                    "csp",
+                    "near"
                   ]
                 },
                 {
-                  "id": 1859465,
-                  "time": "14:00 ～ 16:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "HOBBY SHOP PLATZ",
-                  "address": "大阪府泉佐野市りんくう往来南３番地 　りんくうプレジャータウンシークル１階　大観覧車前",
-                  "fee": "参加費 無料",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20034/20260712/1859465",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1857908,
-                  "time": "14:00 ～ 16:30",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トレカGO!GO!",
-                  "address": "大阪府茨木市駅前１丁目３番９号　生田ビル301号",
-                  "fee": "参加費 200円",
-                  "capacity": "16人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20857/20260712/1857908",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1850937,
+                  "id": 1850938,
                   "time": "16:00 ～",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "TOY　COMP　茨木店",
+                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
+                  "venue": "TOY COMP 茨木店",
                   "address": "大阪府茨木市双葉町6丁目1番　暁ビル2F",
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/10946/20260712/1850937",
+                  "url": "https://players.pokemon-card.com/event/detail/1214/1/10946/20260719/1850938",
                   "tags": [
                     "csp"
                   ]
                 },
                 {
-                  "id": 1855059,
-                  "time": "17:00 ～",
+                  "id": 1870782,
+                  "time": "16:00 ～",
                   "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トレカショップ竜のしっぽ　布施店",
-                  "address": "大阪府東大阪市長堂１丁目２−１  A+FUSEビル ３階",
+                  "venue": "カードショップキャット桃谷店",
+                  "address": "大阪府大阪市天王寺区堂ケ芝1-5-1阪奈ビル101",
                   "fee": "参加費 無料",
-                  "capacity": "32人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/19938/20260712/1855059",
+                  "capacity": "16人",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/18177/20260719/1870782",
                   "tags": [
                     "csp"
                   ]
                 },
                 {
-                  "id": 1864458,
-                  "time": "18:00 ～",
+                  "id": 1851682,
+                  "time": "17:00 ～ 19:00",
                   "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トイコンプ高槻店",
-                  "address": "大阪府高槻市天神町1丁目1-10-2F",
+                  "venue": "トレカショップ ワンショット",
+                  "address": "大阪府池田市石橋1-8-1　サンロード石橋２階",
                   "fee": "参加費 無料",
                   "capacity": "16人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/19966/20260712/1864458",
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/22714/20260719/1851682",
                   "tags": [
                     "csp"
                   ]
                 },
                 {
-                  "id": 1855973,
-                  "time": "18:00 ～ 20:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トレカBOON",
-                  "address": "大阪府東大阪市小若江4-12-18",
-                  "fee": "参加費 200円",
-                  "capacity": "32人",
-                  "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/22056/20260712/1855973",
-                  "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1860210,
+                  "id": 1860203,
                   "time": "18:00 ～ 21:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
-                  "venue": "カードショップきりん　大阪天満橋店",
+                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+                  "venue": "カードショップきりん 大阪天満橋店",
                   "address": "大阪府大阪市中央区天満橋京町2-15　８階Ｂ室",
                   "fee": "参加費 300円",
                   "capacity": "16人",
-                  "distance": "約12分",
-                  "url": "https://players.pokemon-card.com/event/detail/1214/1/22032/20260712/1860210",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/22032/20260719/1860203",
                   "tags": [
                     "csp"
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "id": "friend_battle",
+              "name": "いっしょにフレンドバトル",
+              "color": "#059669",
+              "events": [
                 {
-                  "id": 1873687,
-                  "time": "18:00 ～ 21:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トレカショップ竜のしっぽ　梅田NU茶屋町店",
-                  "address": "大阪府大阪市北区茶屋町10番12号　NU茶屋町4F",
-                  "fee": "参加費 500円",
-                  "capacity": "32人",
-                  "distance": "約8分",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260712/1873687",
+                  "id": 1886832,
+                  "time": "10:00 ～ 19:30",
+                  "name": "ポケモンセンター　ポケカでカジュアルバトル！",
+                  "venue": "ポケモンセンターオーサカDX",
+                  "address": "大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
+                  "fee": "参加費 無料",
+                  "capacity": "80人",
+                  "distance": "約30分",
+                  "url": "https://players.pokemon-card.com/event/detail/147/1/14160/20260719/1886832",
                   "tags": [
-                    "csp"
-                  ]
-                },
-                {
-                  "id": 1869004,
-                  "time": "20:00 ～ 22:00",
-                  "name": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
-                  "venue": "BAR UNKNOWN trading card shop",
-                  "address": "大阪府大阪市浪速区難波中2-7-7　ナンバＦＫビル2Ｆ",
-                  "fee": "参加費 500円1drink付",
-                  "capacity": "24人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1214/1/12188/20260712/1869004",
-                  "tags": [
-                    "csp"
+                    "large",
+                    "beginner"
                   ]
                 }
               ]
@@ -986,31 +905,51 @@
               "color": "#7c3aed",
               "events": [
                 {
-                  "id": 1847420,
-                  "time": "10:00 ～ 12:30",
-                  "name": "つるポケ７月",
-                  "venue": "こでぃー",
-                  "address": "大阪府大阪市鶴見区横堤5-3-15",
-                  "fee": "参加費 500円",
-                  "capacity": "16人",
-                  "distance": "約18分",
-                  "url": "https://players.pokemon-card.com/event/detail/1190/1/21643/20260712/1847420",
-                  "tags": []
+                  "id": 1862313,
+                  "time": "10:30 ～ 14:30",
+                  "name": "【第4回モンスターボール交流会mini】 with 関西ニキ",
+                  "venue": "じぞう",
+                  "address": "大阪府大阪市中央区難波3-2-18　3Fトレカキャピタル",
+                  "fee": "参加費 400円",
+                  "capacity": "6人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1190/2/21564/20260719/1862313",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1835053,
-                  "time": "10:30 ～ 12:30",
-                  "name": "パック争奪戦",
-                  "venue": "ぽとふ",
-                  "address": "大阪府大阪市中央区天満橋京町2ー15ー8B",
-                  "fee": "参加費 300円",
-                  "capacity": "16人",
-                  "distance": "約12分",
-                  "url": "https://players.pokemon-card.com/event/detail/1190/1/20523/20260712/1835053",
-                  "tags": []
+                  "id": 1841421,
+                  "time": "11:00 ～ 18:00",
+                  "name": "コガネカップ",
+                  "venue": "うえたく",
+                  "address": "大阪府大阪市中央区難波千日前13-13 　難波KHビル",
+                  "fee": "参加費 １チーム３０００円",
+                  "capacity": "128人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1191/2/14986/20260719/1841421",
+                  "tags": [
+                    "large",
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1854529,
+                  "id": 1841422,
+                  "time": "11:00 ～ 18:00",
+                  "name": "コガネカップB",
+                  "venue": "ゆぅり",
+                  "address": "大阪府大阪市中央区難波千日前13-13 　難波KHビル",
+                  "fee": "参加費 中学生以下500円　高校生以上1000円",
+                  "capacity": "120人",
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1191/2/19551/20260719/1841422",
+                  "tags": [
+                    "large",
+                    "near"
+                  ]
+                },
+                {
+                  "id": 1854531,
                   "time": "11:30 ～ 13:30",
                   "name": "マーキスカップ",
                   "venue": "トムソン",
@@ -1018,44 +957,48 @@
                   "fee": "参加費 無料",
                   "capacity": "32人",
                   "distance": "約30分",
-                  "url": "https://players.pokemon-card.com/event/detail/1190/1/21037/20260712/1854529",
+                  "url": "https://players.pokemon-card.com/event/detail/1190/2/21037/20260719/1854531",
                   "tags": []
                 },
                 {
-                  "id": 1860388,
+                  "id": 1890891,
+                  "time": "13:00 ～ 15:00",
+                  "name": "きりんランダムデッキ杯 1st anniversary",
+                  "venue": "ぽとふ",
+                  "address": "大阪府大阪市中央区天満橋京町2ー15ー8B",
+                  "fee": "参加費 500円",
+                  "capacity": "16人",
+                  "distance": "約18分",
+                  "url": "https://players.pokemon-card.com/event/detail/1190/2/20523/20260719/1890891",
+                  "tags": []
+                },
+                {
+                  "id": 1860399,
                   "time": "13:00 ～ 17:00",
-                  "name": "ニンニンBOX争奪戦",
+                  "name": "ニンニンエクストラレギュBOX争奪戦",
                   "venue": "テイーガ",
                   "address": "大阪府大阪市浪速区日本橋西１丁目２−２５　2F",
                   "fee": "参加費 500円",
                   "capacity": "32人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1191/1/13619/20260712/1860388",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1191/2/13619/20260719/1860399",
+                  "tags": [
+                    "near"
+                  ]
                 },
                 {
-                  "id": 1847421,
-                  "time": "13:30 ～ 16:30",
-                  "name": "つるポケ７月",
-                  "venue": "こでぃー",
-                  "address": "大阪府大阪市鶴見区横堤5-3-15",
-                  "fee": "参加費 500円",
-                  "capacity": "16人",
-                  "distance": "約18分",
-                  "url": "https://players.pokemon-card.com/event/detail/1190/1/21643/20260712/1847421",
-                  "tags": []
-                },
-                {
-                  "id": 1862262,
+                  "id": 1862263,
                   "time": "14:00 ～ 16:00",
                   "name": "カジュアルバトル",
                   "venue": "はやお",
                   "address": "大阪府大阪市浪速区日本橋4-9-22リファインビル4階",
                   "fee": "参加費 500円",
                   "capacity": "24人",
-                  "distance": "約10分",
-                  "url": "https://players.pokemon-card.com/event/detail/1190/1/12028/20260712/1862262",
-                  "tags": []
+                  "distance": "約5分",
+                  "url": "https://players.pokemon-card.com/event/detail/1190/2/12028/20260719/1862263",
+                  "tags": [
+                    "near"
+                  ]
                 }
               ]
             }
@@ -1064,74 +1007,37 @@
             {
               "id": "competitive-csp-route",
               "name": "CSP優先の競技寄りルート",
-              "subtitle": "午前のなんば周辺から夕方のオープンリーグまでCSP候補を厚く見る",
+              "subtitle": "桃谷のオープンリーグを軸に、夜の天満橋までCSP候補をつなぐ",
               "rating": 5,
               "steps": [
                 {
-                  "time": "10:30 ～ 13:30",
+                  "time": "13:30 ～",
                   "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "GIRAFULLオタロード店",
+                  "venue": "カードショップキャット桃谷店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20895/20260712/1876405"
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/18177/20260719/1870781"
                 },
                 {
-                  "time": "13:00 ～",
+                  "time": "16:00 ～",
                   "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "カードショップONIGIRI",
+                  "venue": "カードショップキャット桃谷店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20760/20260712/1874465"
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/18177/20260719/1870782"
                 },
                 {
-                  "time": "17:00 ～",
+                  "time": "18:00 ～ 21:00",
                   "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トレカショップ竜のしっぽ　布施店",
+                  "venue": "カードショップきりん 大阪天満橋店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/19938/20260712/1855059"
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/22032/20260719/1860203"
                 }
               ],
-              "merit": "早い時間からCSP対象を押さえ、午後以降も複数のオープンリーグ候補に切り替えられる。"
-            },
-            {
-              "id": "namba-girafull-route",
-              "name": "なんば・GIRAFULL軸ルート",
-              "subtitle": "なんば周辺で移動を抑え、GIRAFULLなんば店のX確認済みジムバトルにつなぐ",
-              "rating": 4,
-              "steps": [
-                {
-                  "time": "10:30 ～ 13:30",
-                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "GIRAFULLオタロード店",
-                  "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20895/20260712/1876405"
-                },
-                {
-                  "time": "13:00 ～ 15:00",
-                  "event": "【26/7】エクストラバトルの日",
-                  "venue": "トレカチャンピオンなんば日本橋店",
-                  "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/19054/20260712/1849831"
-                },
-                {
-                  "time": "16:30 ～ 18:30",
-                  "event": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "GIRAFULLなんば店",
-                  "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/19850/20260712/1854246"
-                },
-                {
-                  "time": "19:00 ～ 21:00",
-                  "event": "【26/7】ポケモンカードジム　ジムバトル",
-                  "venue": "Speak easy",
-                  "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260712/1875653"
-                }
-              ],
-              "merit": "日本橋・なんば周辺に寄せて移動負担を抑えつつ、GIRAFULLなんば店はX画像でフロアと定員を確認済み。"
+              "merit": "午後からCSP対象を複数押さえ、最後はお気に入り店舗の天満橋で締められる。"
             },
             {
               "id": "favorite-shop-route",
-              "name": "お気に入り店舗巡回ルート",
-              "subtitle": "おじゃま館蒲生店、あっぷる今福店、カードショップきりんを中心に組む",
+              "name": "お気に入り店舗優先ルート",
+              "subtitle": "蒲生・今福・天満橋の慣れた店舗を中心に回る",
               "rating": 4,
               "steps": [
                 {
@@ -1139,54 +1045,91 @@
                   "event": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "おじゃま館蒲生店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22019/20260712/1851230"
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/22019/20260719/1851231"
                 },
                 {
                   "time": "15:00 ～",
-                  "event": "【26/7】エクストラバトルの日",
+                  "event": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "あっぷる 今福店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1212/1/12120/20260712/1870485"
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12120/20260719/1870531"
+                },
+                {
+                  "time": "15:30 ～ 17:30",
+                  "event": "【26/7】ポケモンカードジム   マイジムNo.1決定戦",
+                  "venue": "カードショップきりん 大阪天満橋店",
+                  "area": "大阪府",
+                  "url": "https://players.pokemon-card.com/event/detail/1218/1/22032/20260719/1860293"
                 },
                 {
                   "time": "18:00 ～ 21:00",
-                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
-                  "venue": "カードショップきりん　大阪天満橋店",
+                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+                  "venue": "カードショップきりん 大阪天満橋店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1214/1/22032/20260712/1860210"
+                  "url": "https://players.pokemon-card.com/event/detail/1213/1/22032/20260719/1860203"
                 }
               ],
-              "merit": "お気に入り店舗の候補が3店そろい、参加枠と時間帯を見ながら夕方まで動ける。"
+              "merit": "参加枠が読みやすいお気に入り店舗を優先し、移動負担と夜の競技枠を両立できる。"
             },
             {
-              "id": "late-open-league-route",
-              "name": "夕方以降の競技継続ルート",
-              "subtitle": "午後遅めからオープン/マスターリーグを重ねて参加機会を増やす",
+              "id": "namba-large-route",
+              "name": "なんば大型・日本橋ルート",
+              "subtitle": "難波の大型自主イベントから日本橋周辺の候補へつなぐ",
+              "rating": 4,
+              "steps": [
+                {
+                  "time": "11:00 ～ 18:00",
+                  "event": "コガネカップ",
+                  "venue": "うえたく",
+                  "area": "大阪府",
+                  "url": "https://players.pokemon-card.com/event/detail/1191/2/14986/20260719/1841421"
+                },
+                {
+                  "time": "11:00 ～",
+                  "event": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "ドラゴンスター日本橋2号店",
+                  "area": "大阪府",
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10927/20260719/1860801"
+                },
+                {
+                  "time": "17:30 ～",
+                  "event": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
+                  "venue": "ドラゴンスター日本橋3号店",
+                  "area": "大阪府",
+                  "url": "https://players.pokemon-card.com/event/detail/1217/1/14773/20260719/1874941"
+                }
+              ],
+              "merit": "なんば周辺に滞在しながら大規模候補とジム系候補を比較しやすい。"
+            },
+            {
+              "id": "casual-late-route",
+              "name": "カジュアル寄り遅めルート",
+              "subtitle": "長時間開催と夕方以降の大阪市内候補で無理なく参加する",
               "rating": 3,
               "steps": [
                 {
-                  "time": "16:00 ～",
-                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "TOY　COMP　茨木店",
+                  "time": "10:00 ～ 19:30",
+                  "event": "ポケモンセンター　ポケカでカジュアルバトル！",
+                  "venue": "ポケモンセンターオーサカDX",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/10946/20260712/1850937"
+                  "url": "https://players.pokemon-card.com/event/detail/147/1/14160/20260719/1886832"
                 },
                 {
-                  "time": "18:00 ～ 21:00",
-                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                  "venue": "トレカショップ竜のしっぽ　梅田NU茶屋町店",
+                  "time": "18:00 ～ 20:30",
+                  "event": "【26/7】ポケモンカードジム　ジムバトル",
+                  "venue": "トレカショップ竜のしっぽ 大阪梅田店",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260712/1873687"
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/10894/20260719/1849950"
                 },
                 {
                   "time": "20:00 ～ 22:00",
-                  "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
+                  "event": "【26/7】ポケモンカードジム　ジムバトル",
                   "venue": "BAR UNKNOWN trading card shop",
                   "area": "大阪府",
-                  "url": "https://players.pokemon-card.com/event/detail/1214/1/12188/20260712/1869004"
+                  "url": "https://players.pokemon-card.com/event/detail/1210/1/12188/20260719/1869007"
                 }
               ],
-              "merit": "昼から動けない場合でもCSP対象を夕方以降に確保でき、梅田・なんば方面へ寄せられる。"
+              "merit": "朝から夜まで候補が残るため、当日の体力や予定に合わせて参加時間を調整しやすい。"
             }
           ],
           "locationFilters": [
@@ -1216,84 +1159,75 @@
           "focusPlans": {
             "namba-umeda": [
               {
-                "id": "namba-girafull-route",
-                "name": "なんば・GIRAFULL軸ルート",
-                "subtitle": "なんば周辺で移動を抑え、GIRAFULLなんば店のX確認済みジムバトルにつなぐ",
+                "id": "namba-large-route",
+                "name": "なんば大型・日本橋ルート",
+                "subtitle": "難波の大型自主イベントから日本橋周辺の候補へつなぐ",
                 "rating": 4,
                 "steps": [
                   {
-                    "time": "10:30 ～ 13:30",
-                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                    "venue": "GIRAFULLオタロード店",
+                    "time": "11:00 ～ 18:00",
+                    "event": "コガネカップ",
+                    "venue": "うえたく",
                     "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1213/1/20895/20260712/1876405"
+                    "url": "https://players.pokemon-card.com/event/detail/1191/2/14986/20260719/1841421"
                   },
                   {
-                    "time": "13:00 ～ 15:00",
-                    "event": "【26/7】エクストラバトルの日",
-                    "venue": "トレカチャンピオンなんば日本橋店",
-                    "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1212/1/19054/20260712/1849831"
-                  },
-                  {
-                    "time": "16:30 ～ 18:30",
+                    "time": "11:00 ～",
                     "event": "【26/7】ポケモンカードジム　ジムバトル",
-                    "venue": "GIRAFULLなんば店",
+                    "venue": "ドラゴンスター日本橋2号店",
                     "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1210/1/19850/20260712/1854246"
+                    "url": "https://players.pokemon-card.com/event/detail/1210/1/10927/20260719/1860801"
                   },
                   {
-                    "time": "19:00 ～ 21:00",
-                    "event": "【26/7】ポケモンカードジム　ジムバトル",
-                    "venue": "Speak easy",
+                    "time": "17:30 ～",
+                    "event": "【26/7】ポケモンカードジム  マイジムNo.1決定戦",
+                    "venue": "ドラゴンスター日本橋3号店",
                     "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1210/1/20821/20260712/1875653"
+                    "url": "https://players.pokemon-card.com/event/detail/1217/1/14773/20260719/1874941"
                   }
                 ],
-                "merit": "日本橋・なんば周辺に寄せて移動負担を抑えつつ、GIRAFULLなんば店はX画像でフロアと定員を確認済み。"
+                "merit": "なんば周辺に滞在しながら大規模候補とジム系候補を比較しやすい。"
               },
               {
-                "id": "late-open-league-route",
-                "name": "夕方以降の競技継続ルート",
-                "subtitle": "午後遅めからオープン/マスターリーグを重ねて参加機会を増やす",
+                "id": "casual-late-route",
+                "name": "カジュアル寄り遅めルート",
+                "subtitle": "長時間開催と夕方以降の大阪市内候補で無理なく参加する",
                 "rating": 3,
                 "steps": [
                   {
-                    "time": "16:00 ～",
-                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                    "venue": "TOY　COMP　茨木店",
+                    "time": "10:00 ～ 19:30",
+                    "event": "ポケモンセンター　ポケカでカジュアルバトル！",
+                    "venue": "ポケモンセンターオーサカDX",
                     "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1213/1/10946/20260712/1850937"
+                    "url": "https://players.pokemon-card.com/event/detail/147/1/14160/20260719/1886832"
                   },
                   {
-                    "time": "18:00 ～ 21:00",
-                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
-                    "venue": "トレカショップ竜のしっぽ　梅田NU茶屋町店",
+                    "time": "18:00 ～ 20:30",
+                    "event": "【26/7】ポケモンカードジム　ジムバトル",
+                    "venue": "トレカショップ竜のしっぽ 大阪梅田店",
                     "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1213/1/20970/20260712/1873687"
+                    "url": "https://players.pokemon-card.com/event/detail/1210/1/10894/20260719/1849950"
                   },
                   {
                     "time": "20:00 ～ 22:00",
-                    "event": "【26/7】ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
+                    "event": "【26/7】ポケモンカードジム　ジムバトル",
                     "venue": "BAR UNKNOWN trading card shop",
                     "area": "大阪府",
-                    "url": "https://players.pokemon-card.com/event/detail/1214/1/12188/20260712/1869004"
+                    "url": "https://players.pokemon-card.com/event/detail/1210/1/12188/20260719/1869007"
                   }
                 ],
-                "merit": "昼から動けない場合でもCSP対象を夕方以降に確保でき、梅田・なんば方面へ寄せられる。"
+                "merit": "朝から夜まで候補が残るため、当日の体力や予定に合わせて参加時間を調整しやすい。"
               }
             ]
           },
           "notes": [
-            "Players Club APIで2026/07/12・大阪府の101件を収集し、開催中止とジュニアリーグ・シニアリーグ・小学生以下イベントを除外して82件を掲載。",
-            "GIRAFULLなんば店はX固定ポストの7月イベントカレンダー原寸画像を確認し、7/12のPK行（16:30 5F）をvenue_checksに記録。",
-            "お気に入り店舗は、おじゃま館蒲生店・あっぷる今福店・カードショップきりん大阪天満橋店に候補あり。トレカWINは対象日の候補なし。",
+            "Players Club APIで2026/07/19・大阪府の94件を収集し、開催中止・中止相当3件、年齢限定/小学生以下15件を除外して75件を掲載。",
+            "GIRAFULLなんば店はX匿名取得で7/19を含む原寸画像行を確認できなかったため、未検証の1件を候補・行動プランから除外。",
+            "満席/受付状況は変動するため、参加前にPlayers Club詳細ページを確認してください。",
             "お気に入り店舗フィルター: おじゃま館蒲生店（16人）: お気に入り店舗として候補に残し、13:00開始、満席ではないこと、参加枠、時間帯、移動負担を確認。",
             "お気に入り店舗フィルター: あっぷる 今福店（32人）: お気に入り店舗として候補に残し、15:00開始、満席ではないこと、参加枠、時間帯、移動負担を確認。",
-            "お気に入り店舗フィルター: カードショップきりん 大阪天満橋店（16人）: お気に入り店舗として候補に残し、13:00/15:30/18:00/10:30開始、満席ではないこと、参加枠、時間帯、移動負担を確認。",
-            "お気に入り店舗フィルター: トレカWIN（0件）: 2026/07/12・大阪府のPlayers Club検索結果内に該当候補なし。時間、空き状況、参加枠、移動負担を確認対象にしたが候補から除外。",
-            "GIRAFULLなんば Xスケジュール確認: フロア: 5F / ラベル色: 黄色（PK: ポケモン） / X固定ポストの2026年7月イベントカレンダー画像1枚目を原寸で確認。7/12（日）のPK行は16:30のジムバトル（5F、64人、参加費-）。 / 確認ポスト: https://x.com/GIRAFULL_Namba/status/2072221932251144377 / 原寸画像: https://pbs.twimg.com/media/HMICzlEaEAAaHzg.jpg?name=orig",
-            "GIRAFULLなんば X対象日イベント: 16:30 PK ジムバトル（階: 5F / ラベル色: 黄色 / 定員: 64人 / 参加費: -）"
+            "お気に入り店舗フィルター: カードショップきりん 大阪天満橋店（16人）: お気に入り店舗として候補に残し、15:30/18:00開始、満席ではないこと、参加枠、時間帯、移動負担を確認。",
+            "お気に入り店舗フィルター: トレカWIN（0件）: 2026/07/19・大阪府のPlayers Club検索結果内に該当候補なし。時間、空き状況、参加枠、移動負担を確認対象にしたが候補から除外。"
           ]
         }
       }
