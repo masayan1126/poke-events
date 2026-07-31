@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "report_date": "2026/07/31",
+    "report_day": "金",
+    "target_date": "2026/08/02",
+    "target_day": "日",
+    "area": "大阪府",
+    "region": "大阪府",
+    "search_url": "https://players.pokemon-card.com/event/search?offset=0&order=1&prefecture=27",
+    "total_events": 8,
+    "criteria": "Players Club検索結果で2026/08/02・大阪府を確認。CloudflareによりAPI直接取得がブロックされたため、検索結果スニペットと店舗情報で確認できた成人向け通常候補のみを掲載。年齢限定イベント、開催中止、Xカレンダー未確認のGIRAFULLなんば店は掲載対象外。行動プランはCSP対象、なんば・梅田周辺、時間帯、移動負担を基準に選定。"
+  },
+  "events": {
+    "gym_battle": [
+      {
+        "id": 1,
+        "datetime": "12:00 ～ 15:00",
+        "name": "【26/8】ポケモンカードジム ジムバトル",
+        "venue": "古本市場 菱江店",
+        "address": "大阪府東大阪市稲葉1-4-16",
+        "fee": "無料",
+        "capacity": "24人",
+        "travel_time": 25,
+        "url": "https://players.pokemon-card.com/event/search?shop_id=15258",
+        "is_full": false
+      },
+      {
+        "id": 2,
+        "datetime": "13:30 ～ 15:30",
+        "name": "【26/8】ポケモンカードジム ジムバトル",
+        "venue": "カードショップマーキス",
+        "address": "大阪府箕面市桜4-1-24 アーバンハイツ桜地下1階",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 35,
+        "url": "https://players.pokemon-card.com/event/detail/1088415/1/21995/20260802/1891799",
+        "is_full": false
+      },
+      {
+        "id": 3,
+        "datetime": "15:00 ～ 17:00",
+        "name": "【26/8】ポケモンカードジム ジムバトル",
+        "venue": "MINT GAMES 心斎橋アメリカ村店",
+        "address": "大阪府大阪市中央区西心斎橋1-6-14 心斎橋ビッグステップ",
+        "fee": "200円",
+        "capacity": "16人",
+        "travel_time": 15,
+        "url": "https://players.pokemon-card.com/event/search/18891/202608/list",
+        "is_full": false
+      },
+      {
+        "id": 4,
+        "datetime": "17:30 ～ 19:00",
+        "name": "【26/8】ポケモンカードジム ジムバトル",
+        "venue": "カードショップすけきよ南森町店",
+        "address": "大阪府大阪市北区天神橋2丁目北2-26 マルサンビル803",
+        "fee": "300円",
+        "capacity": "6人",
+        "travel_time": 10,
+        "url": "https://players.pokemon-card.com/event/detail/1088984/1/20926/20260802/1905882",
+        "is_full": false
+      },
+      {
+        "id": 5,
+        "datetime": "18:00 ～ 21:00",
+        "name": "【26/8】ポケモンカードジム マイジムNo.1決定戦",
+        "venue": "トイコンプ 大阪駅前第3ビル店",
+        "address": "大阪府大阪市北区梅田1-1-3 2F-21",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1089045/1/10893/20260802/1887610",
+        "is_full": false
+      }
+    ],
+    "open_league": [
+      {
+        "id": 6,
+        "datetime": "12:30 ～ 15:30",
+        "name": "【26/8】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "トレカショップ竜のしっぽ 大阪梅田店",
+        "address": "大阪府大阪市北区芝田2-3-23 メイプルビル芝田2F・3F",
+        "fee": "300円",
+        "capacity": "16人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/search?keyword=%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8A%E3%83%BC%E3%82%BA%E3%83%AA%E3%83%BC%E3%82%B0&offset=0&order=1",
+        "is_full": false
+      },
+      {
+        "id": 7,
+        "datetime": "12:00 ～",
+        "name": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+        "venue": "ドラゴンスター日本橋2号店",
+        "address": "大阪府大阪市浪速区難波中2-1-17",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 20,
+        "url": "https://players.pokemon-card.com/event/detail/1058832/1/10927/20260802/1877570",
+        "is_full": false
+      }
+    ],
+    "friend_battle": [],
+    "self_event": [
+      {
+        "id": 8,
+        "datetime": "終日",
+        "name": "8/2大阪府イベント検索の追加確認枠",
+        "venue": "Players Club 大阪府検索",
+        "address": "大阪府",
+        "fee": "各店舗による",
+        "capacity": "検索結果確認",
+        "travel_time": 0,
+        "url": "https://players.pokemon-card.com/event/search?offset=0&order=1&prefecture=27",
+        "is_full": false
+      }
+    ]
+  },
+  "plans": [
+    {
+      "id": "p1",
+      "name": "梅田CSPから夜ジム",
+      "subtitle": "大阪梅田のCSP対象から駅前の夜開催へつなぐ",
+      "rating": 5,
+      "steps": [
+        {
+          "time": "12:30 ～ 15:30",
+          "event": "トレーナーズリーグ（オープンリーグ） CSP（16人）",
+          "venue": "トレカショップ竜のしっぽ 大阪梅田店",
+          "area": "梅田"
+        },
+        {
+          "time": "18:00 ～ 21:00",
+          "event": "マイジムNo.1決定戦（16人）",
+          "venue": "トイコンプ 大阪駅前第3ビル店",
+          "area": "梅田",
+          "url": "https://players.pokemon-card.com/event/detail/1089045/1/10893/20260802/1887610"
+        }
+      ],
+      "merit": "梅田周辺で移動を最小化し、CSP対象イベント後に同日夜の公式ジムへ移れる。"
+    },
+    {
+      "id": "p2",
+      "name": "なんば・心斎橋午後ルート",
+      "subtitle": "日本橋のキャンペーン系から心斎橋ジムバトルへ移動する",
+      "rating": 4,
+      "steps": [
+        {
+          "time": "12:00 ～",
+          "event": "メガエルレイドexSARゲットバトル（32人）",
+          "venue": "ドラゴンスター日本橋2号店",
+          "area": "日本橋",
+          "url": "https://players.pokemon-card.com/event/detail/1058832/1/10927/20260802/1877570"
+        },
+        {
+          "time": "15:00 ～ 17:00",
+          "event": "ジムバトル（16人）",
+          "venue": "MINT GAMES 心斎橋アメリカ村店",
+          "area": "心斎橋"
+        }
+      ],
+      "merit": "なんば・心斎橋周辺に寄せて、昼から夕方まで無理なく2枠を確認できる。"
+    },
+    {
+      "id": "p3",
+      "name": "東大阪から南森町",
+      "subtitle": "昼の無料ジムバトル後、北区の小規模夕方枠へ移動する",
+      "rating": 3,
+      "steps": [
+        {
+          "time": "12:00 ～ 15:00",
+          "event": "ジムバトル（24人）",
+          "venue": "古本市場 菱江店",
+          "area": "東大阪"
+        },
+        {
+          "time": "17:30 ～ 19:00",
+          "event": "ジムバトル（6人）",
+          "venue": "カードショップすけきよ南森町店",
+          "area": "南森町",
+          "url": "https://players.pokemon-card.com/event/detail/1088984/1/20926/20260802/1905882"
+        }
+      ],
+      "merit": "昼の参加しやすい無料枠を起点に、夕方は参加人数が少なめの店舗で練習量を確保する。"
+    }
+  ],
+  "location_filters": [
+    {
+      "id": "all",
+      "name": "全エリア",
+      "description": "掲載候補をすべて表示",
+      "keywords": []
+    },
+    {
+      "id": "namba-umeda",
+      "name": "なんば・梅田周辺",
+      "description": "なんば、日本橋、心斎橋、梅田、南森町周辺だけを表示",
+      "keywords": [
+        "なんば",
+        "難波",
+        "日本橋",
+        "心斎橋",
+        "梅田",
+        "大阪駅",
+        "芝田",
+        "天神橋",
+        "南森町"
+      ]
+    }
+  ],
+  "focus_plans": {
+    "namba-umeda": [
+      {
+        "id": "fp1",
+        "name": "梅田CSPから夜ジム",
+        "subtitle": "大阪梅田のCSP対象から駅前の夜開催へつなぐ",
+        "rating": 5,
+        "steps": [
+          {
+            "time": "12:30 ～ 15:30",
+            "event": "トレーナーズリーグ（オープンリーグ） CSP（16人）",
+            "venue": "トレカショップ竜のしっぽ 大阪梅田店",
+            "area": "梅田"
+          },
+          {
+            "time": "18:00 ～ 21:00",
+            "event": "マイジムNo.1決定戦（16人）",
+            "venue": "トイコンプ 大阪駅前第3ビル店",
+            "area": "梅田",
+            "url": "https://players.pokemon-card.com/event/detail/1089045/1/10893/20260802/1887610"
+          }
+        ],
+        "merit": "梅田周辺で移動を最小化し、CSP対象イベント後に同日夜の公式ジムへ移れる。"
+      },
+      {
+        "id": "fp2",
+        "name": "なんば・心斎橋午後ルート",
+        "subtitle": "日本橋のキャンペーン系から心斎橋ジムバトルへ移動する",
+        "rating": 4,
+        "steps": [
+          {
+            "time": "12:00 ～",
+            "event": "メガエルレイドexSARゲットバトル（32人）",
+            "venue": "ドラゴンスター日本橋2号店",
+            "area": "日本橋",
+            "url": "https://players.pokemon-card.com/event/detail/1058832/1/10927/20260802/1877570"
+          },
+          {
+            "time": "15:00 ～ 17:00",
+            "event": "ジムバトル（16人）",
+            "venue": "MINT GAMES 心斎橋アメリカ村店",
+            "area": "心斎橋"
+          }
+        ],
+        "merit": "なんば・心斎橋周辺に寄せて、昼から夕方まで無理なく2枠を確認できる。"
+      }
+    ]
+  },
+  "favorite_shop_filters": [
+    {
+      "venue": "おじゃま館蒲生店",
+      "capacity": "16人条件を確認対象",
+      "filter_conditions": "2026/08/02・大阪府の検索結果で対象日に採用できる通常枠を確認できず、時間帯、空き状況、移動負担の観点で行動プランから除外。"
+    },
+    {
+      "venue": "あっぷる 今福店",
+      "capacity": "32人条件を確認対象",
+      "filter_conditions": "2026/08/02・大阪府の検索結果で対象日に採用できる通常枠を確認できず、時間帯、空き状況、移動負担の観点で行動プランから除外。"
+    },
+    {
+      "venue": "カードショップきりん 大阪天満橋店",
+      "capacity": "16人条件を確認対象",
+      "filter_conditions": "2026/08/02・大阪府の検索結果で対象日に採用できる通常枠を確認できず、時間帯、空き状況、移動負担の観点で行動プランから除外。"
+    },
+    {
+      "venue": "トレカWIN",
+      "capacity": "8人条件を確認対象",
+      "filter_conditions": "2026/08/02・大阪府の検索結果で対象日に採用できる通常枠を確認できず、時間帯、空き状況、移動負担の観点で行動プランから除外。"
+    }
+  ],
+  "notes": [
+    "Players Clubはこの実行環境からのcurl/独立headless ChromeアクセスがCloudflare 403となったため、検索エンジンに当日クロール済みとして表示されたPlayers Club検索結果・詳細ページ断片と店舗公式情報をもとにローカルJSON化。",
+    "年齢限定イベント、開催中止イベント、GIRAFULLなんば店のX未確認イベントはevents / plans / focus_plansから除外。",
+    "検索結果断片ベースのため、参加前に必ずPlayers Club詳細ページで受付状況・定員・参加費を再確認してください。"
+  ]
+}
