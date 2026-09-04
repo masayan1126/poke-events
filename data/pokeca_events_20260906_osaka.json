@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "report_date": "2026/09/04",
+    "report_day": "金",
+    "target_date": "2026/09/06",
+    "target_day": "日",
+    "area": "大阪府",
+    "region": "大阪府",
+    "search_url": "https://players.pokemon-card.com/event/search?start_date=2026/09/06&end_date=2026/09/06&prefecture=27&order=1",
+    "total_events": 96,
+    "criteria": "2026/09/06・大阪府のPlayers Club検索画面をブラウザで確認。年齢限定、開催中止、マスターリーグ、エクストラ、Xスケジュール未確認のGIRAFULLなんば店をevents / plans / focus_plansから除外。行動プランはCSP対象、なんば・日本橋・梅田周辺、お気に入り店舗、時間帯、移動負担を基準に選定。"
+  },
+  "events": {
+    "gym_battle": [
+      {
+        "id": 1,
+        "datetime": "12:00〜13:30",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "ALANN 日本橋",
+        "address": "大阪府大阪市浪速区難波中2-4-3 村上ビル305",
+        "fee": "無料",
+        "capacity": "8人",
+        "travel_time": 4,
+        "url": "https://players.pokemon-card.com/event/detail/1119773/1/12789/20260906/1912810"
+      },
+      {
+        "id": 2,
+        "datetime": "13:00〜15:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "とれじゃらす別館",
+        "address": "大阪府大阪市浪速区日本橋4丁目10-6 2階",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1119910/1/22730/20260906/1937098"
+      },
+      {
+        "id": 3,
+        "datetime": "13:00〜",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "おじゃま館蒲生店",
+        "address": "大阪府大阪市城東区今福西3丁目2-2 プレジデント城東1F",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 4,
+        "url": "https://players.pokemon-card.com/event/detail/1119811/1/22019/20260906/1919409"
+      },
+      {
+        "id": 4,
+        "datetime": "13:00〜15:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "【CARDBOX】高槻店",
+        "address": "大阪府高槻市北園町19-12 4階",
+        "fee": "100円",
+        "capacity": "16人",
+        "travel_time": 3,
+        "url": "https://players.pokemon-card.com/event/detail/1119888/1/10948/20260906/1929984"
+      },
+      {
+        "id": 5,
+        "datetime": "13:00〜14:30",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "古本市場 鶴見店",
+        "address": "大阪府大阪市鶴見区鶴見5-11-17",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 8,
+        "url": "https://players.pokemon-card.com/event/detail/1119875/1/15245/20260906/1933916"
+      },
+      {
+        "id": 6,
+        "datetime": "14:00〜16:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "トレカショップ スキップ玉出店",
+        "address": "大阪府大阪市住之江区粉浜西1-4-3 エバーグリーン住吉2F",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 4,
+        "url": "https://players.pokemon-card.com/event/detail/1120115/1/10931/20260906/1933742"
+      },
+      {
+        "id": 7,
+        "datetime": "15:00〜",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "あっぷる 今福店",
+        "address": "大阪府大阪市城東区今福東1-11-27",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 4,
+        "url": "https://players.pokemon-card.com/event/detail/1120207/1/12120/20260906/1933596"
+      },
+      {
+        "id": 8,
+        "datetime": "15:30〜17:30",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "カードショップきりん 大阪天満橋店",
+        "address": "大阪府大阪市中央区天満橋京町2-15 8階B室",
+        "fee": "200円",
+        "capacity": "16人",
+        "travel_time": 1,
+        "url": "https://players.pokemon-card.com/event/detail/1120370/1/22032/20260906/1929000"
+      },
+      {
+        "id": 9,
+        "datetime": "16:00〜18:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "ロータス大阪日本橋店",
+        "address": "大阪府大阪市浪速区日本橋4町目11-10 大南ビル204",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 6,
+        "url": "https://players.pokemon-card.com/event/detail/1120444/1/20822/20260906/1932978"
+      },
+      {
+        "id": 10,
+        "datetime": "16:30〜18:30",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "トレカ専門店ポップタウン",
+        "address": "大阪府大阪市浪速区日本橋4丁目9-22 リファインビル4階",
+        "fee": "300円",
+        "capacity": "24人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1120480/1/20022/20260906/1918798"
+      },
+      {
+        "id": 11,
+        "datetime": "16:00〜19:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "Speak easy",
+        "address": "大阪府大阪市浪速区難波中1-16-11 レック難波503",
+        "fee": "300円",
+        "capacity": "8人",
+        "travel_time": 3,
+        "url": "https://players.pokemon-card.com/event/detail/1120458/1/20821/20260906/1938616"
+      },
+      {
+        "id": 12,
+        "datetime": "17:30〜",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "カードショップONIGIRI",
+        "address": "大阪府堺市堺区戎島町2丁53-1 キッコービル204",
+        "fee": "100円以上のお買い物",
+        "capacity": "16人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1120575/1/20760/20260906/1938347"
+      },
+      {
+        "id": 13,
+        "datetime": "17:30〜",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "ドラゴンスター日本橋3号店",
+        "address": "大阪府大阪市浪速区敷津東2-1-5",
+        "fee": "無料",
+        "capacity": "64人",
+        "travel_time": 6,
+        "url": "https://players.pokemon-card.com/event/detail/1120578/1/14773/20260906/1918047"
+      },
+      {
+        "id": 14,
+        "datetime": "18:00〜21:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "トレカショップ竜のしっぽ 大阪梅田店",
+        "address": "大阪府大阪市北区芝田2-3-23 メイプルビル芝田2階",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1120651/1/10894/20260906/1921453"
+      },
+      {
+        "id": 15,
+        "datetime": "19:00〜21:00",
+        "name": "ポケモンカードジム ジムバトル",
+        "venue": "トレカ専門店ポップタウン",
+        "address": "大阪府大阪市浪速区日本橋4丁目9-22 リファインビル4階",
+        "fee": "300円",
+        "capacity": "24人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1120704/1/20022/20260906/1918804"
+      }
+    ],
+    "open_league": [
+      {
+        "id": 101,
+        "datetime": "13:00〜16:00",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "TSUTAYA BOOKSTORE ビバモール寝屋川",
+        "address": "大阪府寝屋川市寝屋南2-22-2",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 8,
+        "url": "https://players.pokemon-card.com/event/detail/1119960/1/19041/20260906/1922014"
+      },
+      {
+        "id": 102,
+        "datetime": "13:00〜13:00",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "古本市場 コレクターズ都島店",
+        "address": "大阪府大阪市都島区友渕町2-11-17",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 8,
+        "url": "https://players.pokemon-card.com/event/detail/1119861/1/15252/20260906/1918292"
+      },
+      {
+        "id": 103,
+        "datetime": "14:00〜15:30",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "カードプラン ジュークボックス",
+        "address": "大阪府堺市北区長曽根町735-3 新金岡ビル3F",
+        "fee": "100円（学生無料）",
+        "capacity": "16人",
+        "travel_time": 6,
+        "url": "https://players.pokemon-card.com/event/detail/1120096/1/13021/20260906/1917506"
+      },
+      {
+        "id": 104,
+        "datetime": "14:00〜",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "ドラゴンスター泉佐野店",
+        "address": "大阪府泉佐野市市場西3丁目7番15号",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 9,
+        "url": "https://players.pokemon-card.com/event/detail/1120020/1/11021/20260906/1918605"
+      },
+      {
+        "id": 105,
+        "datetime": "17:00〜",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "トレカショップ竜のしっぽ 布施店",
+        "address": "大阪府東大阪市長堂1丁目2-1 A+FUSEビル3階",
+        "fee": "無料",
+        "capacity": "48人",
+        "travel_time": 2,
+        "url": "https://players.pokemon-card.com/event/detail/1120505/1/19938/20260906/1917732"
+      },
+      {
+        "id": 106,
+        "datetime": "18:00〜21:00",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "カードショップきりん 大阪天満橋店",
+        "address": "大阪府大阪市中央区天満橋京町2-15 8階B室",
+        "fee": "500円",
+        "capacity": "16人",
+        "travel_time": 1,
+        "url": "https://players.pokemon-card.com/event/detail/1120654/1/22032/20260906/1918750"
+      },
+      {
+        "id": 107,
+        "datetime": "18:00〜21:00",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "トイコンプ 大阪駅前第3ビル店",
+        "address": "大阪府大阪市北区梅田1-1-3 2F-21",
+        "fee": "無料",
+        "capacity": "16人",
+        "travel_time": 2,
+        "url": "https://players.pokemon-card.com/event/detail/1120653/1/10893/20260906/1915160"
+      },
+      {
+        "id": 108,
+        "datetime": "18:00〜20:00",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "トレカショップ竜のしっぽ 梅田NU茶屋町店",
+        "address": "大阪府大阪市北区茶屋町10-12 NU茶屋町4F",
+        "fee": "500円",
+        "capacity": "32人",
+        "travel_time": 4,
+        "url": "https://players.pokemon-card.com/event/detail/1120628/1/20970/20260906/1912763"
+      },
+      {
+        "id": 109,
+        "datetime": "18:00〜20:00",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "トレカBOON",
+        "address": "大阪府東大阪市小若江4-12-18",
+        "fee": "200円",
+        "capacity": "32人",
+        "travel_time": 8,
+        "url": "https://players.pokemon-card.com/event/detail/1120627/1/22056/20260906/1913078"
+      },
+      {
+        "id": 110,
+        "datetime": "19:00〜",
+        "name": "ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+        "venue": "BOOKOFF SUPER BAZAAR 307号枚方池之宮店",
+        "address": "大阪府枚方市池之宮1-2-50",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 9,
+        "url": "https://players.pokemon-card.com/event/detail/1120688/1/18876/20260906/1918718"
+      }
+    ],
+    "friend_battle": [
+      {
+        "id": 201,
+        "datetime": "13:00〜15:00",
+        "name": "いっしょにフレンドバトル",
+        "venue": "Speak easy",
+        "address": "大阪府大阪市浪速区難波中1-16-11 レック難波503",
+        "fee": "300円",
+        "capacity": "8人",
+        "travel_time": 3,
+        "url": "https://players.pokemon-card.com/event/detail/1119918/1/20821/20260906/1938598"
+      }
+    ],
+    "self_event": [
+      {
+        "id": 301,
+        "datetime": "11:30〜13:30",
+        "name": "マーキスカップ",
+        "venue": "カードショップマーキス",
+        "address": "大阪府箕面市桜4-1-24",
+        "fee": "無料",
+        "capacity": "32人",
+        "travel_time": 6,
+        "url": "https://players.pokemon-card.com/event/detail/1113907/1/21037/20260906/1916796"
+      },
+      {
+        "id": 302,
+        "datetime": "14:00〜16:00",
+        "name": "カジュアルバトル",
+        "venue": "トレカ専門店ポップタウン",
+        "address": "大阪府大阪市浪速区日本橋4-9-22 リファインビル4階",
+        "fee": "500円",
+        "capacity": "24人",
+        "travel_time": 5,
+        "url": "https://players.pokemon-card.com/event/detail/1113933/1/12028/20260906/1918854"
+      }
+    ]
+  },
+  "plans": [
+    {
+      "id": "A",
+      "name": "天満橋ジムからCSP",
+      "subtitle": "きりんの通常戦で調整し、夕方のCSP対象へつなぐ",
+      "rating": 5,
+      "steps": [
+        {
+          "time": "15:30〜17:30",
+          "event": "ジムバトル（16人）",
+          "venue": "カードショップきりん 大阪天満橋店",
+          "area": "天満橋",
+          "url": "https://players.pokemon-card.com/event/detail/1120370/1/22032/20260906/1929000"
+        },
+        {
+          "time": "18:00〜21:00",
+          "event": "トレーナーズリーグ（オープンリーグ）CSP（16人）",
+          "venue": "カードショップきりん 大阪天満橋店",
+          "area": "天満橋",
+          "url": "https://players.pokemon-card.com/event/detail/1120654/1/22032/20260906/1918750"
+        }
+      ],
+      "merit": "同一店舗で通常戦からCSP対象へ移れるため、移動リスクが低い。"
+    },
+    {
+      "id": "B",
+      "name": "日本橋で対戦量を確保",
+      "subtitle": "昼から夜まで日本橋周辺で複数候補を押さえる",
+      "rating": 4,
+      "steps": [
+        {
+          "time": "12:00〜13:30",
+          "event": "ジムバトル（8人）",
+          "venue": "ALANN 日本橋",
+          "area": "なんば・日本橋",
+          "url": "https://players.pokemon-card.com/event/detail/1119773/1/12789/20260906/1912810"
+        },
+        {
+          "time": "16:30〜18:30",
+          "event": "ジムバトル（24人）",
+          "venue": "トレカ専門店ポップタウン",
+          "area": "日本橋",
+          "url": "https://players.pokemon-card.com/event/detail/1120480/1/20022/20260906/1918798"
+        },
+        {
+          "time": "17:30〜",
+          "event": "ジムバトル（64人）",
+          "venue": "ドラゴンスター日本橋3号店",
+          "area": "日本橋",
+          "url": "https://players.pokemon-card.com/event/detail/1120578/1/14773/20260906/1918047"
+        }
+      ],
+      "merit": "日本橋周辺に寄せるため、当日の受付状況を見て切り替えやすい。"
+    },
+    {
+      "id": "C",
+      "name": "お気に入り店舗を優先",
+      "subtitle": "蒲生、今福、天満橋の確認済み候補を使う",
+      "rating": 4,
+      "steps": [
+        {
+          "time": "13:00〜",
+          "event": "ジムバトル（16人）",
+          "venue": "おじゃま館蒲生店",
+          "area": "蒲生四丁目",
+          "url": "https://players.pokemon-card.com/event/detail/1119811/1/22019/20260906/1919409"
+        },
+        {
+          "time": "15:00〜",
+          "event": "ジムバトル（32人）",
+          "venue": "あっぷる 今福店",
+          "area": "今福鶴見",
+          "url": "https://players.pokemon-card.com/event/detail/1120207/1/12120/20260906/1933596"
+        },
+        {
+          "time": "18:00〜21:00",
+          "event": "トレーナーズリーグ（オープンリーグ）CSP（16人）",
+          "venue": "カードショップきりん 大阪天満橋店",
+          "area": "天満橋",
+          "url": "https://players.pokemon-card.com/event/detail/1120654/1/22032/20260906/1918750"
+        }
+      ],
+      "merit": "よく見る店舗を中心に組み、夕方にCSP対象も狙える。"
+    },
+    {
+      "id": "D",
+      "name": "梅田夜CSP",
+      "subtitle": "夕方から梅田周辺でCSP対象を選ぶ",
+      "rating": 3,
+      "steps": [
+        {
+          "time": "18:00〜21:00",
+          "event": "トレーナーズリーグ（オープンリーグ）CSP（16人）",
+          "venue": "トイコンプ 大阪駅前第3ビル店",
+          "area": "梅田",
+          "url": "https://players.pokemon-card.com/event/detail/1120653/1/10893/20260906/1915160"
+        },
+        {
+          "time": "18:00〜20:00",
+          "event": "トレーナーズリーグ（オープンリーグ）CSP（32人）",
+          "venue": "トレカショップ竜のしっぽ 梅田NU茶屋町店",
+          "area": "梅田・茶屋町",
+          "url": "https://players.pokemon-card.com/event/detail/1120628/1/20970/20260906/1912763"
+        }
+      ],
+      "merit": "夜開始のCSP候補を梅田周辺に絞れる。昼の予定がある場合に使いやすい。"
+    }
+  ],
+  "focus_plans": {
+    "namba-umeda": [
+      {
+        "id": "B",
+        "name": "日本橋で対戦量を確保",
+        "subtitle": "昼から夜まで日本橋周辺で複数候補を押さえる",
+        "rating": 4,
+        "steps": [
+          {
+            "time": "12:00〜13:30",
+            "event": "ジムバトル（8人）",
+            "venue": "ALANN 日本橋",
+            "area": "なんば・日本橋",
+            "url": "https://players.pokemon-card.com/event/detail/1119773/1/12789/20260906/1912810"
+          },
+          {
+            "time": "16:30〜18:30",
+            "event": "ジムバトル（24人）",
+            "venue": "トレカ専門店ポップタウン",
+            "area": "日本橋",
+            "url": "https://players.pokemon-card.com/event/detail/1120480/1/20022/20260906/1918798"
+          },
+          {
+            "time": "17:30〜",
+            "event": "ジムバトル（64人）",
+            "venue": "ドラゴンスター日本橋3号店",
+            "area": "日本橋",
+            "url": "https://players.pokemon-card.com/event/detail/1120578/1/14773/20260906/1918047"
+          }
+        ],
+        "merit": "日本橋周辺に寄せるため、当日の受付状況を見て切り替えやすい。"
+      },
+      {
+        "id": "D",
+        "name": "梅田夜CSP",
+        "subtitle": "夕方から梅田周辺でCSP対象を選ぶ",
+        "rating": 3,
+        "steps": [
+          {
+            "time": "18:00〜21:00",
+            "event": "トレーナーズリーグ（オープンリーグ）CSP（16人）",
+            "venue": "トイコンプ 大阪駅前第3ビル店",
+            "area": "梅田",
+            "url": "https://players.pokemon-card.com/event/detail/1120653/1/10893/20260906/1915160"
+          },
+          {
+            "time": "18:00〜20:00",
+            "event": "トレーナーズリーグ（オープンリーグ）CSP（32人）",
+            "venue": "トレカショップ竜のしっぽ 梅田NU茶屋町店",
+            "area": "梅田・茶屋町",
+            "url": "https://players.pokemon-card.com/event/detail/1120628/1/20970/20260906/1912763"
+          }
+        ],
+        "merit": "夜開始のCSP候補を梅田周辺に絞れる。昼の予定がある場合に使いやすい。"
+      }
+    ],
+    "csp": [
+      {
+        "id": "A",
+        "name": "天満橋ジムからCSP",
+        "subtitle": "きりんの通常戦で調整し、夕方のCSP対象へつなぐ",
+        "rating": 5,
+        "steps": [
+          {
+            "time": "15:30〜17:30",
+            "event": "ジムバトル（16人）",
+            "venue": "カードショップきりん 大阪天満橋店",
+            "area": "天満橋",
+            "url": "https://players.pokemon-card.com/event/detail/1120370/1/22032/20260906/1929000"
+          },
+          {
+            "time": "18:00〜21:00",
+            "event": "トレーナーズリーグ（オープンリーグ）CSP（16人）",
+            "venue": "カードショップきりん 大阪天満橋店",
+            "area": "天満橋",
+            "url": "https://players.pokemon-card.com/event/detail/1120654/1/22032/20260906/1918750"
+          }
+        ],
+        "merit": "同一店舗で通常戦からCSP対象へ移れるため、移動リスクが低い。"
+      },
+      {
+        "id": "D",
+        "name": "梅田夜CSP",
+        "subtitle": "夕方から梅田周辺でCSP対象を選ぶ",
+        "rating": 3,
+        "steps": [
+          {
+            "time": "18:00〜21:00",
+            "event": "トレーナーズリーグ（オープンリーグ）CSP（16人）",
+            "venue": "トイコンプ 大阪駅前第3ビル店",
+            "area": "梅田",
+            "url": "https://players.pokemon-card.com/event/detail/1120653/1/10893/20260906/1915160"
+          },
+          {
+            "time": "18:00〜20:00",
+            "event": "トレーナーズリーグ（オープンリーグ）CSP（32人）",
+            "venue": "トレカショップ竜のしっぽ 梅田NU茶屋町店",
+            "area": "梅田・茶屋町",
+            "url": "https://players.pokemon-card.com/event/detail/1120628/1/20970/20260906/1912763"
+          }
+        ],
+        "merit": "夜開始のCSP候補を梅田周辺に絞れる。昼の予定がある場合に使いやすい。"
+      }
+    ]
+  },
+  "favorite_shop_filters": [
+    {
+      "venue": "おじゃま館蒲生店",
+      "capacity_summary": "16人",
+      "filter_conditions": "2026/09/06・大阪府のPlayers Club検索2ページ目で13:00開始、無料、通常ジムバトル、掲載対象として確認。"
+    },
+    {
+      "venue": "あっぷる 今福店",
+      "capacity_summary": "32人",
+      "filter_conditions": "2026/09/06・大阪府のPlayers Club検索3ページ目で15:00開始、無料、通常ジムバトル、掲載対象として確認。"
+    },
+    {
+      "venue": "カードショップきりん 大阪天満橋店",
+      "capacity_summary": "16人",
+      "filter_conditions": "2026/09/06・大阪府のPlayers Club検索3ページ目と5ページ目で15:30通常ジムバトル、18:00CSP対象、駅近、掲載対象として確認。"
+    },
+    {
+      "venue": "トレカWIN",
+      "capacity_summary": "対象日の確認済み候補なし",
+      "filter_conditions": "2026/09/06・大阪府のPlayers Club検索5ページを確認。表示候補に見つからなかったため掲載対象外。"
+    }
+  ],
+  "notes": [
+    "Players Clubのevent_search APIはこの実行環境からのcurlアクセスがCloudflare 403となったため、CodexのバックグラウンドブラウザでPlayers Club検索画面を開いて確認。",
+    "Players Club検索画面では2026/09/06・大阪府で96件を確認し、掲載対象として28件を抽出。",
+    "年齢限定イベント、開催中止、マスターリーグ、エクストラ、Xスケジュール未確認のGIRAFULLなんば店はevents / plans / focus_plansから除外。",
+    "GIRAFULLなんば店はPlayers Club上で16:30ジムバトルを確認したが、X投稿の添付カレンダー画像をブラウザで読めなかったため未掲載。",
+    "参加前に必ずPlayers Club詳細ページで受付状況・定員・参加費を再確認してください。"
+  ],
+  "collection": {
+    "source": "Players Club search page via Codex background browser",
+    "api_url": "https://players.pokemon-card.com/event_search?offset=0&limit=200&order=1&start_date=2026%2F09%2F06&end_date=2026%2F09%2F06&prefecture%5B%5D=27",
+    "blocked_reason": "Cloudflare 403 from curl; browser DOM extraction intermittently timed out, so AX-visible search results were used",
+    "collected_at": "2026-09-04T09:01:00+09:00",
+    "visible_search_result": {
+      "target_date": "2026/09/06",
+      "prefecture": "大阪",
+      "result_count": "96件",
+      "pages": "5ページ"
+    },
+    "girafull_namba_x": {
+      "account_url": "https://x.com/GIRAFULL_Namba",
+      "schedule_post_url": "https://x.com/GIRAFULL_Namba/status/2094705617906913309",
+      "status": "X投稿は検索結果で9月イベントカレンダーとして確認。ブラウザでは投稿と画像が読み込み中のままになり、9/6行のフロア・ラベル色・参加費を直接確認できなかったため、GIRAFULLなんば店は掲載対象から除外。"
+    }
+  }
+}
